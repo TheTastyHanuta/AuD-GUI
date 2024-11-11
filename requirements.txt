@@ -1,0 +1,2 @@
+# Packages that need to be installed
+pandas==2.2.3  # CSV IO operations
