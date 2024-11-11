@@ -1,0 +1,14 @@
+11
+
+0, Coderichtlinien
+0, Coderichtlinien eingehalten
+
+11, SierpinskiTriangle
+1, Konstanten
+2, drawTriangle
+5, drawTriangleRec
+2.5, handleInput
+0.5, toggleRandomColor
+
+1, Bonus
+1, Bonus für Abgabe im Team

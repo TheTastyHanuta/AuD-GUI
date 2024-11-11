@@ -1,0 +1,21 @@
+20
+
+2, Coderichtlinien
+2, Coderichtlinien eingehalten
+
+0.5, ElementExistsException
+0.5, Signatur
+
+17.5, BinarySearchTree
+1, Innere Klasse TreeNode
+0.5, clear
+1.5, exists
+2.5, insert
+7, remove
+1, inOrderList
+1, preOrderList
+1, postOrderList
+2, main
+
+2, Bonus
+2, Bonus für Abgabe im Team

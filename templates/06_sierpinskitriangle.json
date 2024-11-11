@@ -1,0 +1,85 @@
+{
+    "total_points": {
+        "actual": 11.0,
+        "max": 11.0
+    },
+    "compile_error": false,
+    "classes": [
+        {
+            "title": "Coderichtlinien",
+            "points": {
+                "actual": 0.0,
+                "max": 0.0
+            },
+            "tasks": [
+                {
+                    "title": "Coderichtlinien eingehalten",
+                    "points": {
+                        "actual": 0.0,
+                        "max": 0.0
+                    }
+                }
+            ]
+        },
+        {
+            "title": "SierpinskiTriangle",
+            "points": {
+                "actual": 11.0,
+                "max": 11.0
+            },
+            "tasks": [
+                {
+                    "title": "Konstanten",
+                    "points": {
+                        "actual": 1.0,
+                        "max": 1.0
+                    }
+                },
+                {
+                    "title": "drawTriangle",
+                    "points": {
+                        "actual": 2.0,
+                        "max": 2.0
+                    }
+                },
+                {
+                    "title": "drawTriangleRec",
+                    "points": {
+                        "actual": 5.0,
+                        "max": 5.0
+                    }
+                },
+                {
+                    "title": "handleInput",
+                    "points": {
+                        "actual": 2.5,
+                        "max": 2.5
+                    }
+                },
+                {
+                    "title": "toggleRandomColor",
+                    "points": {
+                        "actual": 0.5,
+                        "max": 0.5
+                    }
+                }
+            ]
+        },
+        {
+            "title": "Bonus",
+            "points": {
+                "actual": 1.0,
+                "max": 1.0
+            },
+            "tasks": [
+                {
+                    "title": "Bonus für Abgabe im Team",
+                    "points": {
+                        "actual": 1.0,
+                        "max": 1.0
+                    }
+                }
+            ]
+        }
+    ]
+}

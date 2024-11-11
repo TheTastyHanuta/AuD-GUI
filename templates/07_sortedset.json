@@ -1,0 +1,206 @@
+{
+    "total_points": {
+        "actual": 36.0,
+        "max": 36.0
+    },
+    "compile_error": false,
+    "classes": [
+        {
+            "title": "Coderichtlinien",
+            "points": {
+                "actual": 2.0,
+                "max": 2.0
+            },
+            "tasks": [
+                {
+                    "title": "Coderichtlinien eingehalten",
+                    "points": {
+                        "actual": 2.0,
+                        "max": 2.0
+                    }
+                }
+            ]
+        },
+        {
+            "title": "ElementExistsException",
+            "points": {
+                "actual": 2.0,
+                "max": 2.0
+            },
+            "tasks": [
+                {
+                    "title": "Konstruktoren",
+                    "points": {
+                        "actual": 2.0,
+                        "max": 2.0
+                    }
+                }
+            ]
+        },
+        {
+            "title": "SortedSet",
+            "points": {
+                "actual": 32.0,
+                "max": 32.0
+            },
+            "tasks": [
+                {
+                    "title": "ListItem - Attribute",
+                    "points": {
+                        "actual": 1.5,
+                        "max": 1.5
+                    }
+                },
+                {
+                    "title": "ListItem - Konstruktor",
+                    "points": {
+                        "actual": 0.5,
+                        "max": 0.5
+                    }
+                },
+                {
+                    "title": "ListItem - toString",
+                    "points": {
+                        "actual": 1.0,
+                        "max": 1.0
+                    }
+                },
+                {
+                    "title": "ListItem - equals",
+                    "points": {
+                        "actual": 2.0,
+                        "max": 2.0
+                    }
+                },
+                {
+                    "title": "Attribute",
+                    "points": {
+                        "actual": 1.0,
+                        "max": 1.0
+                    }
+                },
+                {
+                    "title": "add(int value)",
+                    "points": {
+                        "actual": 4.5,
+                        "max": 4.5
+                    }
+                },
+                {
+                    "title": "add(int[] values)",
+                    "points": {
+                        "actual": 1.0,
+                        "max": 1.0
+                    }
+                },
+                {
+                    "title": "contains",
+                    "points": {
+                        "actual": 1.0,
+                        "max": 1.0
+                    }
+                },
+                {
+                    "title": "size",
+                    "points": {
+                        "actual": 1.0,
+                        "max": 1.0
+                    }
+                },
+                {
+                    "title": "remove",
+                    "points": {
+                        "actual": 5.0,
+                        "max": 5.0
+                    }
+                },
+                {
+                    "title": "clone",
+                    "points": {
+                        "actual": 1.0,
+                        "max": 1.0
+                    }
+                },
+                {
+                    "title": "intersect",
+                    "points": {
+                        "actual": 2.0,
+                        "max": 2.0
+                    }
+                },
+                {
+                    "title": "unite",
+                    "points": {
+                        "actual": 1.0,
+                        "max": 1.0
+                    }
+                },
+                {
+                    "title": "subtract",
+                    "points": {
+                        "actual": 2.0,
+                        "max": 2.0
+                    }
+                },
+                {
+                    "title": "getSetInBetween",
+                    "points": {
+                        "actual": 2.0,
+                        "max": 2.0
+                    }
+                },
+                {
+                    "title": "toArray",
+                    "points": {
+                        "actual": 1.0,
+                        "max": 1.0
+                    }
+                },
+                {
+                    "title": "toReversedArray",
+                    "points": {
+                        "actual": 1.0,
+                        "max": 1.0
+                    }
+                },
+                {
+                    "title": "toString",
+                    "points": {
+                        "actual": 1.0,
+                        "max": 1.0
+                    }
+                },
+                {
+                    "title": "clear",
+                    "points": {
+                        "actual": 0.5,
+                        "max": 0.5
+                    }
+                },
+                {
+                    "title": "main(Tests)",
+                    "points": {
+                        "actual": 2.0,
+                        "max": 2.0
+                    }
+                }
+            ]
+        },
+        {
+            "title": "Bonus",
+            "points": {
+                "actual": 2.0,
+                "max": 2.0
+            },
+            "tasks": [
+                {
+                    "title": "Bonus für Abgabe im Team",
+                    "points": {
+                        "actual": 2.0,
+                        "max": 2.0
+                    }
+                }
+            ]
+        }
+    ]
+}

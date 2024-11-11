@@ -1,0 +1,203 @@
+{
+    "total_points": {
+        "actual": 27.0,
+        "max": 27.0
+    },
+    "compile_error": false,
+    "classes": [
+        {
+            "title": "Coderichtlinien",
+            "points": {
+                "actual": 2.0,
+                "max": 2.0
+            },
+            "tasks": [
+                {
+                    "title": "Coderichtlinien eingehalten",
+                    "points": {
+                        "actual": 2.0,
+                        "max": 2.0
+                    }
+                }
+            ]
+        },
+        {
+            "title": "ContactDatabase",
+            "points": {
+                "actual": 4.5,
+                "max": 4.5
+            },
+            "tasks": [
+                {
+                    "title": "Signatur",
+                    "points": {
+                        "actual": 0.5,
+                        "max": 0.5
+                    }
+                },
+                {
+                    "title": "main",
+                    "points": {
+                        "actual": 4.0,
+                        "max": 4.0
+                    }
+                }
+            ]
+        },
+        {
+            "title": "AuDHashTable",
+            "points": {
+                "actual": 1.5,
+                "max": 1.5
+            },
+            "tasks": [
+                {
+                    "title": "hash(String s)",
+                    "points": {
+                        "actual": 1.5,
+                        "max": 1.5
+                    }
+                }
+            ]
+        },
+        {
+            "title": "AuDOpenHashTable",
+            "points": {
+                "actual": 7.5,
+                "max": 7.5
+            },
+            "tasks": [
+                {
+                    "title": "Signatur",
+                    "points": {
+                        "actual": 0.5,
+                        "max": 0.5
+                    }
+                },
+                {
+                    "title": "Attribut",
+                    "points": {
+                        "actual": 0.5,
+                        "max": 0.5
+                    }
+                },
+                {
+                    "title": "Konstruktor",
+                    "points": {
+                        "actual": 1.5,
+                        "max": 1.5
+                    }
+                },
+                {
+                    "title": "insert",
+                    "points": {
+                        "actual": 1.0,
+                        "max": 1.0
+                    }
+                },
+                {
+                    "title": "remove",
+                    "points": {
+                        "actual": 2.0,
+                        "max": 2.0
+                    }
+                },
+                {
+                    "title": "getContact",
+                    "points": {
+                        "actual": 2.0,
+                        "max": 2.0
+                    }
+                }
+            ]
+        },
+        {
+            "title": "AuDClosedHashTable",
+            "points": {
+                "actual": 11.5,
+                "max": 11.5
+            },
+            "tasks": [
+                {
+                    "title": "Signatur",
+                    "points": {
+                        "actual": 0.5,
+                        "max": 0.5
+                    }
+                },
+                {
+                    "title": "Attribute",
+                    "points": {
+                        "actual": 0.5,
+                        "max": 0.5
+                    }
+                },
+                {
+                    "title": "Konstruktor",
+                    "points": {
+                        "actual": 1.0,
+                        "max": 1.0
+                    }
+                },
+                {
+                    "title": "isFull",
+                    "points": {
+                        "actual": 0.5,
+                        "max": 0.5
+                    }
+                },
+                {
+                    "title": "hash(String s",
+                    "points": {
+                        "actual": 1.5,
+                        "max": 1.5
+                    }
+                },
+                {
+                    "title": "insert",
+                    "points": {
+                        "actual": 2.0,
+                        "max": 2.0
+                    }
+                },
+                {
+                    "title": "getIndexOf",
+                    "points": {
+                        "actual": 3.0,
+                        "max": 3.0
+                    }
+                },
+                {
+                    "title": "remove",
+                    "points": {
+                        "actual": 1.5,
+                        "max": 1.5
+                    }
+                },
+                {
+                    "title": "getContact",
+                    "points": {
+                        "actual": 1.0,
+                        "max": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "title": "Bonus",
+            "points": {
+                "actual": 2.0,
+                "max": 2.0
+            },
+            "tasks": [
+                {
+                    "title": "Bonus für Abgabe im Team",
+                    "points": {
+                        "actual": 2.0,
+                        "max": 2.0
+                    }
+                }
+            ]
+        }
+    ]
+}

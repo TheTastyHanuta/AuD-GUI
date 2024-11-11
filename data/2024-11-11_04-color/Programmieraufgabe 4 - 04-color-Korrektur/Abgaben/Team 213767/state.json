@@ -1,0 +1,117 @@
+{
+    "id": 213767,
+    "confirmed": false,
+    "code": [
+        "C:/Users/Simon/PycharmProjects/AuD_GUI\\data\\2024-11-11_04-color\\Programmieraufgabe 4 - 04-color-Code\\Abgaben\\Team 213767\\Color.java"
+    ],
+    "pdf": "C:/Users/Simon/PycharmProjects/AuD_GUI\\data\\2024-11-11_04-color\\Programmieraufgabe 4 - 04-color-Korrektur\\Abgaben\\Team 213767\\Korrektur.pdf",
+    "status_filepath": "C:/Users/Simon/PycharmProjects/AuD_GUI\\data\\2024-11-11_04-color\\Programmieraufgabe 4 - 04-color-Korrektur\\Abgaben\\Team 213767\\state.json",
+    "status_csv": "C:/Users/Simon/PycharmProjects/AuD_GUI\\data\\2024-11-11_04-color\\Programmieraufgabe 4 - 04-color-Korrektur\\Abgaben\\status.csv",
+    "comment": {
+        "total_points": {
+            "actual": 20.0,
+            "max": 20.0
+        },
+        "compile_error": false,
+        "classes": [
+            {
+                "title": "Coderichtlinien",
+                "points": {
+                    "actual": 2.0,
+                    "max": 2.0
+                },
+                "tasks": [
+                    {
+                        "title": "Coderichtlinien eingehalten",
+                        "points": {
+                            "actual": 2.0,
+                            "max": 2.0
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "SignalPlotter",
+                "points": {
+                    "actual": 18.0,
+                    "max": 18.0
+                },
+                "tasks": [
+                    {
+                        "title": "Konstanten",
+                        "points": {
+                            "actual": 2.0,
+                            "max": 2.0
+                        }
+                    },
+                    {
+                        "title": "createSamplingPoints",
+                        "points": {
+                            "actual": 4.5,
+                            "max": 4.5
+                        }
+                    },
+                    {
+                        "title": "sigmoid",
+                        "points": {
+                            "actual": 1.0,
+                            "max": 1.0
+                        }
+                    },
+                    {
+                        "title": "applySigmoidToArray",
+                        "points": {
+                            "actual": 2.0,
+                            "max": 2.0
+                        }
+                    },
+                    {
+                        "title": "plotSigmoid",
+                        "points": {
+                            "actual": 2.0,
+                            "max": 2.0
+                        }
+                    },
+                    {
+                        "title": "plotEcg",
+                        "points": {
+                            "actual": 4.0,
+                            "max": 4.0
+                        }
+                    },
+                    {
+                        "title": "computeHeartRate",
+                        "points": {
+                            "actual": 2.0,
+                            "max": 2.0
+                        }
+                    },
+                    {
+                        "title": "main",
+                        "points": {
+                            "actual": 0.5,
+                            "max": 0.5
+                        }
+                    }
+                ]
+            },
+            {
+                "title": "Bonus",
+                "points": {
+                    "actual": 1.0,
+                    "max": 1.0
+                },
+                "tasks": [
+                    {
+                        "title": "Bonus für Abgabe im Team",
+                        "points": {
+                            "actual": 1.0,
+                            "max": 1.0
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "auto_correction_result": "Punktzahl: 11.5\n\n\n0. Coderichtlinien (0.0 points):\n✗   0.00 | Noch nicht korrigiert | AssertionError()\n✓   0.00 | Noch nicht korrigiert\n\n1. Konstanten (0.0 points):\n✗   0.00 | BLACK | AssertionError(Field 'BLACK' of class 'Color' should have modifiers 'public static final' but has modifiers 'static final'.\n)\n✗   0.00 | BLUE | AssertionError(Field 'BLUE' of class 'Color' should have modifiers 'public static final' but has modifiers 'static final'.\n)\n✗   0.00 | GREEN | AssertionError(Field 'GREEN' of class 'Color' should have modifiers 'public static final' but has modifiers 'static final'.\n)\n✗   0.00 | GREY/GRAY | AssertionError(Field 'GRAY' of class 'Color' should have modifiers 'public static final' but has modifiers 'static final'.\n)\n✗   0.00 | RED | AssertionError(Field 'RED' of class 'Color' should have modifiers 'public static final' but has modifiers 'static final'.\n)\n✗   0.00 | WHITE | AssertionError(Field 'WHITE' of class 'Color' should have modifiers 'public static final' but has modifiers 'static final'.\n)\n✓   0.00 | Existiert?\n\n2. Konstruktoren (4.0 points):\n✗   0.00 | Color(String) | NumberFormatException(For input string: \"#0A0B0C\"): Color.<init>(line 79)\n✓   0.00 | Existiert?\n✓   0.50 | Attribut rgb\n✓   0.50 | Color()\n✓   1.00 | Color(int, int, int)\n✓   0.50 | Color(int, int, int) - invalid blue\n✓   0.50 | Color(int, int, int) - invalid green\n✓   0.50 | Color(int, int, int) - invalid red\n✓   0.50 | Color(int)\n\n3. getRgb, getRed, getGreen, getBlue (3.5 points):\n✓   0.00 | Existiert?\n✓   1.00 | getBlue()\n✓   1.00 | getGreen()\n✓   1.00 | getRed()\n✓   0.50 | getRgb()\n\n4. getHex (2.0 points):\n✗   0.00 | leading zeros | AssertionError(No leading zeros. Length of output should be 7. expected:<7> but was:<2>)\n✓   0.00 | Existiert?\n✓   1.00 | conversion\n✓   0.50 | # prefix\n✓   0.50 | upper case?\n\n5. complementaryColor, mixColor, toString (2.0 points):\n✗   0.00 | toString | ComparisonFailure(toString() should be the same as getHex() expected:<[#283C54]> but was:<[Color@5ad78efb]>)\n✓   0.00 | Existiert?\n✓   1.00 | complementaryColor\n✓   1.00 | mixColor\n"
+}

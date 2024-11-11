@@ -1,0 +1,19 @@
+14
+
+0, Coderichtlinien
+0, Coderichtlinien eingehalten
+
+14, Arrays
+1, printArray
+1, printBooleanArray
+1, sum
+1, mean
+1, sumArrays
+1, sumArrays
+2, tail
+2, checkSorting
+2, evenNumbers
+2, Coderichtlinien
+
+1, Bonus
+1, Bonus für Abgabe im Team

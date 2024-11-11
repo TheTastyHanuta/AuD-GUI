@@ -1,0 +1,6720 @@
+"update","team_id","logins","status","mark","notice","comment","plagiarism","plag_comment"
+"0","212192","yv78uhor, gsr72383","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213799","le55dupe, yb79asur","notgraded","15","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (2.0 points):
+✗   0.00 | leading zeros | AssertionError(No leading zeros. Length of output should be 7. expected:<7> but was:<2>)
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","211682","eb89ohim, et06imef","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213916","hi72tice","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213729","uh22ybiz, ki72hofu","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","212152","wo00pyko, ir22egul","notgraded","14","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (4.0 points):
+✗   0.00 | Color(String) | StringIndexOutOfBoundsException(begin 1, end 8, length 7): Color.<init>(line 61)
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.0 points):
+✗   0.00 | toString | ComparisonFailure(toString() should be the same as getHex() expected:<[#283C54]> but was:<[Color@77bd1c4b]>)
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+","",""
+"0","211911","uh15ixyj","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","212835","yd50ylap, ur26awat","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213278","ys98ugyk, is13ulan","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213985","ec73enec","notgraded","0","","
+Compile error","",""
+"0","213787","ik03epys, ib53afut","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213839","dy13lima","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213361","lo42lodu, hy13meci","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213864","bi31jeku, ku26biro","notgraded","0","","
+Compile error","",""
+"0","213652","ag02awin, ym44ewos","notgraded","15","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (2.0 points):
+✗   0.00 | leading zeros | AssertionError(No leading zeros. Length of output should be 7. expected:<7> but was:<2>)
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213791","av53ebub, sy18wodi","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213911","ib97opem, ep14ecyh","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","210401","qi25kane, je49lyto","notgraded","11.5","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (0.0 points):
+✗   0.00 | BLACK | AssertionError(Class 'Color' does not have field 'BLACK'.
+)
+✗   0.00 | BLUE | AssertionError(Class 'Color' does not have field 'BLUE'.
+)
+✗   0.00 | GREEN | AssertionError(Class 'Color' does not have field 'GREEN'.
+)
+✗   0.00 | GREY/GRAY | AssertionError(Class 'Color' does not have field 'GRAY'.
+)
+✗   0.00 | RED | AssertionError(Class 'Color' does not have field 'RED'.
+)
+✗   0.00 | WHITE | AssertionError(Class 'Color' does not have field 'WHITE'.
+)
+✓   0.00 | Existiert?
+
+2. Konstruktoren (4.0 points):
+✗   0.00 | Color(int, int, int) - invalid blue | AssertionError(Constructor not setting rgb value correctly
+expected:<0> but was:<-1>)
+✗   0.00 | Color(int, int, int) - invalid green | AssertionError(Constructor not setting rgb value correctly
+expected:<0> but was:<-256>)
+✗   0.00 | Color(int, int, int) - invalid red | AssertionError(Constructor not setting rgb value correctly
+expected:<0> but was:<-65536>)
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (1.0 points):
+✗   0.00 | mixColor | AssertionError(mix of #283C54 and #26DE0A is incorrect. expected:<2592047> but was:<1052160>)
+✗   0.00 | toString | ComparisonFailure(toString() should be the same as getHex() expected:<[#283C54]> but was:<[Color@86ebbef]>)
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+","",""
+"0","212104","ur43udyn, ka86heop","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213790","es96omap, of52ybid","notgraded","0","","
+Compile error","",""
+"0","213502","ro81luvu","notgraded","14","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (3.5 points):
+✗   0.00 | Color() | AssertionError(Default constructor not setting rgb value correctly
+expected:<0> but was:<4095>)
+✗   0.00 | Color(int, int, int) - invalid blue | AssertionError(Constructor not setting rgb value correctly
+expected:<255> but was:<0>)
+✗   0.00 | Color(int, int, int) - invalid green | AssertionError(Constructor not setting rgb value correctly
+expected:<65280> but was:<0>)
+✗   0.00 | Color(int, int, int) - invalid red | AssertionError(Constructor not setting rgb value correctly
+expected:<16711680> but was:<0>)
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213929","ok82yhih, ti73leqe","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213973","ed52omeh, hi34dimu","notgraded","15.5","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.0 points):
+✗   0.00 | Attribut rgb | AssertionError(Field 'rgb' of class 'Color' should have modifiers 'private' but has modifiers 'private final'.
+)
+✓   0.00 | Existiert?
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213811","ib73ixox, tu19pete","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","212955","az69ohus, of41aces","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213296","qa21cule, be74kizi","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213986","ow50abed","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213776","katharina.brauner, al76iwow","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213258","uj14otik, hi55zifu","notgraded","7.5","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (0.0 points):
+✗   0.00 | BLACK | AssertionError(Class 'Color' does not have field 'BLACK'.
+)
+✗   0.00 | BLUE | AssertionError(Class 'Color' does not have field 'BLUE'.
+)
+✗   0.00 | GREEN | AssertionError(Class 'Color' does not have field 'GREEN'.
+)
+✗   0.00 | GREY/GRAY | AssertionError(Class 'Color' does not have field 'GRAY'.
+)
+✗   0.00 | RED | AssertionError(Class 'Color' does not have field 'RED'.
+)
+✗   0.00 | WHITE | AssertionError(Class 'Color' does not have field 'WHITE'.
+)
+✓   0.00 | Existiert?
+
+2. Konstruktoren (0.0 points):
+✗   0.00 | Attribut rgb | AssertionError(Field 'rgb' of class 'Color' should have type 'int' but has type '[I'.
+)
+✗   0.00 | Color() | ClassCastException(class [I cannot be cast to class java.lang.Integer ([I and java.lang.Integer are in module java.base of loader 'bootstrap')): ColorSecretTest.secTest__constructors__empty(line 181)
+✗   0.00 | Color(String) | ClassCastException(class [I cannot be cast to class java.lang.Integer ([I and java.lang.Integer are in module java.base of loader 'bootstrap')): ColorSecretTest.secTest__constructors__hex(line 193)
+✗   0.00 | Color(int, int, int) | ClassCastException(class [I cannot be cast to class java.lang.Integer ([I and java.lang.Integer are in module java.base of loader 'bootstrap')): ColorSecretTest.secTest__constructors__red_green_blue(line 134)
+✗   0.00 | Color(int, int, int) - invalid blue | ClassCastException(class [I cannot be cast to class java.lang.Integer ([I and java.lang.Integer are in module java.base of loader 'bootstrap')): ColorSecretTest.secTest__constructors__red_green_blue__check_blue(line 167)
+✗   0.00 | Color(int, int, int) - invalid green | ClassCastException(class [I cannot be cast to class java.lang.Integer ([I and java.lang.Integer are in module java.base of loader 'bootstrap')): ColorSecretTest.secTest__constructors__red_green_blue__check_green(line 156)
+✗   0.00 | Color(int, int, int) - invalid red | ClassCastException(class [I cannot be cast to class java.lang.Integer ([I and java.lang.Integer are in module java.base of loader 'bootstrap')): ColorSecretTest.secTest__constructors__red_green_blue__check_red(line 145)
+✗   0.00 | Color(int) | ClassCastException(class [I cannot be cast to class java.lang.Integer ([I and java.lang.Integer are in module java.base of loader 'bootstrap')): ColorSecretTest.secTest__constructors__rgb(line 114)
+✓   0.00 | Existiert?
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (2.0 points):
+✗   0.00 | conversion | ClassCastException(class [I cannot be cast to class java.lang.Integer ([I and java.lang.Integer are in module java.base of loader 'bootstrap')): ColorSecretTest.secTest__getHex__conversion(line 281)
+✓   0.00 | Existiert?
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.0 points):
+✗   0.00 | toString | ComparisonFailure(toString() should be the same as getHex() expected:<[#283C54]> but was:<[Color@630d8a85]>)
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+","",""
+"0","213850","or39ohip, om40azeq","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213827","le01zyro","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","212238","yp65tacu, ra18ryro","notgraded","14.5","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (4.0 points):
+✗   0.00 | Color(int, int, int) - invalid blue | AssertionError(Constructor not setting rgb value correctly
+expected:<255> but was:<0>)
+✗   0.00 | Color(int, int, int) - invalid green | AssertionError(Constructor not setting rgb value correctly
+expected:<65280> but was:<0>)
+✗   0.00 | Color(int, int, int) - invalid red | AssertionError(Constructor not setting rgb value correctly
+expected:<16711680> but was:<0>)
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213510","ib21qaot, ox35uqev","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","210343","ta84naxu, og59uvyh","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213691","mu51wabi, ij24upeq","notgraded","14","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (4.0 points):
+✗   0.00 | Color(int, int, int) - invalid blue | AssertionError(Constructor not setting rgb value correctly
+expected:<255> but was:<0>)
+✗   0.00 | Color(int, int, int) - invalid green | AssertionError(Constructor not setting rgb value correctly
+expected:<65280> but was:<0>)
+✗   0.00 | Color(int, int, int) - invalid red | AssertionError(Constructor not setting rgb value correctly
+expected:<16711680> but was:<0>)
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.0 points):
+✗   0.00 | toString | ComparisonFailure(toString() should be the same as getHex() expected:<[#283C54]> but was:<[Color@5e674fb7]>)
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+","",""
+"0","213653","uv82icyt, mu77vawi","notgraded","14.5","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (4.0 points):
+✗   0.00 | Color(int, int, int) - invalid blue | AssertionError(Constructor not setting rgb value correctly
+expected:<0> but was:<-1>)
+✗   0.00 | Color(int, int, int) - invalid green | AssertionError(Constructor not setting rgb value correctly
+expected:<0> but was:<-256>)
+✗   0.00 | Color(int, int, int) - invalid red | AssertionError(Constructor not setting rgb value correctly
+expected:<0> but was:<-65536>)
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213862","aj52ykop, ak82ujuw","notgraded","0","","
+Compile error","",""
+"0","213855","qi65cylo, uf24uhun","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213774","us20ukax, ij29ipyc","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","212597","ku18zoje, xo88viqu","notgraded","11.5","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (0.0 points):
+✗   0.00 | BLACK | AssertionError(Class 'Color' does not have field 'BLACK'.
+)
+✗   0.00 | BLUE | AssertionError(Class 'Color' does not have field 'BLUE'.
+)
+✗   0.00 | GREEN | AssertionError(Class 'Color' does not have field 'GREEN'.
+)
+✗   0.00 | GREY/GRAY | AssertionError(Class 'Color' does not have field 'GRAY'.
+)
+✗   0.00 | RED | AssertionError(Class 'Color' does not have field 'RED'.
+)
+✗   0.00 | WHITE | AssertionError(Class 'Color' does not have field 'WHITE'.
+)
+✓   0.00 | Existiert?
+
+2. Konstruktoren (4.0 points):
+✗   0.00 | Color(int, int, int) - invalid blue | AssertionError(Constructor not setting rgb value correctly
+expected:<0> but was:<-1>)
+✗   0.00 | Color(int, int, int) - invalid green | AssertionError(Constructor not setting rgb value correctly
+expected:<0> but was:<-256>)
+✗   0.00 | Color(int, int, int) - invalid red | AssertionError(Constructor not setting rgb value correctly
+expected:<0> but was:<-65536>)
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (1.0 points):
+✗   0.00 | mixColor | AssertionError(mix of #283C54 and #26DE0A is incorrect. expected:<2592047> but was:<1052160>)
+✗   0.00 | toString | ComparisonFailure(toString() should be the same as getHex() expected:<[#283C54]> but was:<[Color@5ad78efb]>)
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+","",""
+"0","210882","ra56bixe, fi98gija","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213826","in38ykug, ut07ynob","notgraded","15","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (2.0 points):
+✗   0.00 | leading zeros | AssertionError(No leading zeros. Length of output should be 7. expected:<7> but was:<2>)
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213433","yj34ahym, wo22fasu","notgraded","0","","
+Compile error","",""
+"0","213692","ti47taqe, fo11dole","notgraded","12","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (0.0 points):
+✗   0.00 | BLACK | AssertionError(Class 'Color' does not have field 'BLACK'.
+)
+✗   0.00 | BLUE | AssertionError(Class 'Color' does not have field 'BLUE'.
+)
+✗   0.00 | GREEN | AssertionError(Class 'Color' does not have field 'GREEN'.
+)
+✗   0.00 | GREY/GRAY | AssertionError(Class 'Color' does not have field 'GRAY'.
+)
+✗   0.00 | RED | AssertionError(Class 'Color' does not have field 'RED'.
+)
+✗   0.00 | WHITE | AssertionError(Class 'Color' does not have field 'WHITE'.
+)
+✓   0.00 | Existiert?
+
+2. Konstruktoren (4.0 points):
+✗   0.00 | Color(String) | NumberFormatException(For input string: ""0A0B0C""): Color.<init>(line 64)
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (2.0 points):
+✗   0.00 | leading zeros | AssertionError(No leading zeros. Length of output should be 7. expected:<7> but was:<2>)
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213574","wi49soxa, hy85zuqi","notgraded","11.5","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (2.5 points):
+✗   0.00 | Color(int, int, int) | AssertionError(Constructor 'Color(int, int, int)' of class 'Color' should have modifiers 'public' but has modifiers ''.
+)
+✗   0.00 | Color(int, int, int) - invalid blue | AssertionError(Constructor not setting rgb value correctly
+expected:<0> but was:<255>)
+✗   0.00 | Color(int, int, int) - invalid green | AssertionError(Constructor not setting rgb value correctly
+expected:<0> but was:<65280>)
+✗   0.00 | Color(int, int, int) - invalid red | AssertionError(Constructor not setting rgb value correctly
+expected:<0> but was:<16711680>)
+✗   0.00 | Color(int) | AssertionError(Constructor 'Color(int)' of class 'Color' should have modifiers 'public' but has modifiers ''.
+)
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (1.5 points):
+✗   0.00 | leading zeros | AssertionError(No leading zeros. Length of output should be 7. expected:<7> but was:<2>)
+✗   0.00 | upper case? | ComparisonFailure(Letters are not upper case expected:<#[ABCDEF]> but was:<#[abcdef]>)
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   0.50 | # prefix
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213366","cy28sise, ni58juze","notgraded","14","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (2.0 points):
+✗   0.00 | leading zeros | AssertionError(No leading zeros. Length of output should be 7. expected:<7> but was:<2>)
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (1.5 points):
+✗   0.00 | complementaryColor | AssertionError(complementary color is wrong for color #283C54 expected:<14140331> but was:<0>)
+✓   0.00 | Existiert?
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213529","up63eved, go43rehu","notgraded","14.5","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (4.0 points):
+✗   0.00 | Color(int, int, int) - invalid blue | AssertionError(Constructor not setting rgb value correctly
+expected:<0> but was:<-1>)
+✗   0.00 | Color(int, int, int) - invalid green | AssertionError(Constructor not setting rgb value correctly
+expected:<0> but was:<-256>)
+✗   0.00 | Color(int, int, int) - invalid red | AssertionError(Constructor not setting rgb value correctly
+expected:<0> but was:<-65536>)
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","212957","iv91ytuq, ag89itav","notgraded","15","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (2.0 points):
+✗   0.00 | leading zeros | AssertionError(No leading zeros. Length of output should be 7. expected:<7> but was:<2>)
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213683","vo28fora, od22ehyq","notgraded","15.5","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.0 points):
+✗   0.00 | Color(int) | AssertionError(Constructor not setting rgb value correctly
+expected:<16777215> but was:<0>)
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213870","og88ibem, se51wowi","notgraded","12.5","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (4.0 points):
+✗   0.00 | Color(int, int, int) - invalid blue | AssertionError(Constructor not setting rgb value correctly
+expected:<0> but was:<-1>)
+✗   0.00 | Color(int, int, int) - invalid green | AssertionError(Constructor not setting rgb value correctly
+expected:<0> but was:<-256>)
+✗   0.00 | Color(int, int, int) - invalid red | AssertionError(Constructor not setting rgb value correctly
+expected:<0> but was:<-65536>)
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (2.0 points):
+✗   0.00 | leading zeros | AssertionError(No leading zeros. Length of output should be 7. expected:<7> but was:<2>)
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (1.5 points):
+✗   0.00 | mixColor | AssertionError(mix of #283C54 and #26DE0A is incorrect. expected:<2592047> but was:<3902767>)
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   0.50 | toString
+","",""
+"0","213669","ly75regi, ow52ehow","notgraded","13.5","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (3.5 points):
+✗   0.00 | Color(String) | NumberFormatException(For input string: "" 000000""): Color.<init>(line 74)
+✗   0.00 | Color(int, int, int) - invalid red | AssertionError(Constructor not setting rgb value correctly
+expected:<16711680> but was:<19660800>)
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.0 points):
+✗   0.00 | toString | MissingFormatArgumentException(Format specifier '%02X'): Color.toString(line 78)
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+","",""
+"0","213462","il33avoq, ib17ysik","notgraded","10.5","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (0.0 points):
+✗   0.00 | BLUE | AssertionError(Field 'BLUE' of class 'Color' should have modifiers 'public static final' but has modifiers 'private static final'.
+)
+✗   0.00 | GREEN | AssertionError(Field 'GREEN' of class 'Color' should have modifiers 'public static final' but has modifiers 'private static final'.
+)
+✗   0.00 | GREY/GRAY | AssertionError(Field 'GRAY' of class 'Color' should have modifiers 'public static final' but has modifiers 'private static final'.
+)
+✗   0.00 | RED | AssertionError(Field 'RED' of class 'Color' should have modifiers 'public static final' but has modifiers 'private static final'.
+)
+✗   0.00 | WHITE | AssertionError(Field 'WHITE' of class 'Color' should have modifiers 'public static final' but has modifiers 'private static final'.
+)
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+
+2. Konstruktoren (4.0 points):
+✗   0.00 | Color(int, int, int) - invalid blue | AssertionError(Constructor not setting rgb value correctly
+expected:<0> but was:<-1>)
+✗   0.00 | Color(int, int, int) - invalid green | AssertionError(Constructor not setting rgb value correctly
+expected:<0> but was:<-256>)
+✗   0.00 | Color(int, int, int) - invalid red | AssertionError(Constructor not setting rgb value correctly
+expected:<0> but was:<-65536>)
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (0.0 points):
+✗   0.00 | complementaryColor | AssertionError(complementary color is wrong for color #283C54 expected:<14140331> but was:<14140355>)
+✗   0.00 | mixColor | AssertionError(mix of #283C54 and #26DE0A is incorrect. expected:<2592047> but was:<3910489>)
+✗   0.00 | toString | ComparisonFailure(toString() should be the same as getHex() expected:<[#283C54]> but was:<[Color@1569421c]>)
+✓   0.00 | Existiert?
+","",""
+"0","213651","ty16juki","notgraded","15.5","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.0 points):
+✗   0.00 | toString | ComparisonFailure(toString() should be the same as getHex() expected:<#[]283C54> but was:<#[#]283C54>)
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+","",""
+"0","212504","qe50niry, ke17qeho","notgraded","13.5","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (0.0 points):
+✗   0.00 | BLACK | AssertionError(Class 'Color' does not have field 'BLACK'.
+)
+✗   0.00 | BLUE | AssertionError(Class 'Color' does not have field 'BLUE'.
+)
+✗   0.00 | GREEN | AssertionError(Class 'Color' does not have field 'GREEN'.
+)
+✗   0.00 | GREY/GRAY | AssertionError(Class 'Color' does not have field 'GRAY'.
+)
+✗   0.00 | RED | AssertionError(Class 'Color' does not have field 'RED'.
+)
+✗   0.00 | WHITE | AssertionError(Class 'Color' does not have field 'WHITE'.
+)
+✓   0.00 | Existiert?
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (2.0 points):
+✗   0.00 | leading zeros | AssertionError(No leading zeros. Length of output should be 7. expected:<7> but was:<2>)
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213818","ud08isav, om10akyc","notgraded","14","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (3.5 points):
+✗   0.00 | Color(int, int, int) - invalid blue | AssertionError(Constructor not setting rgb value correctly
+expected:<255> but was:<0>)
+✗   0.00 | Color(int, int, int) - invalid green | AssertionError(Constructor not setting rgb value correctly
+expected:<65280> but was:<0>)
+✗   0.00 | Color(int, int, int) - invalid red | AssertionError(Constructor not setting rgb value correctly
+expected:<16711680> but was:<0>)
+✗   0.00 | Color(int) | AssertionError(Constructor not setting rgb value correctly
+expected:<16777215> but was:<0>)
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213764","oj72uriv, iz71ohyn","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213821","ny59cysi, if30ymor","notgraded","15.5","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.0 points):
+✗   0.00 | Attribut rgb | AssertionError(Field 'rgb' of class 'Color' should have modifiers 'private' but has modifiers 'private final'.
+)
+✓   0.00 | Existiert?
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","212010","fu13neru, yb36apol","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","212823","iq02aqix, lu01bisy","notgraded","13","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (4.0 points):
+✗   0.00 | Color(String) | NumberFormatException(For input string: ""#0A0B0C""): Color.<init>(line 69)
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (2.0 points):
+✗   0.00 | leading zeros | AssertionError(No leading zeros. Length of output should be 7. expected:<7> but was:<2>)
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.0 points):
+✗   0.00 | toString | ComparisonFailure(toString() should be the same as getHex() expected:<[#283C54]> but was:<[Color@6c3b039]>)
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+","",""
+"0","213869","ez33efar","notgraded","11.5","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.0 points):
+✗   0.00 | Color(int, int, int) - invalid blue | AssertionError(Constructor not setting rgb value correctly
+expected:<255> but was:<0>)
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (2.0 points):
+✗   0.00 | getBlue() | AssertionError(getBlue() not working correctly for value [40, 60, 84] !
+expected:<84> but was:<0>)
+✗   0.00 | getRgb() | AssertionError(getRgb() not working correctly for value [40, 60, 84] !
+expected:<2636884> but was:<2636800>)
+✓   0.00 | Existiert?
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+
+4. getHex (2.5 points):
+✗   0.00 | upper case? | ComparisonFailure(Letters are not upper case expected:<#[ABCDEF]> but was:<#[abcdef]>)
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+
+5. complementaryColor, mixColor, toString (0.5 points):
+✗   0.00 | complementaryColor | AssertionError(complementary color is wrong for color #283C54 expected:<14140331> but was:<14140160>)
+✗   0.00 | mixColor | AssertionError(mix of #283C54 and #26DE0A is incorrect. expected:<2592047> but was:<2592000>)
+✓   0.00 | Existiert?
+✓   0.50 | toString
+","",""
+"0","213508","le61zezi, em01ivaw","notgraded","0","","
+Compile error","",""
+"0","213712","me67qety, sy33qija","notgraded","14.5","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (0.0 points):
+✗   0.00 | BLACK | AssertionError(Field 'BLACK' of class 'Color' should have modifiers 'public static final' but has modifiers 'static final'.
+)
+✗   0.00 | BLUE | AssertionError(Field 'BLUE' of class 'Color' should have modifiers 'public static final' but has modifiers 'static final'.
+)
+✗   0.00 | GREEN | AssertionError(Field 'GREEN' of class 'Color' should have modifiers 'public static final' but has modifiers 'static final'.
+)
+✗   0.00 | GREY/GRAY | AssertionError(Field 'GRAY' of class 'Color' should have modifiers 'public static final' but has modifiers 'static final'.
+)
+✗   0.00 | RED | AssertionError(Field 'RED' of class 'Color' should have modifiers 'public static final' but has modifiers 'static final'.
+)
+✗   0.00 | WHITE | AssertionError(Field 'WHITE' of class 'Color' should have modifiers 'public static final' but has modifiers 'static final'.
+)
+✓   0.00 | Existiert?
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213860","me42zuri, ul07akej","notgraded","0","","
+Compile error","",""
+"0","213824","uq09yfem, oq34avix","notgraded","14.5","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (4.0 points):
+✗   0.00 | Color(String) | NumberFormatException(For input string: "" 0A0B0C""): Color.<init>(line 75)
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213987","ha32zyfo","notgraded","13.5","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (4.0 points):
+✗   0.00 | Color(int, int, int) - invalid blue | AssertionError(Constructor not setting rgb value correctly
+expected:<0> but was:<-1>)
+✗   0.00 | Color(int, int, int) - invalid green | AssertionError(Constructor not setting rgb value correctly
+expected:<0> but was:<-256>)
+✗   0.00 | Color(int, int, int) - invalid red | AssertionError(Constructor not setting rgb value correctly
+expected:<0> but was:<-65536>)
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (2.0 points):
+✗   0.00 | leading zeros | AssertionError(No leading zeros. Length of output should be 7. expected:<7> but was:<2>)
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213739","os72usil, qu72heso","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213838","yf73iwec, ca90zuhy","notgraded","12.5","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (0.0 points):
+✗   0.00 | BLACK | AssertionError(Class 'Color' does not have field 'BLACK'.
+)
+✗   0.00 | BLUE | AssertionError(Class 'Color' does not have field 'BLUE'.
+)
+✗   0.00 | GREEN | AssertionError(Class 'Color' does not have field 'GREEN'.
+)
+✗   0.00 | GREY/GRAY | AssertionError(Class 'Color' does not have field 'GRAY'.
+)
+✗   0.00 | RED | AssertionError(Class 'Color' does not have field 'RED'.
+)
+✗   0.00 | WHITE | AssertionError(Class 'Color' does not have field 'WHITE'.
+)
+✓   0.00 | Existiert?
+
+2. Konstruktoren (3.5 points):
+✗   0.00 | Attribut rgb | AssertionError(Field 'rgb' of class 'Color' should have modifiers 'private' but has modifiers 'private final'.
+)
+✗   0.00 | Color(int, int, int) - invalid blue | AssertionError(Constructor not setting rgb value correctly
+expected:<0> but was:<255>)
+✗   0.00 | Color(int, int, int) - invalid green | AssertionError(Constructor not setting rgb value correctly
+expected:<0> but was:<65280>)
+✗   0.00 | Color(int, int, int) - invalid red | AssertionError(Constructor not setting rgb value correctly
+expected:<0> but was:<16711680>)
+✓   0.00 | Existiert?
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213542","gi00kuce, lo05juco","notgraded","13","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (2.5 points):
+✗   0.00 | Color(String) | AssertionError(Constructor not setting rgb value correctly
+expected:<658188> but was:<0>)
+✗   0.00 | Color(int, int, int) - invalid blue | AssertionError(Constructor not setting rgb value correctly
+expected:<0> but was:<255>)
+✗   0.00 | Color(int, int, int) - invalid green | AssertionError(Constructor not setting rgb value correctly
+expected:<0> but was:<65280>)
+✗   0.00 | Color(int, int, int) - invalid red | AssertionError(Constructor not setting rgb value correctly
+expected:<0> but was:<16711680>)
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213370","si82wumo, ef74urih","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","210588","my50gefu, qi67wigo","notgraded","14.5","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (4.0 points):
+✗   0.00 | Color(String) | NumberFormatException(For input string: ""0A0B0C""): Color.<init>(line 79)
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213728","gsr47381, so69ciwo","notgraded","15","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (2.0 points):
+✗   0.00 | leading zeros | AssertionError(No leading zeros. Length of output should be 7. expected:<7> but was:<2>)
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213771","ux65afus, vo81wixe","notgraded","0","","
+Compile error","",""
+"0","212669","ov16yryh, za25pebi","notgraded","12.5","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (0.0 points):
+✗   0.00 | BLACK | AssertionError(Field 'BLACK' of class 'Color' should have modifiers 'public static final' but has modifiers 'static'.
+)
+✗   0.00 | BLUE | AssertionError(Field 'BLUE' of class 'Color' should have modifiers 'public static final' but has modifiers 'static final'.
+)
+✗   0.00 | GREEN | AssertionError(Field 'GREEN' of class 'Color' should have modifiers 'public static final' but has modifiers 'static final'.
+)
+✗   0.00 | GREY/GRAY | AssertionError(Field 'GRAY' of class 'Color' should have modifiers 'public static final' but has modifiers 'static final'.
+)
+✗   0.00 | RED | AssertionError(Field 'RED' of class 'Color' should have modifiers 'public static final' but has modifiers 'static final'.
+)
+✗   0.00 | WHITE | AssertionError(Field 'WHITE' of class 'Color' should have modifiers 'public static final' but has modifiers 'static final'.
+)
+✓   0.00 | Existiert?
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (0.5 points):
+✗   0.00 | complementaryColor | AssertionError(complementary color is wrong for color #283C54 expected:<14140331> but was:<14134211>)
+✗   0.00 | mixColor | AssertionError(mix of #283C54 and #26DE0A is incorrect. expected:<2592047> but was:<2568077>)
+✓   0.00 | Existiert?
+✓   0.50 | toString
+","",""
+"0","213479","er35ekik, wa79qeta","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213527","en69apoq, fe97wape","notgraded","12","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (0.0 points):
+✗   0.00 | BLACK | AssertionError(Class 'Color' does not have field 'BLACK'.
+)
+✗   0.00 | BLUE | AssertionError(Class 'Color' does not have field 'BLUE'.
+)
+✗   0.00 | GREEN | AssertionError(Class 'Color' does not have field 'GREEN'.
+)
+✗   0.00 | GREY/GRAY | AssertionError(Class 'Color' does not have field 'GRAY'.
+)
+✗   0.00 | RED | AssertionError(Class 'Color' does not have field 'RED'.
+)
+✗   0.00 | WHITE | AssertionError(Class 'Color' does not have field 'WHITE'.
+)
+✓   0.00 | Existiert?
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (2.0 points):
+✗   0.00 | leading zeros | AssertionError(No leading zeros. Length of output should be 7. expected:<7> but was:<2>)
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (1.0 points):
+✗   0.00 | complementaryColor | NullPointerException(): ColorSecretTest.secTest__complementaryColer(line 299)
+✗   0.00 | toString | ComparisonFailure(toString() should be the same as getHex() expected:<[#283C54]> but was:<[Color@5e674fb7]>)
+✓   0.00 | Existiert?
+✓   1.00 | mixColor
+","",""
+"0","213767","fa18nehi, jy77luge","notgraded","11.5","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (0.0 points):
+✗   0.00 | BLACK | AssertionError(Field 'BLACK' of class 'Color' should have modifiers 'public static final' but has modifiers 'static final'.
+)
+✗   0.00 | BLUE | AssertionError(Field 'BLUE' of class 'Color' should have modifiers 'public static final' but has modifiers 'static final'.
+)
+✗   0.00 | GREEN | AssertionError(Field 'GREEN' of class 'Color' should have modifiers 'public static final' but has modifiers 'static final'.
+)
+✗   0.00 | GREY/GRAY | AssertionError(Field 'GRAY' of class 'Color' should have modifiers 'public static final' but has modifiers 'static final'.
+)
+✗   0.00 | RED | AssertionError(Field 'RED' of class 'Color' should have modifiers 'public static final' but has modifiers 'static final'.
+)
+✗   0.00 | WHITE | AssertionError(Field 'WHITE' of class 'Color' should have modifiers 'public static final' but has modifiers 'static final'.
+)
+✓   0.00 | Existiert?
+
+2. Konstruktoren (4.0 points):
+✗   0.00 | Color(String) | NumberFormatException(For input string: ""#0A0B0C""): Color.<init>(line 79)
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (2.0 points):
+✗   0.00 | leading zeros | AssertionError(No leading zeros. Length of output should be 7. expected:<7> but was:<2>)
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.0 points):
+✗   0.00 | toString | ComparisonFailure(toString() should be the same as getHex() expected:<[#283C54]> but was:<[Color@5ad78efb]>)
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+","",""
+"0","212457","ry79loro, oc71uvid","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213024","ib69ygek, ek60acaj","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213706","en17ijib, ad61efoj","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","212972","gsr21876, uh05epek","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","212956","gsr84611, im64amoj","notgraded","15","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (2.0 points):
+✗   0.00 | leading zeros | AssertionError(No leading zeros. Length of output should be 7. expected:<7> but was:<2>)
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213796","he91pona, zu54xove","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","210854","ep35imyn, so25qyro","notgraded","15","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (2.0 points):
+✗   0.00 | leading zeros | AssertionError(No leading zeros. Length of output should be 7. expected:<7> but was:<6>)
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213858","ol05otep, we72webo","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213212","bi74pemi, ut61owuj","notgraded","14.5","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (4.0 points):
+✗   0.00 | Color(String) | NumberFormatException(For input string: ""0A0B0C""): Color.<init>(line 93)
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213940","xe57mepa, je56soju","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213853","iz81yqun, ob81umyf","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213708","yk64ugap, ud43ilic","notgraded","13","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (0.0 points):
+✗   0.00 | BLACK | AssertionError(Class 'Color' does not have field 'BLACK'.
+)
+✗   0.00 | BLUE | AssertionError(Class 'Color' does not have field 'BLUE'.
+)
+✗   0.00 | GREEN | AssertionError(Class 'Color' does not have field 'GREEN'.
+)
+✗   0.00 | GREY/GRAY | AssertionError(Class 'Color' does not have field 'GRAY'.
+)
+✗   0.00 | RED | AssertionError(Class 'Color' does not have field 'RED'.
+)
+✗   0.00 | WHITE | AssertionError(Class 'Color' does not have field 'WHITE'.
+)
+✓   0.00 | Existiert?
+
+2. Konstruktoren (4.0 points):
+✗   0.00 | Color(int, int, int) - invalid blue | AssertionError(Constructor not setting rgb value correctly
+expected:<0> but was:<-1>)
+✗   0.00 | Color(int, int, int) - invalid green | AssertionError(Constructor not setting rgb value correctly
+expected:<0> but was:<-256>)
+✗   0.00 | Color(int, int, int) - invalid red | AssertionError(Constructor not setting rgb value correctly
+expected:<0> but was:<-65536>)
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","212491","ni20mury, ev59ocum","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213050","od68yjog, ky45bixu","notgraded","13","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (0.0 points):
+✗   0.00 | BLUE | AssertionError(Class 'Color' does not have field 'BLUE'.
+)
+✗   0.00 | GREEN | AssertionError(Class 'Color' does not have field 'GREEN'.
+)
+✗   0.00 | GREY/GRAY | AssertionError(Class 'Color' does not have field 'GRAY'.
+)
+✗   0.00 | RED | AssertionError(Class 'Color' does not have field 'RED'.
+)
+✗   0.00 | WHITE | AssertionError(Class 'Color' does not have field 'WHITE'.
+)
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+
+2. Konstruktoren (4.0 points):
+✗   0.00 | Color(int, int, int) - invalid blue | AssertionError(Constructor not setting rgb value correctly
+expected:<255> but was:<0>)
+✗   0.00 | Color(int, int, int) - invalid green | AssertionError(Constructor not setting rgb value correctly
+expected:<65280> but was:<0>)
+✗   0.00 | Color(int, int, int) - invalid red | AssertionError(Constructor not setting rgb value correctly
+expected:<16711680> but was:<0>)
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213779","gsr73186, he86tyho","notgraded","0","","
+Compile error","",""
+"0","213660","hy28boty, xa69moku","notgraded","13","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (0.0 points):
+✗   0.00 | BLACK | AssertionError(Class 'Color' does not have field 'BLACK'.
+)
+✗   0.00 | BLUE | AssertionError(Class 'Color' does not have field 'BLUE'.
+)
+✗   0.00 | GREEN | AssertionError(Class 'Color' does not have field 'GREEN'.
+)
+✗   0.00 | GREY/GRAY | AssertionError(Class 'Color' does not have field 'GRAY'.
+)
+✗   0.00 | RED | AssertionError(Class 'Color' does not have field 'RED'.
+)
+✗   0.00 | WHITE | AssertionError(Class 'Color' does not have field 'WHITE'.
+)
+✓   0.00 | Existiert?
+
+2. Konstruktoren (5.0 points):
+✗   0.00 | Attribut rgb | AssertionError(Field 'rgb' of class 'Color' should have modifiers 'private' but has modifiers 'private final'.
+)
+✓   0.00 | Existiert?
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (1.5 points):
+✗   0.00 | mixColor | AssertionError(mix of #248067 and #3D9332 is incorrect. expected:<3180876> but was:<3246669>)
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   0.50 | toString
+","",""
+"0","213759","ep20ajyr, mu90roqy","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","212592","uh09ejam, uh26uwut","notgraded","11.5","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (1.5 points):
+✗   0.00 | getBlue() | AssertionError(getBlue() not working correctly for value [40, 60, 84] !
+expected:<84> but was:<0>)
+✗   0.00 | getGreen() | AssertionError(getGreen() not working correctly for value [40, 60, 84] !
+expected:<60> but was:<40>)
+✓   0.00 | Existiert?
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (0.0 points):
+✗   0.00 | complementaryColor | AssertionError(complementary color is wrong for color #283C54 expected:<14140331> but was:<14145535>)
+✗   0.00 | mixColor | AssertionError(mix of #283C54 and #26DE0A is incorrect. expected:<2592047> but was:<2561793>)
+✗   0.00 | toString | ComparisonFailure(toString() should be the same as getHex() expected:<[#283C54]> but was:<[Color@5e674fb7]>)
+✓   0.00 | Existiert?
+","",""
+"0","212244","ok18omyb","notgraded","12","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (0.0 points):
+✗   0.00 | BLACK | AssertionError(Field 'BLACK' of class 'Color' should have modifiers 'public static final' but has modifiers 'public static'.
+)
+✗   0.00 | BLUE | AssertionError(Field 'BLUE' of class 'Color' should have modifiers 'public static final' but has modifiers 'public static'.
+)
+✗   0.00 | GREEN | AssertionError(Field 'GREEN' of class 'Color' should have modifiers 'public static final' but has modifiers 'public static'.
+)
+✗   0.00 | GREY/GRAY | AssertionError(Field 'GRAY' of class 'Color' should have modifiers 'public static final' but has modifiers 'public static'.
+)
+✗   0.00 | RED | AssertionError(Field 'RED' of class 'Color' should have modifiers 'public static final' but has modifiers 'public static'.
+)
+✗   0.00 | WHITE | AssertionError(Field 'WHITE' of class 'Color' should have modifiers 'public static final' but has modifiers 'public static'.
+)
+✓   0.00 | Existiert?
+
+2. Konstruktoren (4.0 points):
+✗   0.00 | Color(String) | AssertionError(Constructor not setting rgb value correctly
+expected:<658188> but was:<0>)
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (1.5 points):
+✗   0.00 | complementaryColor | AssertionError(complementary color is wrong for color #283C54 expected:<14140331> but was:<-2111573>)
+✓   0.00 | Existiert?
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","211322","do69disa, um08ypot","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213754","ne38johe, pe12ceve","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","212946","se89dema, eg91ajoj","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213797","gsr10451, le38nipu","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213819","ed25upeq, qi98tuvi","notgraded","0","","
+Compile error","",""
+"0","211354","va96qehy, ig57ytik","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213618","li76rasy, ep12atil","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213814","na98xefy, ru61fuba","notgraded","0","","
+Compile error","",""
+"0","213742","gsr96399, ju31dehe","notgraded","15.5","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.0 points):
+✗   0.00 | Color(int) | AssertionError(Constructor not setting rgb value correctly
+expected:<16777215> but was:<0>)
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213758","it38itod, of61epuv","notgraded","0","","
+Compile error","",""
+"0","213893","by07tuga, ve30xaxu","notgraded","14.5","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (4.0 points):
+✗   0.00 | Color(int, int, int) - invalid blue | AssertionError(Constructor not setting rgb value correctly
+expected:<255> but was:<0>)
+✗   0.00 | Color(int, int, int) - invalid green | AssertionError(Constructor not setting rgb value correctly
+expected:<65280> but was:<0>)
+✗   0.00 | Color(int, int, int) - invalid red | AssertionError(Constructor not setting rgb value correctly
+expected:<16711680> but was:<0>)
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","212745","wi83hyge","notgraded","0","","
+Compile error","",""
+"0","211758","ab88uxob, uq82ywow","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213848","ox33asun, av13yjog","notgraded","14","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.0 points):
+✗   0.00 | Attribut rgb | AssertionError(Field 'rgb' of class 'Color' should have modifiers 'private' but has modifiers 'private final'.
+)
+✓   0.00 | Existiert?
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (1.5 points):
+✗   0.00 | leading zeros | AssertionError(No leading zeros. Length of output should be 7. expected:<7> but was:<2>)
+✗   0.00 | upper case? | ComparisonFailure(Letters are not upper case expected:<#[ABCDEF]> but was:<#[abcdef]>)
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   0.50 | # prefix
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213226","dy07zody, lu48remi","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213846","it38exyk, op67avyn","notgraded","14.5","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (4.0 points):
+✗   0.00 | Color(int, int, int) - invalid blue | AssertionError(Constructor not setting rgb value correctly
+expected:<0> but was:<16776960>)
+✗   0.00 | Color(int, int, int) - invalid green | AssertionError(Constructor not setting rgb value correctly
+expected:<0> but was:<16711935>)
+✗   0.00 | Color(int, int, int) - invalid red | AssertionError(Constructor not setting rgb value correctly
+expected:<0> but was:<65535>)
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213504","do58zuci, fe72guna","notgraded","12","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (0.0 points):
+✗   0.00 | BLACK | AssertionError(Class 'Color' does not have field 'BLACK'.
+)
+✗   0.00 | BLUE | AssertionError(Class 'Color' does not have field 'BLUE'.
+)
+✗   0.00 | GREEN | AssertionError(Class 'Color' does not have field 'GREEN'.
+)
+✗   0.00 | GREY/GRAY | AssertionError(Class 'Color' does not have field 'GRAY'.
+)
+✗   0.00 | RED | AssertionError(Class 'Color' does not have field 'RED'.
+)
+✗   0.00 | WHITE | AssertionError(Class 'Color' does not have field 'WHITE'.
+)
+✓   0.00 | Existiert?
+
+2. Konstruktoren (3.5 points):
+✗   0.00 | Attribut rgb | AssertionError(Field 'rgb' of class 'Color' should have modifiers 'private' but has modifiers 'private final'.
+)
+✗   0.00 | Color(int, int, int) - invalid blue | AssertionError(Constructor not setting rgb value correctly
+expected:<255> but was:<0>)
+✗   0.00 | Color(int, int, int) - invalid green | AssertionError(Constructor not setting rgb value correctly
+expected:<65280> but was:<0>)
+✗   0.00 | Color(int, int, int) - invalid red | AssertionError(Constructor not setting rgb value correctly
+expected:<16711680> but was:<0>)
+✓   0.00 | Existiert?
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.0 points):
+✗   0.00 | toString | ComparisonFailure(toString() should be the same as getHex() expected:<[#283C54]> but was:<[Color@5ad78efb]>)
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+","",""
+"0","212560","pe87bejo, xo55dovy","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","212741","aq71yryn, nu54vesy","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213762","te10jula, ud85yxop","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213977","uf99unim, do02cajy","notgraded","15.5","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.0 points):
+✗   0.00 | Attribut rgb | AssertionError(Field 'rgb' of class 'Color' should have modifiers 'private' but has modifiers 'private final'.
+)
+✓   0.00 | Existiert?
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213842","ah53apez, ca39gyxo","notgraded","14.5","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (4.0 points):
+✗   0.00 | Color(int, int, int) - invalid blue | AssertionError(Constructor not setting rgb value correctly
+expected:<0> but was:<255>)
+✗   0.00 | Color(int, int, int) - invalid green | AssertionError(Constructor not setting rgb value correctly
+expected:<0> but was:<65280>)
+✗   0.00 | Color(int, int, int) - invalid red | AssertionError(Constructor not setting rgb value correctly
+expected:<0> but was:<16711680>)
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","212950","gi36hape, xe82puxa","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213297","yw61yfuz, ad60olat","notgraded","12","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (2.0 points):
+✗   0.00 | Color() | AssertionError(Constructor 'Color()' of class 'Color' should have modifiers 'public' but has modifiers ''.
+)
+✗   0.00 | Color(int, int, int) | AssertionError(Constructor 'Color(int, int, int)' of class 'Color' should have modifiers 'public' but has modifiers ''.
+)
+✗   0.00 | Color(int, int, int) - invalid blue | AssertionError(Constructor not setting rgb value correctly
+expected:<0> but was:<-1>)
+✗   0.00 | Color(int, int, int) - invalid green | AssertionError(Constructor not setting rgb value correctly
+expected:<0> but was:<-256>)
+✗   0.00 | Color(int, int, int) - invalid red | AssertionError(Constructor not setting rgb value correctly
+expected:<0> but was:<-65536>)
+✗   0.00 | Color(int) | AssertionError(Constructor 'Color(int)' of class 'Color' should have modifiers 'public' but has modifiers ''.
+)
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   1.50 | Color(String)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.0 points):
+✗   0.00 | toString | ComparisonFailure(toString() should be the same as getHex() expected:<[#283C54]> but was:<[Color@7208c756]>)
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+","",""
+"0","213878","os43ycac","notgraded","12.5","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (0.0 points):
+✗   0.00 | BLACK | AssertionError(Field 'BLACK' of class 'Color' should have modifiers 'public static final' but has modifiers 'static final'.
+)
+✗   0.00 | BLUE | AssertionError(Field 'BLUE' of class 'Color' should have modifiers 'public static final' but has modifiers 'static final'.
+)
+✗   0.00 | GREEN | AssertionError(Field 'GREEN' of class 'Color' should have modifiers 'public static final' but has modifiers 'static final'.
+)
+✗   0.00 | GREY/GRAY | AssertionError(Field 'GRAY' of class 'Color' should have modifiers 'public static final' but has modifiers 'static final'.
+)
+✗   0.00 | RED | AssertionError(Field 'RED' of class 'Color' should have modifiers 'public static final' but has modifiers 'static final'.
+)
+✗   0.00 | WHITE | AssertionError(Field 'WHITE' of class 'Color' should have modifiers 'public static final' but has modifiers 'static final'.
+)
+✓   0.00 | Existiert?
+
+2. Konstruktoren (3.5 points):
+✗   0.00 | Attribut rgb | AssertionError(Field 'rgb' of class 'Color' should have modifiers 'private' but has modifiers 'private final'.
+)
+✗   0.00 | Color(int, int, int) - invalid blue | AssertionError(Constructor not setting rgb value correctly
+expected:<255> but was:<0>)
+✗   0.00 | Color(int, int, int) - invalid green | AssertionError(Constructor not setting rgb value correctly
+expected:<65280> but was:<0>)
+✗   0.00 | Color(int, int, int) - invalid red | AssertionError(Constructor not setting rgb value correctly
+expected:<16711680> but was:<0>)
+✓   0.00 | Existiert?
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213852","ap64amib, or55uzyp","notgraded","11","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (3.0 points):
+✗   0.00 | Color(int, int, int) | AssertionError(Constructor not setting rgb value correctly
+expected:<64000> but was:<250>)
+✗   0.00 | Color(int, int, int) - invalid blue | AssertionError(Constructor not setting rgb value correctly
+expected:<0> but was:<65280>)
+✗   0.00 | Color(int, int, int) - invalid green | AssertionError(Constructor not setting rgb value correctly
+expected:<0> but was:<255>)
+✗   0.00 | Color(int, int, int) - invalid red | AssertionError(Constructor not setting rgb value correctly
+expected:<0> but was:<16711680>)
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (1.0 points):
+✗   0.00 | getBlue() | AssertionError(getBlue() not working correctly for value [40, 60, 84] !
+expected:<84> but was:<60>)
+✗   0.00 | getGreen() | AssertionError(getGreen() not working correctly for value [40, 60, 84] !
+expected:<60> but was:<84>)
+✗   0.00 | getRgb() | AssertionError(getRgb() not working correctly for value [40, 60, 84] !
+expected:<2636884> but was:<2643004>)
+✓   0.00 | Existiert?
+✓   1.00 | getRed()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213748","an97ygoj, pe46qicy","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213577","uk35ulaq, vu21vuqa","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213695","iw12ykom, ol74ahib","notgraded","14","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (0.0 points):
+✗   0.00 | BLACK | AssertionError(Class 'Color' does not have field 'BLACK'.
+)
+✗   0.00 | BLUE | AssertionError(Class 'Color' does not have field 'BLUE'.
+)
+✗   0.00 | GREEN | AssertionError(Class 'Color' does not have field 'GREEN'.
+)
+✗   0.00 | GREY/GRAY | AssertionError(Class 'Color' does not have field 'GRAY'.
+)
+✗   0.00 | RED | AssertionError(Class 'Color' does not have field 'RED'.
+)
+✗   0.00 | WHITE | AssertionError(Class 'Color' does not have field 'WHITE'.
+)
+✓   0.00 | Existiert?
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.0 points):
+✗   0.00 | toString | ComparisonFailure(toString() should be the same as getHex() expected:<[]#283C54> but was:<[red: 40 green: 60 blue: 84 hexa: ]#283C54>)
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+","",""
+"0","213909","so55coni, if18uvic","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213323","qi03raba, xy64wyqa","notgraded","11.5","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (4.0 points):
+✗   0.00 | Color(int, int, int) - invalid blue | AssertionError(Constructor not setting rgb value correctly
+expected:<0> but was:<-1>)
+✗   0.00 | Color(int, int, int) - invalid green | AssertionError(Constructor not setting rgb value correctly
+expected:<0> but was:<-256>)
+✗   0.00 | Color(int, int, int) - invalid red | AssertionError(Constructor not setting rgb value correctly
+expected:<0> but was:<-65536>)
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (2.5 points):
+✗   0.00 | getRed() | AssertionError(getRed() not working correctly for value [40, 60, 84] !
+expected:<40> but was:<0>)
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (0.5 points):
+✗   0.00 | complementaryColor | AssertionError(complementary color is wrong for color #283C54 expected:<14140331> but was:<16761771>)
+✗   0.00 | mixColor | AssertionError(mix of #283C54 and #26DE0A is incorrect. expected:<2592047> but was:<56842>)
+✓   0.00 | Existiert?
+✓   0.50 | toString
+","",""
+"0","213354","ji50tade","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213859","nu16gefo, uh85yxej","notgraded","15.5","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.0 points):
+✗   0.00 | toString | ComparisonFailure(toString() should be the same as getHex() expected:<#[283C54]> but was:<#[]>)
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+","",""
+"0","213810","dy84zywi, ju85guto","notgraded","13","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (0.0 points):
+✗   0.00 | BLACK | AssertionError(Field 'BLACK' of class 'Color' should have type 'Color' but has type 'int'.
+)
+✗   0.00 | BLUE | AssertionError(Field 'BLUE' of class 'Color' should have type 'Color' but has type 'int'.
+)
+✗   0.00 | GREEN | AssertionError(Field 'GREEN' of class 'Color' should have type 'Color' but has type 'int'.
+)
+✗   0.00 | GREY/GRAY | AssertionError(Field 'GRAY' of class 'Color' should have type 'Color' but has type 'int'.
+)
+✗   0.00 | RED | AssertionError(Field 'RED' of class 'Color' should have type 'Color' but has type 'int'.
+)
+✗   0.00 | WHITE | AssertionError(Field 'WHITE' of class 'Color' should have type 'Color' but has type 'int'.
+)
+✓   0.00 | Existiert?
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (2.0 points):
+✗   0.00 | leading zeros | AssertionError(No leading zeros. Length of output should be 7. expected:<7> but was:<2>)
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.0 points):
+✗   0.00 | toString | ComparisonFailure(toString() should be the same as getHex() expected:<[#283C54]> but was:<[Color@6c3b039]>)
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+","",""
+"0","213997","yq17abec","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213038","up07ypoz, uz24yfuh","notgraded","14.5","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (4.0 points):
+✗   0.00 | Color(int, int, int) - invalid blue | IllegalArgumentException(Farbwert muss zwischen 0 und 255 liegen): Color.<init>(line 23)
+✗   0.00 | Color(int, int, int) - invalid green | IllegalArgumentException(Farbwert muss zwischen 0 und 255 liegen): Color.<init>(line 23)
+✗   0.00 | Color(int, int, int) - invalid red | IllegalArgumentException(Farbwert muss zwischen 0 und 255 liegen): Color.<init>(line 23)
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","212967","hy82xyle, nu24zule","notgraded","14","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (3.5 points):
+✗   0.00 | Attribut rgb | AssertionError(Field 'rgb' of class 'Color' should have modifiers 'private' but has modifiers 'private final'.
+)
+✗   0.00 | Color(String) | AssertionError(Constructor not setting rgb value correctly
+expected:<658188> but was:<0>)
+✓   0.00 | Existiert?
+✓   0.50 | Color()
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213863","le63zaxa, re71xago","notgraded","14","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (0.0 points):
+✗   0.00 | BLACK | AssertionError(Class 'Color' does not have field 'BLACK'.
+)
+✗   0.00 | BLUE | AssertionError(Class 'Color' does not have field 'BLUE'.
+)
+✗   0.00 | GREEN | AssertionError(Class 'Color' does not have field 'GREEN'.
+)
+✗   0.00 | GREY/GRAY | AssertionError(Class 'Color' does not have field 'GRAY'.
+)
+✗   0.00 | RED | AssertionError(Class 'Color' does not have field 'RED'.
+)
+✗   0.00 | WHITE | AssertionError(Class 'Color' does not have field 'WHITE'.
+)
+✓   0.00 | Existiert?
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.0 points):
+✗   0.00 | toString | ComparisonFailure(toString() should be the same as getHex() expected:<[#283C54]> but was:<[Color@5e674fb7]>)
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+","",""
+"0","213968","gsr686001","notgraded","0","","
+Compile error","",""
+"0","213833","od14otok","notgraded","0","","
+Compile error","",""
+"0","213815","ke77govi, om79owem","notgraded","14","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.0 points):
+✗   0.00 | Color(int) | AssertionError(Constructor not setting rgb value correctly
+expected:<16777215> but was:<0>)
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (2.0 points):
+✗   0.00 | leading zeros | AssertionError(No leading zeros. Length of output should be 7. expected:<7> but was:<2>)
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.0 points):
+✗   0.00 | toString | ComparisonFailure(toString() should be the same as getHex() expected:<[#283C54]> but was:<[Color@5e674fb7]>)
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+","",""
+"0","213980","as76ogoz, ip38ujuv","notgraded","14.5","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (4.0 points):
+✗   0.00 | Color(String) | NumberFormatException(For input string: ""0A0B0C""): Color.<init>(line 48)
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","212076","ec58osyl, al26azuf","notgraded","14.5","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (0.0 points):
+✗   0.00 | BLACK | AssertionError(Class 'Color' does not have field 'BLACK'.
+)
+✗   0.00 | BLUE | AssertionError(Class 'Color' does not have field 'BLUE'.
+)
+✗   0.00 | GREEN | AssertionError(Class 'Color' does not have field 'GREEN'.
+)
+✗   0.00 | GREY/GRAY | AssertionError(Class 'Color' does not have field 'GRAY'.
+)
+✗   0.00 | RED | AssertionError(Class 'Color' does not have field 'RED'.
+)
+✗   0.00 | WHITE | AssertionError(Class 'Color' does not have field 'WHITE'.
+)
+✓   0.00 | Existiert?
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213937","ap78akin, um98oqow","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","212243","bi35gaji, gsr81036","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213805","oj31alij, yp00eveb","notgraded","13","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (4.5 points):
+✗   0.00 | Color(int, int, int) - invalid blue | AssertionError(Constructor not setting rgb value correctly
+expected:<255> but was:<0>)
+✗   0.00 | Color(int, int, int) - invalid green | AssertionError(Constructor not setting rgb value correctly
+expected:<65280> but was:<0>)
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (1.5 points):
+✗   0.00 | leading zeros | AssertionError(No leading zeros. Length of output should be 6. expected:<6> but was:<7>)
+✗   0.00 | # prefix | AssertionError(Prefix (#) is missing)
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.0 points):
+✗   0.00 | toString | ComparisonFailure(toString() should be the same as getHex() expected:<[283C54#]> but was:<[Color@55ce19f2]>)
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+","",""
+"0","213950","za70gymo, uj29ifec","notgraded","0","","
+Compile error","",""
+"0","213782","jo54syqo, az13ixon","notgraded","15.5","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.0 points):
+✗   0.00 | toString | ComparisonFailure(toString() should be the same as getHex() expected:<[#283C54]> but was:<[Color@6c3b039]>)
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+","",""
+"0","213539","as32ytip, sa52naqi","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213975","eb17acik","notgraded","0","","
+Compile error","",""
+"0","213969","qe84hese, ag27agip","notgraded","15","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (1.5 points):
+✗   0.00 | mixColor | AssertionError(mix of #248067 and #3D9332 is incorrect. expected:<3180876> but was:<3246669>)
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   0.50 | toString
+","",""
+"0","213931","pa85duvy","notgraded","14.5","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (4.0 points):
+✗   0.00 | Color(int, int, int) - invalid blue | AssertionError(Constructor not setting rgb value correctly
+expected:<0> but was:<255>)
+✗   0.00 | Color(int, int, int) - invalid green | AssertionError(Constructor not setting rgb value correctly
+expected:<0> but was:<65280>)
+✗   0.00 | Color(int, int, int) - invalid red | AssertionError(Constructor not setting rgb value correctly
+expected:<0> but was:<16711680>)
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213920","my87jeru, ud66ipuh","notgraded","12.5","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (2.0 points):
+✗   0.00 | Color() | AssertionError(Constructor 'Color()' of class 'Color' should have modifiers 'public' but has modifiers ''.
+)
+✗   0.00 | Color(String) | AssertionError(Constructor 'Color(java.lang.String)' of class 'Color' should have modifiers 'public' but has modifiers ''.
+)
+✗   0.00 | Color(int, int, int) | AssertionError(Constructor 'Color(int, int, int)' of class 'Color' should have modifiers 'public' but has modifiers ''.
+)
+✗   0.00 | Color(int) | AssertionError(Constructor 'Color(int)' of class 'Color' should have modifiers 'public' but has modifiers ''.
+)
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213405","ro97nyjy, yb06aced","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","210600","iw13umap, gsr75956","notgraded","15.5","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.0 points):
+✗   0.00 | toString | ComparisonFailure(toString() should be the same as getHex() expected:<[#283C54]> but was:<[Color@630d8a85]>)
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+","",""
+"0","213793","at54azez, av00eles","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213766","en85ycuf, av90obor","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","212780","ep74ymin","notgraded","14.5","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (4.0 points):
+✗   0.00 | Color(int, int, int) - invalid blue | AssertionError(Constructor not setting rgb value correctly
+expected:<0> but was:<-1>)
+✗   0.00 | Color(int, int, int) - invalid green | AssertionError(Constructor not setting rgb value correctly
+expected:<0> but was:<-256>)
+✗   0.00 | Color(int, int, int) - invalid red | AssertionError(Constructor not setting rgb value correctly
+expected:<0> but was:<-65536>)
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213834","iq03icel","notgraded","15","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (2.0 points):
+✗   0.00 | leading zeros | AssertionError(No leading zeros. Length of output should be 7. expected:<7> but was:<2>)
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213984","im99anic","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213823","vi94siji","notgraded","16","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (5.5 points):
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int, int, int) - invalid blue
+✓   0.50 | Color(int, int, int) - invalid green
+✓   0.50 | Color(int, int, int) - invalid red
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (3.0 points):
+✓   0.00 | Existiert?
+✓   1.00 | conversion
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+✓   0.50 | toString
+","",""
+"0","213828","la91myne","notgraded","13","","
+
+0. Coderichtlinien (0.0 points):
+✗   0.00 | Noch nicht korrigiert | AssertionError()
+✓   0.00 | Noch nicht korrigiert
+
+1. Konstanten (1.5 points):
+✓   0.00 | Existiert?
+✓   0.25 | BLACK
+✓   0.25 | BLUE
+✓   0.25 | GREEN
+✓   0.25 | GREY/GRAY
+✓   0.25 | RED
+✓   0.25 | WHITE
+
+2. Konstruktoren (4.0 points):
+✗   0.00 | Color(int, int, int) - invalid blue | AssertionError(Constructor not setting rgb value correctly
+expected:<0> but was:<255>)
+✗   0.00 | Color(int, int, int) - invalid green | AssertionError(Constructor not setting rgb value correctly
+expected:<0> but was:<65280>)
+✗   0.00 | Color(int, int, int) - invalid red | AssertionError(Constructor not setting rgb value correctly
+expected:<0> but was:<16711680>)
+✓   0.00 | Existiert?
+✓   0.50 | Attribut rgb
+✓   0.50 | Color()
+✓   1.50 | Color(String)
+✓   1.00 | Color(int, int, int)
+✓   0.50 | Color(int)
+
+3. getRgb, getRed, getGreen, getBlue (3.5 points):
+✓   0.00 | Existiert?
+✓   1.00 | getBlue()
+✓   1.00 | getGreen()
+✓   1.00 | getRed()
+✓   0.50 | getRgb()
+
+4. getHex (2.0 points):
+✗   0.00 | conversion | AssertionError(Hex value is not correct. Expected: 283C54, Got: FFDAB9)
+✓   0.00 | Existiert?
+✓   1.00 | leading zeros
+✓   0.50 | # prefix
+✓   0.50 | upper case?
+
+5. complementaryColor, mixColor, toString (2.0 points):
+✗   0.00 | toString | ComparisonFailure(toString() should be the same as getHex() expected:<#[FFDAB9]> but was:<#[283C54]>)
+✓   0.00 | Existiert?
+✓   1.00 | complementaryColor
+✓   1.00 | mixColor
+","",""
