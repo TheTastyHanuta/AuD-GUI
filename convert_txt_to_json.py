@@ -1,6 +1,9 @@
+"""
+File for converting txt-templates to json-templates
+"""
+
 import json
 import os
-from comment_utils import State
 
 
 def convert_txt_to_json(filename: str):
@@ -33,18 +36,16 @@ def convert_txt_to_json(filename: str):
         d["tasks"] = task_list
         class_data.append(d)
     data_dict["classes"] = class_data
-    with open(os.path.join(os.getcwd(), "templates", name + ".json"), "w", encoding="utf-8") as f:
+    with open(os.path.join(os.path.split(__file__)[0], "templates", name + ".json"), "w", encoding="utf-8") as f:
         json.dump(data_dict, f, indent=4, ensure_ascii=False)
 
 
 def main():
     path_to_templates = "txt_templates"
+    path_to_templates = os.path.join(os.path.split(__file__)[0], path_to_templates)
     files = [os.path.join(path_to_templates, i) for i in os.listdir(path_to_templates)]
     for i in files:
         convert_txt_to_json(i)
-
-    # s = State(json_file="data/2024-10-30_04-color/Programmieraufgabe 4 - 04-color-Korrektur/Abgaben/Team 210343/state.json")
-    # print(s.comment)
 
 
 if __name__ == '__main__':

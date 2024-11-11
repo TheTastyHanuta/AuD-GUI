@@ -3,3 +3,6 @@ assets
 test.py
 team_ids.txt
 .idea
+data/**
+logs/**
+
