@@ -133,6 +133,6 @@ class State:
                         mark = "✓"
                     elif t["points"]["actual"] == 0.0:
                         mark = "✗"
-                    res += f"{mark}   {t['points']['actual']} / {t['points']['actual']}  |  {t['title']}\n"
+                    res += f"{mark}   {t['points']['actual']} / {t['points']['max']}  |  {t['title']}\n"
 
         return total, res

@@ -8,7 +8,7 @@
 1, Anlegen der Variablen
 1, Ausgabe mit Variablen
 
-16, Ciruit
+16, Circuit
 1, Anlegen der Konstante
 2, Anlegen der Variablen
 1, Einlesen des Widerstandswerts
