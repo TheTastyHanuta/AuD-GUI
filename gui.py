@@ -694,5 +694,10 @@ class AuDGUI(Window):
 
 
 if __name__ == '__main__':
-    # Let the magic happen...
-    AuDGUI().mainloop()
+    a = AuDGUI()
+    try:
+        # Let the magic happen...
+        a.mainloop()
+    except KeyboardInterrupt:
+        # Catch closing cmd
+        a.save()

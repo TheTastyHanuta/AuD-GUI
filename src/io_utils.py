@@ -4,18 +4,19 @@ import shutil
 from tkinter import messagebox
 
 
-def copy_import_data(filename):
+def copy_import_data(filename: str, path_to_data: str):
     """
     Copies the content of the folder.
 
     :param filename: filename of a .zip-file
+    :param path_to_data: Path to the data storage folder
     """
     if not ((os.path.isfile(filename) and filename.endswith(".zip")) or (os.path.isdir(filename))):
         # TODO: Log ???
         return
     f = os.path.split(filename)[-1]  # Extract real filename without directory
     f = os.path.splitext(f)[0]
-    dir_name = os.path.join("../data", str(datetime.date.today()) + "_" + f)
+    dir_name = os.path.join(path_to_data, str(datetime.date.today()) + "_" + f)
     if os.path.isdir(dir_name):
         replace = messagebox.askokcancel(title="AuD-GUI :D - Warnung!",
                                          message=f"Ordner \"{dir_name}\" existiert bereits.\n"
