@@ -9,8 +9,8 @@ import csv
 from tkinter import filedialog
 from tkinter import messagebox
 
-from comment_utils import State, Settings
-from io_utils import copy_import_data, check_updates
+from src.comment_utils import State, Settings
+from src.io_utils import copy_import_data, check_updates
 
 # Configure Log
 logging.basicConfig(
@@ -39,10 +39,16 @@ class Manager:
         self.dir_name = ""
 
         # Settings
-        self.settings = Settings("", os.path.join(self.path_to_settings, "settings.json"))
-        for f in os.listdir(self.path_to_settings):
-            if f == "settings.json":
-                self.settings = Settings(json_file=os.path.join(self.path_to_settings, f))
+        if "settings.json" in os.listdir(self.path_to_settings):
+            # Load from JSON file
+            self.settings = Settings(json_file=os.path.join(self.path_to_settings, "settings.json"))
+        else:
+            # Create new settings from scratch
+            self.settings = Settings(personal_annotation="Korrigiert von Friedrich-Alexander\n"
+                                                         "Bitte Korrektur-PDF beachten :)\n"
+                                                         "(E-mail: friedrich.alexander@fau.de)",
+                                     filepath=self.path_to_settings)
+            self.settings.save()
 
         # Important state variables
         self.team_idx: int = 0  # Current index of team in team_list
@@ -63,6 +69,7 @@ class Manager:
         logging.debug(f"import_data: Importing to \"{dir_name}\"")
         # Convert content of dir_name to comments
         template_file = [t for t in os.listdir(self.path_to_templates) if template in t][0]
+        logging.debug(f"import_data: Using template \"{template}\" ({template_file})")
 
         self.code_dir = os.path.join(self.path,
                                      dir_name,
@@ -77,6 +84,7 @@ class Manager:
         # Remove files that are not necessary
         # List of teams to keep
         team_folders_to_keep = ["Team " + i for i in team_ids]
+        logging.debug(f"import_data: Keep teams {team_folders_to_keep}")
 
         # Remove from code_dir and status.csv
         for f in os.listdir(self.code_dir):
@@ -109,6 +117,7 @@ class Manager:
             messagebox.showerror(title="AuD-GUI :D - Fehler!",
                                  message=f"IDs {', '.join(missing_teams)} fehlen!"
                                          f"Es werden nur die existierenden Teams importiert.")
+            logging.error(f"import_data: Teams {missing_teams} missing. Importing only {check_ids}.")
             self.team_list = check_ids
 
     def open_data(self):
@@ -141,6 +150,7 @@ class Manager:
                                 files.append(os.path.join(self.pdf_dir, team, file))
                 self.states = [State(json_file=f) for f in files]
                 self.team_list = [str(s.id) for s in self.states]
+                logging.debug(f"open_data: Teams {self.team_list} loaded.")
                 if len(self.states) == 0:
                     logging.exception(f"open_data: No states found in {self.pdf_dir}")
             except OSError:
@@ -153,14 +163,14 @@ class Manager:
 
     def open_team(self, index: int):
         logging.debug("manager.py: open_team")
-        logging.debug(f"Open team at index {index}")
+        logging.debug(f"open_team: Open team at index {index}")
         self.team_idx = index
         self.team_state = self.states[self.team_idx]
-        logging.debug(f"Open team {self.team_state.id}")
+        logging.debug(f"open_team: Open team {self.team_state.id}")
 
     def open_pdf(self):
         logging.debug("manager.py: open_pdf")
-        logging.debug(f"Open PDF for team {self.team_state.id} (Location: \"{self.team_state.pdf}\")")
+        logging.debug(f"open_pdf: Open PDF for team {self.team_state.id} (Location: \"{self.team_state.pdf}\")")
         # Nice extra functionality to reduce pain while correcting ;)
         subprocess.Popen([self.team_state.pdf], shell=True)
 
@@ -168,6 +178,7 @@ class Manager:
         logging.debug("manager.py: save")
         for i in self.states:
             i.save()
+        logging.debug("save: Saved successfully")
 
     # Main frame functions
     def get_id(self):
@@ -179,6 +190,7 @@ class Manager:
     def switch_confirmed(self):
         logging.debug("manager.py: switch_confirmed")
         self.team_state.confirmed = not self.team_state.confirmed
+        logging.debug(f"switch_confirmed: Team {self.team_state.id}: {self.team_state.confirmed}")
 
     def get_total_points(self):
         """
@@ -199,12 +211,13 @@ class Manager:
     def switch_compile_error(self):
         logging.debug("manager.py: switch_compile_error")
         self.team_state.comment["compile_error"] = not self.team_state.comment["compile_error"]
+        logging.debug(f"switch_compile_error: Team {self.team_state.id}: {self.team_state.comment['compile_error']}")
 
     def get_class_idx(self, class_str):
         for idx, i in enumerate(self.team_state.comment["classes"]):
             if i["title"] == class_str:
                 return idx
-        logging.error(f"Class \"{class_str}\" does not exist in current status file!")
+        logging.error(f"Class \"{class_str}\" does not exist in current status file")
         return None
 
     def get_task_idx(self, class_str, task_str):
@@ -276,42 +289,52 @@ class Manager:
         logging.debug("manager.py: save_personal_comment")
         self.settings.personal_annotation = comment.rstrip("\n")  # Remove trailing newlines
         self.settings.save()
+        logging.debug(f"save_personal_comment: Saved \"{self.settings.personal_annotation}\"")
 
     def export(self, zip_name: str):
         logging.debug("manager.py: export")
         if zip_name == "":
             messagebox.showerror(title="AuD-GUI :D - Fehler!",
                                  message="Name des Export-Ordners darf nicht leer sein!")
+            logging.error("export: Zip-folder name empty")
             return
         res = []
         for s in self.states:
             points, feedback = s.export()
             feedback += f"\n{self.settings.personal_annotation}"
             res.append((str(s.id), points, feedback))  # Add ID, total points, comment feedback
+        logging.debug("export: Created export list successfully")
 
         export_path = os.path.join(self.path_to_output, self.dir_name, zip_name, zip_name)
+        logging.debug(f"Try to export to \"{export_path}\"")
 
         # Check if directory already exist
         if os.path.isdir(export_path):
+            logging.debug(f"export: Directory \"{export_path}\" already exists")
             # Ask for permission to delete it
             remove_dir = messagebox.askokcancel(title="AuD-GUI :D - Warnung!",
                                                 message=f"Ordner {export_path} existiert bereits. "
                                                         f"Ordner durch neuen Inhalt ersetzen? "
                                                         f"(Bisheriger Inhalt wird gelöscht!)")
             if remove_dir:
+                logging.debug(f"export: Permission given -> remove directory \"{export_path}\"")
                 shutil.rmtree(export_path)
             else:
                 # Cancel operation if ordner deletion is not performed
+                logging.debug("export: Permission not given -> abort")
                 return
 
         shutil.copytree(src=self.pdf_dir, dst=export_path)
+        logging.debug(f"export: Copy folder \"{self.pdf_dir}\" to \"{export_path}\"")
 
         path_to_status_csv = os.path.join(export_path, "status.csv")
         try:
+            logging.debug(f"export: Try to open \"{path_to_status_csv}\"")
             with open(path_to_status_csv, encoding="utf-8", errors="backslashreplace") as input_fd:
                 status_df = pd.read_csv(input_fd)
         except OSError:
             messagebox.showerror(title="AuD-GUI :D - Fehler!", message="status.csv existiert nicht!")
+            logging.exception("export: status.csv not found")
             return
 
         # Find column with ID (Could be team_id or usr_id)
@@ -328,6 +351,7 @@ class Manager:
             for file in os.listdir(os.path.join(export_path, team_folder)):
                 if file != "Korrektur.pdf":
                     os.remove(os.path.join(export_path, team_folder, file))
+                    logging.debug(f"export: Remove \"{os.path.join(export_path, team_folder, file)}\"")
 
             # Set score
             status_df.loc[status_df[id_col] == team_id, "mark"] = team_points
@@ -340,6 +364,7 @@ class Manager:
         if not check_updates(status_df, self.team_list):
             messagebox.showerror(title="AuD-GUI :D - Fehler!",
                                  message="Die Anzahl an Updates stimmt nicht überein!")
+            logging.error("export: Number of updates in status.csv is not correct")
             return
 
         # export status.csv
@@ -348,9 +373,13 @@ class Manager:
         shutil.make_archive(base_name=os.path.join(self.path_to_output, self.dir_name, zip_name),  # Destination
                             format="zip",  # Extension
                             root_dir=os.path.join(self.path_to_output, self.dir_name, zip_name))  # Folder to zip
+        logging.debug(f"export: Converted to zip file "
+                      f"\"{os.path.join(self.path_to_output, self.dir_name, zip_name)}.zip\"")
         open_folder = messagebox.askyesno(title="AuD-GUI :D - Export",
                                           message=f"Datei \""
                                                   f"{os.path.join(self.path_to_output, self.dir_name, zip_name)}.zip"
                                                   f"\" anzeigen?")
         if open_folder:
             os.startfile(os.path.join(self.path_to_output, self.dir_name))
+            logging.debug(f"export: Open in file explorer: "
+                          f"\"{os.path.join(self.path_to_output, self.dir_name, zip_name)}.zip\"")

@@ -85,7 +85,7 @@ class State:
                                      message="Keine Spalte für Team-IDs in \"status.csv\" gefunden!")
                 return
             status_df[id_col] = status_df[id_col].astype(str)
-            status_df["comment"].fillna(value="", inplace=True)
+            status_df["comment"] = status_df["comment"].fillna(value="")
 
             # Find row in dataframe and grab comment column value
             try:

@@ -15,7 +15,7 @@ def copy_import_data(filename):
         return
     f = os.path.split(filename)[-1]  # Extract real filename without directory
     f = os.path.splitext(f)[0]
-    dir_name = os.path.join("data", str(datetime.date.today()) + "_" + f)
+    dir_name = os.path.join("../data", str(datetime.date.today()) + "_" + f)
     if os.path.isdir(dir_name):
         replace = messagebox.askokcancel(title="AuD-GUI :D - Warnung!",
                                          message=f"Ordner \"{dir_name}\" existiert bereits.\n"

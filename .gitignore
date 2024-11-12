@@ -3,6 +3,16 @@ assets
 test.py
 team_ids.txt
 .idea
-data/**
-logs/**
 
+# Exclude folders but keep empty folders for file structure -> .gitkeep
+data/**
+!data/.gitkeep
+
+logs/**
+!logs/.gitkeep
+
+out/**
+!out/.gitkeep
+
+settings/**
+!settings/.gitkeep

@@ -1,12 +1,12 @@
 import os
 import tkinter as tk
-import platform
+# import platform
 from tkinter import simpledialog
 from tkinter import messagebox
 
-from gui_utils import ScrollFrame
-from dialogs import ImportDialog, SettingsDialog, ExportDialog
-from manager import Manager
+from src.gui_utils import ScrollFrame
+from src.dialogs import ImportDialog, SettingsDialog, ExportDialog
+from src.manager import Manager
 
 
 class Window(tk.Tk):
@@ -18,11 +18,11 @@ class Window(tk.Tk):
         :param size: Size of the window in pixels
         """
         super().__init__()
-        # Set window to fullscreen
-        if platform.system() == "Darwin":  # macOS
-            self.attributes("-zoomed", True)
-        else:  # Windows and some Linux distributions
-            self.state("zoomed")
+        # # Set window to fullscreen
+        # if platform.system() == "Darwin":  # macOS
+        #     self.attributes("-zoomed", True)
+        # else:  # Windows and some Linux distributions
+        #     self.state("zoomed")
         # Set window attributes
         self.title(title)
         self.set_size(size)
