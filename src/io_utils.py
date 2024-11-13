@@ -28,7 +28,7 @@ def copy_import_data(filename: str, path_to_data: str):
         shutil.unpack_archive(filename, dir_name)
         return dir_name
     elif os.path.isdir(filename):
-        # TODO: Import from folder (Copy folder instead of extracting it)
+        # TODO: Import from folder (Copy folder instead of extracting it) => shutil.copytree(...)
         return
 
 

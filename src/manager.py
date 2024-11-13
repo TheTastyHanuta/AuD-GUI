@@ -4,6 +4,7 @@ import os
 import shutil
 import datetime
 import subprocess
+import platform
 import pandas as pd
 import csv
 from tkinter import filedialog
@@ -61,10 +62,10 @@ class Manager:
         filename, template, team_ids = res
         self.team_list = team_ids
         dir_name = copy_import_data(filename, self.path_to_data)
-        self.dir_name = os.path.split(dir_name)[-1]  # Store for later usage
         if dir_name is None:
             logging.debug("import_data: Import folder is not valid or does not exist")
             return
+        self.dir_name = os.path.split(dir_name)[-1]  # Store for later usage
 
         logging.debug(f"import_data: Importing to \"{dir_name}\"")
         # Convert content of dir_name to comments
@@ -172,7 +173,10 @@ class Manager:
         logging.debug("manager.py: open_pdf")
         logging.debug(f"open_pdf: Open PDF for team {self.team_state.id} (Location: \"{self.team_state.pdf}\")")
         # Nice extra functionality to reduce pain while correcting ;)
-        subprocess.Popen([self.team_state.pdf], shell=True)
+        if platform.system() == "Darwin":
+            subprocess.Popen(["open", self.team_state.pdf])
+        else:
+            subprocess.Popen([self.team_state.pdf], shell=True)
 
     def save(self):
         logging.debug("manager.py: save")
