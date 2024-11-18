@@ -77,16 +77,48 @@ class Manager:
                       f"dir_name: {dir_name}\n"
                       f"Joined: {os.path.join(self.path, dir_name)}\n"
                       f"Content: {os.listdir(os.path.join(self.path, dir_name))}")
+
+        folder_to_iterate = os.path.join(self.path, dir_name)
+
+        # Code directory search
+        code_path = [i for i in os.listdir(folder_to_iterate) if
+                     "Code" in i and os.path.isdir(os.path.join(folder_to_iterate, i))]
+        code_found = None
+        if len(code_path) > 0:
+            code_found = code_path[0]
+        else:
+            for dirpath, dirnames, _ in os.walk(folder_to_iterate):
+                code_path = [i for i in dirnames if "Code" in i]
+                if len(code_path) > 0:
+                    code_found = os.path.join(dirpath, code_path[0])
+
+            if code_found is None:
+                logging.error(f"import_data: No Code directory found in {folder_to_iterate}!")
+
+        # PDF directory search
+        pdf_path = [i for i in os.listdir(folder_to_iterate) if
+                    "Korrektur" in i and os.path.isdir(os.path.join(folder_to_iterate, i))]
+        pdf_found = None
+        if len(pdf_path) > 0:
+            pdf_found = pdf_path[0]
+        else:
+            for dirpath, dirnames, _ in os.walk(folder_to_iterate):
+                pdf_path = [i for i in dirnames if "Korrektur" in i]
+                if len(pdf_path) > 0:
+                    pdf_found = os.path.join(dirpath, pdf_path[0])
+
+            if pdf_found is None:
+                logging.error(f"import_data: No Code directory found in {folder_to_iterate}!")
+
         self.code_dir = os.path.join(self.path,
                                      dir_name,
-                                     [i for i in os.listdir(os.path.join(self.path, dir_name)) if
-                                      "Code" in i and os.path.isdir(os.path.join(self.path, dir_name, i))][0],
+                                     code_found,
                                      "Abgaben")
         self.pdf_dir = os.path.join(self.path,
                                     dir_name,
-                                    [i for i in os.listdir(os.path.join(self.path, dir_name)) if
-                                     "Korrektur" in i and os.path.isdir(os.path.join(self.path, dir_name, i))][0],
+                                    pdf_found,
                                     "Abgaben")
+        logging.debug(f"Code: {self.code_dir}\nPDFs: {self.pdf_dir}")
         # Remove files that are not necessary
         # List of teams to keep
         team_folders_to_keep = ["Team " + i for i in team_ids]
