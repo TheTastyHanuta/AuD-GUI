@@ -72,14 +72,19 @@ class Manager:
         template_file = [t for t in os.listdir(self.path_to_templates) if template in t][0]
         logging.debug(f"import_data: Using template \"{template}\" ({template_file})")
 
+        logging.debug(f"import_data: Path info:\n"
+                      f"self.path: {self.path}\n"
+                      f"dir_name: {dir_name}\n"
+                      f"Joined: {os.path.join(self.path, dir_name)}\n"
+                      f"Content: {os.listdir(os.path.join(self.path, dir_name))}")
         self.code_dir = os.path.join(self.path,
                                      dir_name,
-                                     [i for i in os.listdir(dir_name) if
+                                     [i for i in os.listdir(os.path.join(self.path, dir_name)) if
                                       "Code" in i and os.path.isdir(os.path.join(self.path, dir_name, i))][0],
                                      "Abgaben")
         self.pdf_dir = os.path.join(self.path,
                                     dir_name,
-                                    [i for i in os.listdir(dir_name) if
+                                    [i for i in os.listdir(os.path.join(self.path, dir_name)) if
                                      "Korrektur" in i and os.path.isdir(os.path.join(self.path, dir_name, i))][0],
                                     "Abgaben")
         # Remove files that are not necessary
