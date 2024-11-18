@@ -60,11 +60,11 @@ class Manager:
     def import_data(self, res):
         logging.debug("manager.py: import_data")
         filename, template, team_ids = res
-        self.team_list = team_ids
         dir_name = copy_import_data(filename, self.path_to_data)
         if dir_name is None:
             logging.debug("import_data: Import folder is not valid or does not exist")
             return
+        self.team_list = team_ids
         self.dir_name = os.path.split(dir_name)[-1]  # Store for later usage
 
         logging.debug(f"import_data: Importing to \"{dir_name}\"")
