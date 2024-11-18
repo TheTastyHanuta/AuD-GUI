@@ -64,7 +64,7 @@
                     }
                 },
                 {
-                    "title": "sumArrays",
+                    "title": "maximum",
                     "points": {
                         "actual": 1.0,
                         "max": 1.0

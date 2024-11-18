@@ -9,7 +9,7 @@
 1, sum
 1, mean
 1, sumArrays
-1, sumArrays
+1, maximum
 2, tail
 2, checkSorting
 2, evenNumbers
