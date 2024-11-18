@@ -7,7 +7,7 @@ import os
 class ImportDialog(tk.Toplevel):
     def __init__(self,
                  master,
-                 # size: tuple,
+                 allow_folders: bool,
                  path_to_templates: str,
                  import_func):
         super().__init__(master=master)
@@ -15,6 +15,7 @@ class ImportDialog(tk.Toplevel):
         self.resizable(False, False)
         self.focus_set()
         self.grab_set()
+        self.allow_folders = allow_folders
 
         # Read templates
         self.templates = [os.path.splitext(t)[0] for t in os.listdir(path_to_templates)]
@@ -74,8 +75,10 @@ class ImportDialog(tk.Toplevel):
         self.terminate_frame.pack(padx=10, pady=5, anchor="w", fill="x")
 
     def search_folder(self):
-        # TODO: Allow folders
-        self.import_folder.set(filedialog.askopenfilename(parent=self, filetypes=[("ZIP Files", "*.zip")]))
+        if self.allow_folders:
+            self.import_folder.set(filedialog.askdirectory(parent=self))
+        else:
+            self.import_folder.set(filedialog.askopenfilename(parent=self, filetypes=[("ZIP Files", "*.zip")]))
 
     def import_data(self):
         # Set text widget to variable

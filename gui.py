@@ -58,7 +58,11 @@ class AuDGUI(Window):
         self.file_menu = tk.Menu(self.menu_bar, tearoff=0)
         self.file_menu.add_command(label="Korrektur öffnen", command=self.open_data)
         self.file_menu.add_separator()
-        self.file_menu.add_command(label="Abgaben importieren", command=self.import_dialog)
+        self.import_menu = tk.Menu(self.file_menu, tearoff=0)
+        self.import_menu.add_command(label="Ordner", command=lambda: self.import_dialog(allow_folders=True))
+        self.import_menu.add_command(label="Zip-Datei", command=lambda: self.import_dialog(allow_folders=False))
+        self.file_menu.add_cascade(label="Abgaben importieren", menu=self.import_menu)
+        # self.file_menu.add_command(label="Abgaben importieren", command=self.import_dialog)
         self.file_menu.add_command(label="Korrekturen exportieren", command=self.export_data, state="disabled")
         self.file_menu.add_separator()
         self.file_menu.add_command(label="Speichern", accelerator="Strg + S", command=self.save)
@@ -587,11 +591,12 @@ class AuDGUI(Window):
         """
         return len(self.manager.states) > 0
 
-    def import_dialog(self):
+    def import_dialog(self, allow_folders: bool):
         """
         Create an ImportDialog.
         """
         ImportDialog(master=self,
+                     allow_folders=allow_folders,
                      path_to_templates=self.manager.path_to_templates,
                      import_func=self._continue_import)
 

@@ -5,6 +5,9 @@ team_ids.txt
 .idea
 
 # Exclude folders but keep empty folders for file structure -> .gitkeep
+.tmp/**
+!.tmp/.gitkeep
+
 data/**
 !data/.gitkeep
 

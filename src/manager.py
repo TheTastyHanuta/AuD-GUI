@@ -11,7 +11,7 @@ from tkinter import filedialog
 from tkinter import messagebox
 
 from src.comment_utils import State, Settings
-from src.io_utils import copy_import_data, check_updates
+from src.io_utils import copy_import_data, check_updates, copy_import_src
 
 # Configure Log
 logging.basicConfig(
@@ -33,6 +33,7 @@ class Manager:
         self.path_to_data = os.path.join(self.path, "data")
         self.path_to_settings = os.path.join(self.path, "settings")
         self.path_to_output = os.path.join(self.path, "out")
+        self.path_to_tmp = os.path.join(self.path, ".tmp")
         # Late initialization
         self.code_dir = ""
         self.pdf_dir = ""
@@ -60,7 +61,12 @@ class Manager:
     def import_data(self, res):
         logging.debug("manager.py: import_data")
         filename, template, team_ids = res
-        dir_name = copy_import_data(filename, self.path_to_data)
+
+        # copy_import_src(self.path_to_tmp, filename, self.path_to_data)
+        # return
+
+        # dir_name = copy_import_data(filename, self.path_to_data)
+        dir_name = copy_import_src(self.path_to_tmp, filename, self.path_to_data)
         if dir_name is None:
             logging.debug("import_data: Import folder is not valid or does not exist")
             return
@@ -78,47 +84,17 @@ class Manager:
                       f"Joined: {os.path.join(self.path, dir_name)}\n"
                       f"Content: {os.listdir(os.path.join(self.path, dir_name))}")
 
-        folder_to_iterate = os.path.join(self.path, dir_name)
-
-        # Code directory search
-        code_path = [i for i in os.listdir(folder_to_iterate) if
-                     "Code" in i and os.path.isdir(os.path.join(folder_to_iterate, i))]
-        code_found = None
-        if len(code_path) > 0:
-            code_found = code_path[0]
-        else:
-            for dirpath, dirnames, _ in os.walk(folder_to_iterate):
-                code_path = [i for i in dirnames if "Code" in i]
-                if len(code_path) > 0:
-                    code_found = os.path.join(dirpath, code_path[0])
-
-            if code_found is None:
-                logging.error(f"import_data: No Code directory found in {folder_to_iterate}!")
-
-        # PDF directory search
-        pdf_path = [i for i in os.listdir(folder_to_iterate) if
-                    "Korrektur" in i and os.path.isdir(os.path.join(folder_to_iterate, i))]
-        pdf_found = None
-        if len(pdf_path) > 0:
-            pdf_found = pdf_path[0]
-        else:
-            for dirpath, dirnames, _ in os.walk(folder_to_iterate):
-                pdf_path = [i for i in dirnames if "Korrektur" in i]
-                if len(pdf_path) > 0:
-                    pdf_found = os.path.join(dirpath, pdf_path[0])
-
-            if pdf_found is None:
-                logging.error(f"import_data: No Code directory found in {folder_to_iterate}!")
-
         self.code_dir = os.path.join(self.path,
                                      dir_name,
-                                     code_found,
+                                     [i for i in os.listdir(os.path.join(self.path, dir_name)) if
+                                      "Code" in i and os.path.isdir(os.path.join(self.path, dir_name, i))][0],
                                      "Abgaben")
         self.pdf_dir = os.path.join(self.path,
                                     dir_name,
-                                    pdf_found,
+                                    [i for i in os.listdir(os.path.join(self.path, dir_name)) if
+                                     "Korrektur" in i and os.path.isdir(os.path.join(self.path, dir_name, i))][0],
                                     "Abgaben")
-        logging.debug(f"Code: {self.code_dir}\nPDFs: {self.pdf_dir}")
+        logging.debug(f"Path info:\nCode: {self.code_dir}\nPDFs: {self.pdf_dir}")
         # Remove files that are not necessary
         # List of teams to keep
         team_folders_to_keep = ["Team " + i for i in team_ids]
