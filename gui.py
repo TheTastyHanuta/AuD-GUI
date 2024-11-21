@@ -231,6 +231,15 @@ class AuDGUI(Window):
             main_title_frame.pack(fill="x", pady=10, expand=True, anchor="w")
             self.main_frames.append(main_title_frame)  # Store for faster deletion
 
+            # Display logins as single Label
+            logins_label = tk.Label(parent,
+                                    text=f"StudOn-Kennungen: {', '.join(self.manager.get_logins())}",
+                                    font=("Arial", 16),
+                                    bg="lightgray",
+                                    anchor="w")
+            logins_label.pack(fill="x", padx=10, anchor="w")
+            self.main_frames.append(logins_label)
+
             # Compile Error frame
             compile_error_frame = tk.Frame(parent, bg="lightgray")
             compile_error_label = tk.Label(compile_error_frame,

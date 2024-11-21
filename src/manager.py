@@ -179,8 +179,11 @@ class Manager:
         logging.debug("manager.py: open_team")
         logging.debug(f"open_team: Open team at index {index}")
         self.team_idx = index
-        self.team_state = self.states[self.team_idx]
-        logging.debug(f"open_team: Open team {self.team_state.id}")
+        try:
+            self.team_state = self.states[self.team_idx]
+            logging.debug(f"open_team: Open team {self.team_state.id}")
+        except IndexError:
+            logging.exception(f"open_team: Index does not exist for states {self.states}")
 
     def open_pdf(self):
         logging.debug("manager.py: open_pdf")
@@ -200,6 +203,9 @@ class Manager:
     # Main frame functions
     def get_id(self):
         return self.team_state.id
+
+    def get_logins(self):
+        return self.team_state.logins
 
     def get_confirmed(self):
         return self.team_state.confirmed
