@@ -194,6 +194,15 @@ class Manager:
         else:
             subprocess.Popen([self.team_state.pdf], shell=True)
 
+    def open_code(self):
+        logging.debug("manager.py: open_code")
+        logging.debug(f"open_code: Open code for team {self.team_state.id} (Location: \"{self.team_state.code[0]}\")")
+        # Open code in default editor for .java files
+        if platform.system() == "Darwin":
+            subprocess.Popen(["open", self.team_state.code[0]])
+        else:
+            subprocess.Popen([self.team_state.code[0]], shell=True)
+
     def save(self):
         logging.debug("manager.py: save")
         for i in self.states:

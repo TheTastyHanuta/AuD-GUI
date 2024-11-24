@@ -87,6 +87,8 @@ class AuDGUI(Window):
         self.edit_menu.add_command(label="Suche Team", command=self.search_folder, state="disabled")
         self.edit_menu.add_separator()
         self.edit_menu.add_command(label="PDF öffnen", command=self.open_pdf, state="disabled")
+        self.edit_menu.add_separator()
+        self.edit_menu.add_command(label="Code öffnen", command=self.manager.open_code, state="disabled")
         # Add to main menu
         self.menu_bar.add_cascade(label="Navigation", menu=self.edit_menu)
 
@@ -589,7 +591,7 @@ class AuDGUI(Window):
         # Configure export menu
         self.file_menu.entryconfigure("Korrekturen exportieren", state="normal")
         # Update edit menu
-        for i in ["Nächstes Team", "Vorheriges Team", "Suche Team", "PDF öffnen"]:
+        for i in ["Nächstes Team", "Vorheriges Team", "Suche Team", "PDF öffnen", "Code öffnen"]:
             self.edit_menu.entryconfigure(i, state="normal")
 
     def _ready(self):
@@ -650,7 +652,7 @@ class AuDGUI(Window):
             # Configure menu
             self.file_menu.entryconfigure("Korrekturen exportieren", state="normal")
             # Update edit menu
-            for i in ["Nächstes Team", "Vorheriges Team", "Suche Team", "PDF öffnen"]:
+            for i in ["Nächstes Team", "Vorheriges Team", "Suche Team", "PDF öffnen", "Code öffnen"]:
                 self.edit_menu.entryconfigure(i, state="normal")
 
     def close(self):
@@ -698,6 +700,13 @@ class AuDGUI(Window):
         """
         if self._ready():
             self.manager.open_pdf()
+
+    def open_code(self):
+        """
+        Open the corresponding code folder for correction.
+        """
+        if self._ready():
+            self.manager.open_code()
 
     def save(self):
         """
