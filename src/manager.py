@@ -195,13 +195,24 @@ class Manager:
             subprocess.Popen([self.team_state.pdf], shell=True)
 
     def open_code(self):
-        logging.debug("manager.py: open_code")
-        logging.debug(f"open_code: Open code for team {self.team_state.id} (Location: \"{self.team_state.code[0]}\")")
-        # Open code in default editor for .java files
-        if platform.system() == "Darwin":
-            subprocess.Popen(["open", self.team_state.code[0]])
+        # check if there are multiple code files and open all of them
+        if len(self.team_state.code) > 1:
+            for code_file in self.team_state.code:
+                logging.debug("manager.py: open_code (multiple files)")
+                logging.debug(f"open_code: Open code file for team {self.team_state.id} (Location: \"{code_file}\")")
+                # Open code in default editor for .java files
+                if platform.system() == "Darwin":
+                    subprocess.Popen(["open", code_file])
+                else:
+                    subprocess.Popen([code_file], shell=True)
         else:
-            subprocess.Popen([self.team_state.code[0]], shell=True)
+            logging.debug("manager.py: open_code (single file)")
+            logging.debug(f"open_code: Open code for team {self.team_state.id} (Location: \"{self.team_state.code[0]}\")")
+            # Open code in default editor for .java files
+            if platform.system() == "Darwin":
+                subprocess.Popen(["open", self.team_state.code[0]])
+            else:
+                subprocess.Popen([self.team_state.code[0]], shell=True)
 
     def save(self):
         logging.debug("manager.py: save")
