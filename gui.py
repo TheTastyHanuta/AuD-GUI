@@ -5,7 +5,7 @@ from tkinter import simpledialog
 from tkinter import messagebox
 
 from src.gui_utils import ScrollFrame
-from src.dialogs import ImportDialog, SettingsDialog, ExportDialog
+from src.dialogs import ImportDialog, SettingsDialog, ExportDialog, ClipboardApp
 from src.manager import Manager
 
 
@@ -50,6 +50,8 @@ class AuDGUI(Window):
 
         # Override the close button action
         self.protocol("WM_DELETE_WINDOW", self.close)
+        # Placeholder for clipboard app
+        self.clipboard_window: ClipboardApp = None
 
         # Construct menu -----------------------------------------------------------------------------------------------
         self.menu_bar = tk.Menu(self)
@@ -91,6 +93,11 @@ class AuDGUI(Window):
         self.edit_menu.add_command(label="Code öffnen", command=self.manager.open_code, state="disabled")
         # Add to main menu
         self.menu_bar.add_cascade(label="Navigation", menu=self.edit_menu)
+
+        # Extras menu
+        self.extras_menu = tk.Menu(self.menu_bar, tearoff=0)
+        self.extras_menu.add_command(label="Korrekturhilfe", command=self.clipboard_helper, state="normal")
+        self.menu_bar.add_cascade(label="Extras", menu=self.extras_menu)
 
         # Set menu
         self.config(menu=self.menu_bar)
@@ -712,8 +719,19 @@ class AuDGUI(Window):
         """
         Save all states.
         """
+        # Close clipboard helper if it still exists
+        if self.clipboard_window is not None:
+            if self.clipboard_window.winfo_exists() == 1:
+                self.clipboard_window.close()
+        # Save all other data
         if self._ready():
             self.manager.save()
+
+    def clipboard_helper(self):
+        """
+        Launches the clipboard helper
+        """
+        self.clipboard_window = ClipboardApp(self, path_to_data=self.manager.path_to_clipboarddata)
 
 
 if __name__ == '__main__':

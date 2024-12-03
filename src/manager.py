@@ -32,6 +32,7 @@ class Manager:
         self.path_to_templates = os.path.join(self.path, "templates")
         self.path_to_data = os.path.join(self.path, "data")
         self.path_to_settings = os.path.join(self.path, "settings")
+        self.path_to_clipboarddata = os.path.join(self.path, "settings", "clipboard_data.json")
         self.path_to_output = os.path.join(self.path, "out")
         self.path_to_tmp = os.path.join(self.path, ".tmp")
         # Late initialization
