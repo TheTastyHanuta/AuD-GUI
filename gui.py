@@ -666,6 +666,10 @@ class AuDGUI(Window):
         """
         Function to save before closing the application
         """
+        # Close clipboard helper if it still exists
+        if self.clipboard_window is not None:
+            if self.clipboard_window.winfo_exists() == 1:
+                self.clipboard_window.close()
         self.save()
         self.destroy()
 
@@ -719,10 +723,6 @@ class AuDGUI(Window):
         """
         Save all states.
         """
-        # Close clipboard helper if it still exists
-        if self.clipboard_window is not None:
-            if self.clipboard_window.winfo_exists() == 1:
-                self.clipboard_window.close()
         # Save all other data
         if self._ready():
             self.manager.save()
