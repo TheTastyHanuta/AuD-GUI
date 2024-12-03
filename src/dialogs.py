@@ -284,6 +284,7 @@ class ClipboardApp(tk.Toplevel):
 
         # Main frame
         self.main_frames = []
+        self.labels = []
 
         self.main_frame = tk.Frame(self, highlightbackground="gray", highlightthickness=2)
 
@@ -312,6 +313,7 @@ class ClipboardApp(tk.Toplevel):
 
         # Load stored data
         self.load()
+        self.bind("<Configure>", self.wrap_labels)
 
     def update_sidebar(self):
         # Forget old content
@@ -368,20 +370,29 @@ class ClipboardApp(tk.Toplevel):
             for f in self.main_frames:
                 f.pack_forget()
             self.main_frames.clear()
+            self.labels.clear()
 
         if self.selected_category >= 0:
             for an in self.data[self.selected_category].annotations:
-                f = tk.Frame(self.main_frame)
+                f = tk.Frame(self.main_frame, highlightbackground="gray", highlightthickness=2)
                 b0 = tk.Button(f, text="-", width=10,
                                command=lambda x=an: self.delete_annotation(x))
-                text = tk.Label(f, text=an)
+                text = tk.Label(f, text=an, justify="left")
+                self.labels.append(text)
                 b1 = tk.Button(f, text="Copy", width=10,
                                command=lambda x=an: self.copy_to_clipboard(x))
-                b0.pack(side="left")
-                text.pack(side="left")
-                b1.pack(side="right")
+                b0.pack(side="left", fill="y")
+                text.pack(side="left", fill="y")
+                b1.pack(side="right", fill="y")
                 f.pack(fill="x", anchor="w", side="top")
                 self.main_frames.append(f)
+            self.wrap_labels(None)
+
+    def wrap_labels(self, event):
+        if event is None or event.widget == self:
+            for i, f in enumerate(self.main_frames):
+                width = self.winfo_width() - self.sidebar_frame.winfo_width() - 180
+                self.labels[i].configure(wraplength=width)
 
     def add_annotation(self):
         if self.selected_category >= 0:
