@@ -19,3 +19,5 @@ out/**
 
 settings/**
 !settings/.gitkeep
+
+V2/**

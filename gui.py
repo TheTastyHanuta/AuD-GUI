@@ -90,7 +90,7 @@ class AuDGUI(Window):
         self.edit_menu.add_separator()
         self.edit_menu.add_command(label="PDF öffnen", command=self.open_pdf, state="disabled")
         self.edit_menu.add_separator()
-        self.edit_menu.add_command(label="Code öffnen", command=self.manager.open_code, state="disabled")
+        self.edit_menu.add_command(label="Code öffnen", command=self.open_code, state="disabled")
         # Add to main menu
         self.menu_bar.add_cascade(label="Navigation", menu=self.edit_menu)
 
