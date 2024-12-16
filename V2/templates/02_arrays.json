@@ -1,0 +1,120 @@
+{
+    "total_points": {
+        "actual": 14.0,
+        "max": 14.0
+    },
+    "compile_error": false,
+    "classes": [
+        {
+            "title": "Coderichtlinien",
+            "points": {
+                "actual": 0.0,
+                "max": 0.0
+            },
+            "tasks": [
+                {
+                    "title": "Coderichtlinien eingehalten",
+                    "points": {
+                        "actual": 0.0,
+                        "max": 0.0
+                    }
+                }
+            ]
+        },
+        {
+            "title": "Arrays",
+            "points": {
+                "actual": 14.0,
+                "max": 14.0
+            },
+            "tasks": [
+                {
+                    "title": "printArray",
+                    "points": {
+                        "actual": 1.0,
+                        "max": 1.0
+                    }
+                },
+                {
+                    "title": "printBooleanArray",
+                    "points": {
+                        "actual": 1.0,
+                        "max": 1.0
+                    }
+                },
+                {
+                    "title": "sum",
+                    "points": {
+                        "actual": 1.0,
+                        "max": 1.0
+                    }
+                },
+                {
+                    "title": "mean",
+                    "points": {
+                        "actual": 1.0,
+                        "max": 1.0
+                    }
+                },
+                {
+                    "title": "sumArrays",
+                    "points": {
+                        "actual": 1.0,
+                        "max": 1.0
+                    }
+                },
+                {
+                    "title": "maximum",
+                    "points": {
+                        "actual": 1.0,
+                        "max": 1.0
+                    }
+                },
+                {
+                    "title": "tail",
+                    "points": {
+                        "actual": 2.0,
+                        "max": 2.0
+                    }
+                },
+                {
+                    "title": "checkSorting",
+                    "points": {
+                        "actual": 2.0,
+                        "max": 2.0
+                    }
+                },
+                {
+                    "title": "evenNumbers",
+                    "points": {
+                        "actual": 2.0,
+                        "max": 2.0
+                    }
+                },
+                {
+                    "title": "Coderichtlinien",
+                    "points": {
+                        "actual": 2.0,
+                        "max": 2.0
+                    }
+                }
+            ]
+        },
+        {
+            "title": "Bonus",
+            "points": {
+                "actual": 1.0,
+                "max": 1.0
+            },
+            "tasks": [
+                {
+                    "title": "Bonus für Abgabe im Team",
+                    "points": {
+                        "actual": 1.0,
+                        "max": 1.0
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,347 @@
+{
+    "total_points": {
+        "actual": 60.0,
+        "max": 60.0
+    },
+    "compile_error": false,
+    "classes": [
+        {
+            "title": "Coderichtlinien",
+            "points": {
+                "actual": 4.0,
+                "max": 4.0
+            },
+            "tasks": [
+                {
+                    "title": "Coderichtlinien eingehalten",
+                    "points": {
+                        "actual": 4.0,
+                        "max": 4.0
+                    }
+                }
+            ]
+        },
+        {
+            "title": "SnakeGame",
+            "points": {
+                "actual": 21.0,
+                "max": 21.0
+            },
+            "tasks": [
+                {
+                    "title": "Signatur (extends)",
+                    "points": {
+                        "actual": 0.5,
+                        "max": 0.5
+                    }
+                },
+                {
+                    "title": "Konstanten",
+                    "points": {
+                        "actual": 1.5,
+                        "max": 1.5
+                    }
+                },
+                {
+                    "title": "Attribute",
+                    "points": {
+                        "actual": 3.5,
+                        "max": 3.5
+                    }
+                },
+                {
+                    "title": "Konstruktor",
+                    "points": {
+                        "actual": 4.0,
+                        "max": 4.0
+                    }
+                },
+                {
+                    "title": "paintGame",
+                    "points": {
+                        "actual": 2.0,
+                        "max": 2.0
+                    }
+                },
+                {
+                    "title": "updateGame",
+                    "points": {
+                        "actual": 2.0,
+                        "max": 2.0
+                    }
+                },
+                {
+                    "title": "handleInput",
+                    "points": {
+                        "actual": 2.0,
+                        "max": 2.0
+                    }
+                },
+                {
+                    "title": "checkCollisions",
+                    "points": {
+                        "actual": 3.0,
+                        "max": 3.0
+                    }
+                },
+                {
+                    "title": "createNewApple",
+                    "points": {
+                        "actual": 2.0,
+                        "max": 2.0
+                    }
+                },
+                {
+                    "title": "main",
+                    "points": {
+                        "actual": 0.5,
+                        "max": 0.5
+                    }
+                }
+            ]
+        },
+        {
+            "title": "Snake",
+            "points": {
+                "actual": 21.0,
+                "max": 21.0
+            },
+            "tasks": [
+                {
+                    "title": "Enumeration",
+                    "points": {
+                        "actual": 1.0,
+                        "max": 1.0
+                    }
+                },
+                {
+                    "title": "Attribute",
+                    "points": {
+                        "actual": 2.0,
+                        "max": 2.0
+                    }
+                },
+                {
+                    "title": "Konstruktoren",
+                    "points": {
+                        "actual": 3.0,
+                        "max": 3.0
+                    }
+                },
+                {
+                    "title": "setNextDirection",
+                    "points": {
+                        "actual": 1.5,
+                        "max": 1.5
+                    }
+                },
+                {
+                    "title": "step",
+                    "points": {
+                        "actual": 3.5,
+                        "max": 3.5
+                    }
+                },
+                {
+                    "title": "grow",
+                    "points": {
+                        "actual": 3.0,
+                        "max": 3.0
+                    }
+                },
+                {
+                    "title": "collidesWith",
+                    "points": {
+                        "actual": 3.0,
+                        "max": 3.0
+                    }
+                },
+                {
+                    "title": "collidesWithSelf",
+                    "points": {
+                        "actual": 2.0,
+                        "max": 2.0
+                    }
+                },
+                {
+                    "title": "paint",
+                    "points": {
+                        "actual": 2.0,
+                        "max": 2.0
+                    }
+                }
+            ]
+        },
+        {
+            "title": "Point",
+            "points": {
+                "actual": 2.0,
+                "max": 2.0
+            },
+            "tasks": [
+                {
+                    "title": "Attribute",
+                    "points": {
+                        "actual": 0.5,
+                        "max": 0.5
+                    }
+                },
+                {
+                    "title": "Konstruktor",
+                    "points": {
+                        "actual": 0.5,
+                        "max": 0.5
+                    }
+                },
+                {
+                    "title": "getX",
+                    "points": {
+                        "actual": 0.5,
+                        "max": 0.5
+                    }
+                },
+                {
+                    "title": "getY",
+                    "points": {
+                        "actual": 0.5,
+                        "max": 0.5
+                    }
+                }
+            ]
+        },
+        {
+            "title": "GameItem",
+            "points": {
+                "actual": 4.0,
+                "max": 4.0
+            },
+            "tasks": [
+                {
+                    "title": "Signatur (abstract)",
+                    "points": {
+                        "actual": 1.0,
+                        "max": 1.0
+                    }
+                },
+                {
+                    "title": "Attribut",
+                    "points": {
+                        "actual": 1.0,
+                        "max": 1.0
+                    }
+                },
+                {
+                    "title": "Konstruktor",
+                    "points": {
+                        "actual": 0.5,
+                        "max": 0.5
+                    }
+                },
+                {
+                    "title": "getPosition",
+                    "points": {
+                        "actual": 0.5,
+                        "max": 0.5
+                    }
+                },
+                {
+                    "title": "paint",
+                    "points": {
+                        "actual": 1.0,
+                        "max": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "title": "Brick",
+            "points": {
+                "actual": 3.0,
+                "max": 3.0
+            },
+            "tasks": [
+                {
+                    "title": "Signatur (extends)",
+                    "points": {
+                        "actual": 1.0,
+                        "max": 1.0
+                    }
+                },
+                {
+                    "title": "Konstruktor",
+                    "points": {
+                        "actual": 1.0,
+                        "max": 1.0
+                    }
+                },
+                {
+                    "title": "paint",
+                    "points": {
+                        "actual": 1.0,
+                        "max": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "title": "Apple",
+            "points": {
+                "actual": 5.0,
+                "max": 5.0
+            },
+            "tasks": [
+                {
+                    "title": "Signatur (extends)",
+                    "points": {
+                        "actual": 1.0,
+                        "max": 1.0
+                    }
+                },
+                {
+                    "title": "Attribute",
+                    "points": {
+                        "actual": 1.0,
+                        "max": 1.0
+                    }
+                },
+                {
+                    "title": "Konstruktor",
+                    "points": {
+                        "actual": 1.5,
+                        "max": 1.5
+                    }
+                },
+                {
+                    "title": "paint",
+                    "points": {
+                        "actual": 1.0,
+                        "max": 1.0
+                    }
+                },
+                {
+                    "title": "getValue",
+                    "points": {
+                        "actual": 0.5,
+                        "max": 0.5
+                    }
+                }
+            ]
+        },
+        {
+            "title": "Bonus",
+            "points": {
+                "actual": 3.0,
+                "max": 3.0
+            },
+            "tasks": [
+                {
+                    "title": "Bonus für Abgabe im Team",
+                    "points": {
+                        "actual": 3.0,
+                        "max": 3.0
+                    }
+                }
+            ]
+        }
+    ]
+}

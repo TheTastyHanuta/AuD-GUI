@@ -1,0 +1,92 @@
+{
+    "total_points": {
+        "actual": 13.0,
+        "max": 13.0
+    },
+    "compile_error": false,
+    "classes": [
+        {
+            "title": "Coderichtlinien",
+            "points": {
+                "actual": 2.0,
+                "max": 2.0
+            },
+            "tasks": [
+                {
+                    "title": "Coderichtlinien eingehalten",
+                    "points": {
+                        "actual": 2.0,
+                        "max": 2.0
+                    }
+                }
+            ]
+        },
+        {
+            "title": "CaesarChiffre",
+            "points": {
+                "actual": 11.0,
+                "max": 11.0
+            },
+            "tasks": [
+                {
+                    "title": "Konstanten",
+                    "points": {
+                        "actual": 0.5,
+                        "max": 0.5
+                    }
+                },
+                {
+                    "title": "getIndexOfMaximumEntry",
+                    "points": {
+                        "actual": 1.5,
+                        "max": 1.5
+                    }
+                },
+                {
+                    "title": "getHistogram",
+                    "points": {
+                        "actual": 2.5,
+                        "max": 2.5
+                    }
+                },
+                {
+                    "title": "getSignificantLetter",
+                    "points": {
+                        "actual": 2.0,
+                        "max": 2.0
+                    }
+                },
+                {
+                    "title": "getShift",
+                    "points": {
+                        "actual": 1.5,
+                        "max": 1.5
+                    }
+                },
+                {
+                    "title": "decode",
+                    "points": {
+                        "actual": 3.0,
+                        "max": 3.0
+                    }
+                }
+            ]
+        },
+        {
+            "title": "Bonus",
+            "points": {
+                "actual": 1.0,
+                "max": 1.0
+            },
+            "tasks": [
+                {
+                    "title": "Bonus für Abgabe im Team",
+                    "points": {
+                        "actual": 1.0,
+                        "max": 1.0
+                    }
+                }
+            ]
+        }
+    ]
+}

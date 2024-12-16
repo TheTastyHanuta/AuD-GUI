@@ -16,3 +16,15 @@ out/**
 
 settings/**
 !settings/.gitkeep
+
+V2/.cache/**
+!V2/.cache/.gitkeep
+
+V2/data/**
+!V2/data/.gitkeep
+
+V2/log/**
+!V2/log/.gitkeep
+
+V2/settings/**
+!V2/settings/.gitkeep

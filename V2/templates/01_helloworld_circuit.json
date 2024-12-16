@@ -1,0 +1,169 @@
+{
+    "total_points": {
+        "actual": 19.0,
+        "max": 19.0
+    },
+    "compile_error": false,
+    "classes": [
+        {
+            "title": "Coderichtlinien",
+            "points": {
+                "actual": 0.0,
+                "max": 0.0
+            },
+            "tasks": [
+                {
+                    "title": "Coderichtlinien eingehalten",
+                    "points": {
+                        "actual": 0.0,
+                        "max": 0.0
+                    }
+                }
+            ]
+        },
+        {
+            "title": "Hello World",
+            "points": {
+                "actual": 3.0,
+                "max": 3.0
+            },
+            "tasks": [
+                {
+                    "title": "Ausgabe \"Hello World\"",
+                    "points": {
+                        "actual": 1.0,
+                        "max": 1.0
+                    }
+                },
+                {
+                    "title": "Anlegen der Variablen",
+                    "points": {
+                        "actual": 1.0,
+                        "max": 1.0
+                    }
+                },
+                {
+                    "title": "Ausgabe mit Variablen",
+                    "points": {
+                        "actual": 1.0,
+                        "max": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "title": "Circuit",
+            "points": {
+                "actual": 16.0,
+                "max": 16.0
+            },
+            "tasks": [
+                {
+                    "title": "Anlegen der Konstante",
+                    "points": {
+                        "actual": 1.0,
+                        "max": 1.0
+                    }
+                },
+                {
+                    "title": "Anlegen der Variablen",
+                    "points": {
+                        "actual": 2.0,
+                        "max": 2.0
+                    }
+                },
+                {
+                    "title": "Einlesen des Widerstandswerts",
+                    "points": {
+                        "actual": 1.0,
+                        "max": 1.0
+                    }
+                },
+                {
+                    "title": "Fehlerbehandlung bei negativem Widerstandswert",
+                    "points": {
+                        "actual": 1.0,
+                        "max": 1.0
+                    }
+                },
+                {
+                    "title": "Berechnung current",
+                    "points": {
+                        "actual": 1.0,
+                        "max": 1.0
+                    }
+                },
+                {
+                    "title": "Berechnung power",
+                    "points": {
+                        "actual": 1.0,
+                        "max": 1.0
+                    }
+                },
+                {
+                    "title": "Ausgabe current & power",
+                    "points": {
+                        "actual": 1.0,
+                        "max": 1.0
+                    }
+                },
+                {
+                    "title": "Benutzerhinweis und Einlesen des Moduls",
+                    "points": {
+                        "actual": 1.0,
+                        "max": 1.0
+                    }
+                },
+                {
+                    "title": "switch/case",
+                    "points": {
+                        "actual": 2.0,
+                        "max": 2.0
+                    }
+                },
+                {
+                    "title": "Variablen & Berechnung Kapazität",
+                    "points": {
+                        "actual": 1.5,
+                        "max": 1.5
+                    }
+                },
+                {
+                    "title": "Ausgabe Kapazität",
+                    "points": {
+                        "actual": 1.0,
+                        "max": 1.0
+                    }
+                },
+                {
+                    "title": "Variable & Berechnung Widerstand",
+                    "points": {
+                        "actual": 1.0,
+                        "max": 1.0
+                    }
+                },
+                {
+                    "title": "Ausgabe Widerstand",
+                    "points": {
+                        "actual": 0.5,
+                        "max": 0.5
+                    }
+                },
+                {
+                    "title": "Ausgabe Kurzschluss",
+                    "points": {
+                        "actual": 0.5,
+                        "max": 0.5
+                    }
+                },
+                {
+                    "title": "default-Fall",
+                    "points": {
+                        "actual": 0.5,
+                        "max": 0.5
+                    }
+                }
+            ]
+        }
+    ]
+}
