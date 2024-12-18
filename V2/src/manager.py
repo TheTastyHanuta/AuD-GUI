@@ -10,8 +10,8 @@ import csv
 from tkinter import filedialog
 from tkinter import messagebox
 
-from src.comment_utils import State, Settings
-from src.io_utils import check_updates, copy_import_src
+from V2.src.comment_utils import State, Settings
+from V2.src.io_utils import check_updates, copy_import_src
 
 
 class Manager:
@@ -246,6 +246,14 @@ class Manager:
         logging.debug("manager.py: switch_compile_error")
         self.team_state.comment["compile_error"] = not self.team_state.comment["compile_error"]
         logging.debug(f"switch_compile_error: Team {self.team_state.id}: {self.team_state.comment['compile_error']}")
+
+    def get_plagiat(self):
+        return False  # TODO
+
+    def switch_plagiat(self):
+        logging.debug("manager.py: switch_plagiat")
+        # TODO
+        logging.debug(f"switch_plagiat: Team {self.team_state.id}: ")  # TODO
 
     def get_class_idx(self, class_str):
         for idx, i in enumerate(self.team_state.comment["classes"]):

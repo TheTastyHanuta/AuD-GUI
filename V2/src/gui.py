@@ -63,9 +63,9 @@ class AuDGUI(Window):
         # View menu
         self.view_menu = tk.Menu(self.menu_bar, tearoff=0)
         self.view_menu.add_checkbutton(label="Übersicht",
-                                       command=self.toggle_left_frame)
+                                       command=self._toggle_left_frame)
         self.view_menu.add_checkbutton(label="Test Feedback",
-                                       command=self.toggle_right_frame)
+                                       command=self._toggle_right_frame)
         self.menu_bar.add_cascade(label="Ansicht",
                                   menu=self.view_menu)
 
@@ -123,13 +123,13 @@ class AuDGUI(Window):
         # Left frame: parent = self.left_scroll
         self.left_sidebar_frames: list[tk.Frame] = []
         self.left_sidebar_buttons: list[tk.Button] = []
-        self._create_team_sidebar_buttons()  # TODO: Remove???
+        # self._create_team_sidebar_buttons()  # TODO: Remove???
 
         # Right frame: parent = self.right_scroll
         self.feedback_label = tk.Label(self.right_scroll,
-                                       text="",
+                                       text="Hier steht das Test Feedback",
                                        font=(self.g.test_result_font, self.g.test_result_size),
-                                       bg=self.g.right_bar_color,
+                                       bg=self.g.bg_color,
                                        anchor="w",
                                        justify="left")
         self.feedback_label.pack(fill="both",
@@ -138,6 +138,51 @@ class AuDGUI(Window):
                                  expand=True)
 
         # Main scroll 1: Points --> parent = self.main_scroll1
+        self.total_points_label = None
+        self.class_points_labels = []
+        self.task_points_labels = []
+        self.compile_error_button = None
+        self.plag_button = None
+        self.confirm_button = None
+
+        self.main_frames: list[tk.Frame] = []
+        self.main_total_points_labels: list[tk.Label] = []
+        self.main_class_title_labels: list[tk.Label] = []
+        self.main_task_points_labels: list[tk.Label] = []
+        self.main_buttons: list[tk.Button] = []
+        # ID title and buttons
+        self.main_title_frame = tk.Frame(self.main_scroll1)
+        # ID Label
+        self.main_id = tk.Label(self.main_title_frame,
+                                text=f"Team ID",
+                                anchor="w")
+        self.main_id.pack(fill="x",
+                          side="left",
+                          anchor="w",
+                          padx=10,
+                          pady=10,
+                          expand=True)
+        # Next button
+        self.next_button = tk.Button(self.main_title_frame,
+                                     text="Weiter",
+                                     command=self.next_folder)
+        self.next_button.pack(fill="x",
+                              padx=10,
+                              side="right",
+                              anchor="e")
+        # Previous button
+        self.prev_button = tk.Button(self.main_title_frame,
+                                     text="Zurück",
+                                     command=self.prev_folder)
+        self.prev_button.pack(fill="x",
+                              padx=10,
+                              side="right",
+                              anchor="e")
+        # Pack
+        self.main_title_frame.pack(fill="x",
+                                   pady=10,
+                                   expand=True,
+                                   anchor="w")
 
         # Main scroll 2: Points --> parent = self.main_scroll2
 
@@ -153,41 +198,246 @@ class AuDGUI(Window):
                                       font=(self.g.header_font, self.g.header_size))
 
         # Frames
-        self.main_frame.config(bg=self.g.main_frame_color)
-        self.left_frame.config(bg=self.g.left_bar_color)
-        self.right_frame.config(bg=self.g.right_bar_color)
-        # Scrollframes --> Canvas config
-        self.left_scroll.canvas.config(bg=self.g.left_bar_color)
-        self.right_scroll.canvas.config(bg=self.g.right_bar_color)
-        self.main_scroll1.canvas.config(bg=self.g.main_frame_color)
-        self.main_scroll2.canvas.config(bg=self.g.main_frame_color)
+        self.main_frame.config(bg=self.g.bg_color)
+        self.left_frame.config(bg=self.g.bg_color)
+        self.right_frame.config(bg=self.g.bg_color)
+        # Left sidebar frames
+        self._color_sidebar()
 
-    def toggle_left_frame(self):
+        # Scrollframes --> Canvas/inner config
+        self.left_scroll.set_color(self.g.bg_color)
+        self.right_scroll.set_color(self.g.bg_color)
+        self.main_scroll1.set_color(self.g.bg_color)
+        self.main_scroll2.set_color(self.g.bg_color)
+
+        # Main frame
+        self.main_title_frame.config(bg=self.g.bg_color)
+        self.main_id.config(bg=self.g.bg_color,
+                            font=(self.g.points_font, self.g.team_title_size))
+        self.next_button.config(bg=self.g.button_color,
+                                font=(self.g.points_font, self.g.button_font_size))
+        self.prev_button.config(bg=self.g.button_color,
+                                font=(self.g.points_font, self.g.button_font_size))
+        for i in self.main_frames:
+            i.config(bg=self.g.bg_color)
+        for i in self.main_total_points_labels:
+            i.config(bg=self.g.bg_color,
+                     font=(self.g.points_font, self.g.total_points_size))
+        for i in self.main_class_title_labels:
+            i.config(bg=self.g.bg_color,
+                     font=(self.g.points_font, self.g.class_font_size))
+        for i in self.main_task_points_labels:
+            i.config(bg=self.g.bg_color,
+                     font=(self.g.points_font, self.g.task_font_size))
+        for i in self.main_buttons:
+            i.config(bg=self.g.button_color,
+                     font=(self.g.points_font, self.g.button_font_size))
+
+        if self.confirm_button is not None:
+            self.confirm_button.config(font=(self.g.points_font, self.g.button_font_size))
+        if self.compile_error_button is not None:
+            self.compile_error_button.config(font=(self.g.points_font, self.g.button_font_size))
+        if self.plag_button is not None:
+            self.plag_button.config(font=(self.g.points_font, self.g.button_font_size))
+
+    def _delete_main_frame(self):
+        for li in [self.main_frames,
+                   self.main_total_points_labels,
+                   self.main_class_title_labels,
+                   self.main_task_points_labels,
+                   self.main_buttons]:
+            if len(li) > 0:
+                for i in li:
+                    i.pack_forget()
+                li.clear()
+
+        if self.confirm_button is not None:
+            self.confirm_button.pack_forget()
+            self.confirm_button = None
+        if self.compile_error_button is not None:
+            self.compile_error_button.pack_forget()
+            self.compile_error_button = None
+        if self.plag_button is not None:
+            self.plag_button.pack_forget()
+            self.plag_button = None
+
+    def _create_main_frame(self):
+        self._delete_main_frame()
+
+        # Create new widgets
+        if self._ready():
+            self.main_id.config(text=f"Team {self.manager.get_id()}")
+
+            # Plagiat Error frame --------------------------------------------------------------------------------------
+            plag_frame = tk.Frame(self.main_scroll1,
+                                  bd=2,
+                                  relief="solid")
+            plag_label = tk.Label(plag_frame,
+                                  text="Plagiat: ",
+                                  anchor="w",
+                                  width=12)
+            plag_label.pack(side="left",
+                            anchor="w",
+                            padx=10,
+                            pady=10)
+            self.plag_button = tk.Button(plag_frame,
+                                         text="Nein",
+                                         width=5,
+                                         command=self._switch_plag)
+            self._render_plag()  # Ensure correct state
+            self.plag_button.pack(side="left",
+                                  pady=10)
+            plag_frame.pack(fill="x",
+                            side="top",
+                            pady=10)
+            self.main_frames.append(plag_frame)
+            self.main_total_points_labels.append(plag_label)
+
+            # Compile Error frame --------------------------------------------------------------------------------------
+            compile_error_frame = tk.Frame(self.main_scroll1,
+                                           bd=2,
+                                           relief="solid")
+            compile_error_label = tk.Label(compile_error_frame,
+                                           text="Compile Error: ",
+                                           anchor="w",
+                                           width=12)
+            compile_error_label.pack(side="left",
+                                     anchor="w",
+                                     padx=10,
+                                     pady=10)
+            self.compile_error_button = tk.Button(compile_error_frame,
+                                                  text="Nein",
+                                                  width=5,
+                                                  command=self._switch_compile_error)
+            self._render_compile_error()  # Ensure correct state
+            self.compile_error_button.pack(side="left",
+                                           pady=10)
+            compile_error_frame.pack(fill="x",
+                                     side="top",
+                                     pady=10)
+            self.main_frames.append(compile_error_frame)
+            self.main_total_points_labels.append(compile_error_label)
+
+            # Total points ---------------------------------------------------------------------------------------------
+            p = self.manager.get_total_points()
+            self.total_points_label = tk.Label(self.main_scroll1,
+                                               text=f"Total: {p['actual']} / {p['max']}",
+                                               anchor="w")
+            self.total_points_label.pack(fill="x", padx=10, pady=10)
+            self.main_total_points_labels.append(self.total_points_label)
+
+            # Classes --------------------------------------------------------------------------------------------------
+            for c in self.manager.team_state.comment["classes"]:
+                c_title, c_points = c["title"], c["points"]
+                c_label = tk.Label(self.main_scroll1,
+                                   text=f"{c_title}: {c_points['actual']} / {c_points['max']}",
+                                   anchor="w")
+                self.class_points_labels.append((c_title, c_label))  # Store for correct config when changing points
+                c_label.pack(fill="x",
+                             anchor="w",
+                             padx=10,
+                             pady=10)
+                self.main_class_title_labels.append(c_label)
+
+                # Tasks ------------------------------------------------------------------------------------------------
+                for t in self.manager.team_state.comment["classes"][self.manager.get_class_idx(c_title)]["tasks"]:
+                    t_title, t_points = t["title"], t["points"]
+                    # Task frame
+                    t_frame = tk.Frame(self.main_scroll1)
+                    # Minus button
+                    t_minus_button = tk.Button(t_frame,
+                                               text="-",
+                                               command=lambda x=(c_title, t_title): self._decrease_task_points(x[0],
+                                                                                                               x[1]))
+                    t_minus_button.pack(side="left",
+                                        anchor="w",
+                                        fill="x",
+                                        pady=5,
+                                        padx=5)
+                    # Points label
+                    t_points_label = tk.Label(t_frame,
+                                              text=f"{t_points['actual']} / {t_points['max']}")
+                    t_points_label.pack(fill="x",
+                                        side="left",
+                                        padx=5,
+                                        pady=5)
+                    self.task_points_labels.append((c_title, t_title, t_points_label))  # Store for changing points text
+                    # Plus button
+                    t_plus_button = tk.Button(t_frame,
+                                              text="+",
+                                              command=lambda x=(c_title, t_title): self._increase_task_points(x[0],
+                                                                                                              x[1]))
+                    t_plus_button.pack(side="left",
+                                       fill="x",
+                                       pady=5,
+                                       padx=5)
+                    # Description label
+                    t_desc_label = tk.Label(t_frame,
+                                            text=t_title)
+                    t_desc_label.pack(fill="x",
+                                      side="left",
+                                      padx=5,
+                                      pady=5)
+                    t_frame.pack(fill="x",
+                                 padx=10,
+                                 anchor="w")
+                    self.main_frames.append(t_frame)
+                    self.main_task_points_labels += [t_points_label, t_desc_label]
+                    self.main_buttons += [t_plus_button, t_minus_button]
+
+            # Confirm button -------------------------------------------------------------------------------------------
+            self.confirm_button = tk.Button(self.main_scroll1,
+                                            text="Nicht bestätigt",
+                                            bg="#ffcccb",
+                                            width=20,
+                                            command=self._switch_confirm)
+            self.confirm_button.pack(fill="x", padx=10, pady=10, anchor="w", side="left")
+            self._render_confirm()  # Ensure correct state
+
+            # Color everything
+            self.update_graphics()
+
+    def _toggle_left_frame(self):
         if self.active_left_frame:
             self.paned_window.forget(self.left_frame)
         else:
             self.paned_window.add(self.left_frame, before=self.main_frame)
         # Toggle boolean indicator
         self.active_left_frame = not self.active_left_frame
-        self.update_panes()
+        self._update_panes()
 
-    def toggle_right_frame(self):
+    def _toggle_right_frame(self):
         if self.active_right_frame:
             self.paned_window.forget(self.right_frame)
         else:
             self.paned_window.add(self.right_frame, after=self.main_frame)
         # Toggle boolean indicator
         self.active_right_frame = not self.active_right_frame
-        self.update_panes()
+        self._update_panes()
 
-    def update_panes(self):
+    def _update_panes(self):
         self.paned_window.paneconfigure(self.main_frame, stretch="always")
         if self.active_left_frame:
             self.paned_window.paneconfigure(self.left_frame, minsize=130, stretch="never")
         if self.active_right_frame:
             self.paned_window.paneconfigure(self.right_frame, minsize=150, stretch="never")
 
-    # TODO: Andere Methoden an die neue Version anpassen
+    def _color_sidebar(self):
+        """
+        Adjust the color of sidebar buttons and frames to match the current state.
+        """
+        if len(self.left_sidebar_frames) > 0 and len(self.left_sidebar_buttons) > 0:
+            # Color frames for "log in"-theme
+            for i in self.left_sidebar_frames:
+                i.configure(highlightbackground=self.g.bg_color)
+            self.left_sidebar_frames[self.manager.team_idx].configure(highlightbackground="blue")
+            # Color buttons for "confirmed"-theme
+            for idx, i in enumerate(self.left_sidebar_buttons):
+                if self.manager.states[idx].confirmed:
+                    i.configure(bg="lightgreen")
+                else:
+                    i.configure(bg=self.g.button_color)
+
     def save(self):
         """
         Save all states.
@@ -197,7 +447,20 @@ class AuDGUI(Window):
             self.manager.save()
 
     def open_data(self):
-        pass
+        # Set team_ids
+        success = self.manager.open_data()
+        if success:
+            # Change status back and forth to refresh scroll region (call 2 times)
+            self._create_team_sidebar_buttons()
+            self._create_feedback_label()
+            # Start with first team
+            self._open_team(index=0)
+
+            # Configure menu
+            self.file_menu.entryconfigure("Korrekturen exportieren", state="normal")
+            # Update edit menu
+            for i in ["Nächstes Team", "Vorheriges Team", "Suche Team", "PDF öffnen"]:
+                self.edit_menu.entryconfigure(i, state="normal")
 
     def settings_dialog(self):
         """
@@ -288,16 +551,50 @@ class AuDGUI(Window):
         return len(self.manager.states) > 0
 
     def _continue_import(self, res: list):
-        pass
+        # Load directory
+        self.manager.import_data(res)
+        # Change status back and forth to refresh scroll region (call 2 times)
+        self._create_team_sidebar_buttons()
+        self._create_feedback_label()
+        # Start with first team
+        self._open_team(index=0)
 
-    def _open_team(self):
-        pass
+        # Update menu
+        if len(os.listdir(self.manager.path_to_data)) > 0:
+            self.file_menu.entryconfigure("Korrektur öffnen", state="normal")
+        # Configure export menu
+        self.file_menu.entryconfigure("Korrekturen exportieren", state="normal")
+        # Update edit menu
+        for i in ["Nächstes Team", "Vorheriges Team", "Suche Team", "PDF öffnen"]:
+            self.edit_menu.entryconfigure(i, state="normal")
+
+    def _open_team(self, index: int):
+        # Save if old team was opened
+        self.save()
+
+        self.manager.open_team(index)
+        # Update labels
+        self._create_main_frame()
+        self._color_sidebar()
+        self._create_feedback_label()
+        self._color_sidebar()
 
     def _switch_confirm(self):
-        pass
+        """
+        Switch the confirm state.
+        """
+        self.manager.team_state.confirmed = not self.manager.team_state.confirmed
+        self._render_confirm()  # Change widgets
 
     def _render_confirm(self):
-        pass
+        """
+        Change the widget states to be consistent with the confirm flag.
+        """
+        if self.manager.team_state.confirmed:
+            self.confirm_button.configure(text="Bestätigt", bg="lightgreen")
+        else:
+            self.confirm_button.configure(text="Nicht bestätigt", bg="#ffcccb")
+        self._color_sidebar()  # Colors the team sidebar buttons
 
     def _increase_task_points(self, class_str: str, task_str: str):
         """
@@ -306,6 +603,10 @@ class AuDGUI(Window):
         :param class_str: Class name of the task
         :param task_str: Task name
         """
+        # Switch confirmed to prevent errors
+        if self.manager.team_state.confirmed:
+            self._switch_confirm()
+
         self.manager.increase_task_points(class_str, task_str)
         self._render_points_labels()  # Adjust the widgets to match the points of the current state
 
@@ -316,6 +617,10 @@ class AuDGUI(Window):
         :param class_str: Class name of the task
         :param task_str: Task name
         """
+        # Switch confirmed to prevent errors
+        if self.manager.team_state.confirmed:
+            self._switch_confirm()
+
         self.manager.decrease_task_points(class_str, task_str)
         self._render_points_labels()  # Adjust the widgets to match the points of the current state
 
@@ -323,25 +628,55 @@ class AuDGUI(Window):
         """
         Adjust the point label widgets to match the points of the current state.
         """
-        pass
+        if self.total_points_label is not None:
+            # Update and retrieve total points
+            self.manager.update_total_points()
+            p = self.manager.get_total_points()
+            self.total_points_label.configure(text=f"Total: {p['actual']} / {p['max']}")
+            # Update class labels
+            for t, i in self.class_points_labels:
+                p = self.manager.get_class_points(t)
+                i.configure(text=f"{t}: {p['actual']} / {p['max']}")
+            # Update task labels
+            for c, t, i in self.task_points_labels:
+                p = self.manager.get_task_points(c, t)
+                i.configure(text=f"{p['actual']} / {p['max']}")
 
-    def _render_compile_error(self, frame, button):
-        """
-        Updates the compile error widgets to match the current state.
-
-        :param frame: Frame containing the compile error button (For coloring)
-        :param button: Compile error button (For changing of text)
-        """
-        pass
-
-    def _switch_compile_error(self, frame, button):
+    def _switch_compile_error(self):
         """
         Switch the compile error state.
-
-        :param frame: Frame containing the compile error button (For coloring)
-        :param button: Compile error button (For changing of text)
         """
-        pass
+        self.manager.switch_compile_error()
+        self._render_compile_error()  # Update Compile Error button
+        self._render_points_labels()  # Update labels
+
+    def _render_compile_error(self):
+        """
+        Updates the compile error widgets to match the current state.
+        """
+        if self.compile_error_button is not None:
+            if self.manager.get_compile_error():
+                self.compile_error_button.configure(text="Ja", bg="red")
+            else:
+                self.compile_error_button.configure(text="Nein", bg="green")
+
+    def _switch_plag(self):
+        """
+        Switch the plagiat state.
+        """
+        self.manager.switch_plagiat()
+        self._render_plag()  # Update Compile Error button
+        self._render_points_labels()  # Update labels
+
+    def _render_plag(self):
+        """
+        Updates the compile error widgets to match the current state.
+        """
+        if self.plag_button is not None:
+            if self.manager.get_plagiat():
+                self.plag_button.configure(text="Ja", bg="red")
+            else:
+                self.plag_button.configure(text="Nein", bg="green")
 
     def _create_team_sidebar_buttons(self):
         """
@@ -350,10 +685,10 @@ class AuDGUI(Window):
         self._delete_team_sidebar_buttons()
         if self._ready():
             for i, t in enumerate(self.manager.team_list):
-                f = tk.Frame(self.left_scroll, highlightbackground="lightgray", highlightthickness=2)
-                b = tk.Button(f, text=t, command=lambda x=i: self._open_team(index=x))
-                b.pack(fill="x")
-                f.pack(padx=10, pady=5, fill="x")
+                f = tk.Frame(self.left_scroll, highlightbackground=self.g.bg_color, highlightthickness=2)
+                b = tk.Button(f, text=t, width=11, command=lambda x=i: self._open_team(index=x))
+                b.pack(fill="x", expand=True)
+                f.pack(padx=10, pady=5, fill="x", expand=True)
                 self.left_sidebar_buttons.append(b)
                 self.left_sidebar_frames.append(f)
         self.update_graphics()

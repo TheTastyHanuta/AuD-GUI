@@ -28,3 +28,6 @@ V2/log/**
 
 V2/settings/**
 !V2/settings/.gitkeep
+
+V2/out/**
+!V2/out/.gitkeep

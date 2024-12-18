@@ -124,4 +124,7 @@ class DoubleScrolledFrame:
     def __str__(self):
         return str(self.outer)
 
-
+    # Extra method
+    def set_color(self, color: str):
+        self.canvas.config(bg=color)
+        self.inner.config(bg=color)
