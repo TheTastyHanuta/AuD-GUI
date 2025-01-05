@@ -6,15 +6,25 @@ from tkinter import messagebox
 
 
 class Settings:
-    def __init__(self, personal_annotation: str = "", filepath: str = "", json_file: str = ""):
+    def __init__(self, personal_annotation: str = "",
+                 compile_error_annotation: str = "",
+                 plagiat_annotation: str = "",
+                 filepath: str = "",
+                 json_file: str = ""):
         if json_file != "":
             # Initialization via json dict
             with open(json_file, "r", encoding="utf-8") as f:
                 json_data = json.load(f)
+                if "compile_error_annotation" not in json_data.keys():
+                    json_data["compile_error_annotation"] = ""
+                if "plagiat_annotation" not in json_data.keys():
+                    json_data["plagiat_annotation"] = ""
                 self.__dict__.update(json_data)
         else:
             self.settings_path = os.path.join(filepath, "settings.json")
             self.personal_annotation = personal_annotation
+            self.compile_error_annotation = compile_error_annotation
+            self.plagiat_annotation = plagiat_annotation
 
     def save(self):
         """
@@ -41,6 +51,8 @@ class State:
                     logins = self.get_logins()
                     if logins:
                         self.logins = logins
+                if "plagiat" not in self.comment.keys():
+                    self.comment["plagiat"] = False
         else:
             # New instance
             self.id = int(team_id)
@@ -72,6 +84,8 @@ class State:
 
             # Define comment
             self.comment = d
+            # Add new plagiat attribute
+            self.comment["plagiat"] = False
 
             # Try to load status.csv
             try:
@@ -156,13 +170,15 @@ class State:
         with open(self.status_filepath, "w", encoding="utf-8") as f:
             json.dump(self.__dict__, f, indent=4, ensure_ascii=False)
 
-    def export(self):
+    def export(self, compile_error_annotation: str, plagiat_annotation: str):
         total = float(self.comment["total_points"]["actual"])
 
         res = f"Gesamt: {self.comment['total_points']['actual']} von {self.comment['total_points']['max']} Punkten\n"
 
-        if self.comment["compile_error"]:
-            res += "\nCompile-Error :(\n"
+        if self.comment["plagiat"]:
+            res += f"\n{plagiat_annotation}\n"
+        elif self.comment["compile_error"]:
+            res += f"\n{compile_error_annotation}\n"
         else:
             for i, c in enumerate(self.comment["classes"]):
                 res += f"\n{c['title']} ({c['points']['actual']} / {c['points']['max']}):\n"

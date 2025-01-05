@@ -1,9 +1,11 @@
 import tkinter as tk
 from tkinter import ttk
+from tkinter import filedialog
 import os
-from tkinter import filedialog, simpledialog, messagebox
-import json
-from typing import Union
+from tkinter import filedialog
+
+from src.gui_utils import DoubleScrolledFrame
+from src.graphics import Graphics
 
 
 class ImportDialog(tk.Toplevel):
@@ -11,12 +13,13 @@ class ImportDialog(tk.Toplevel):
                  master,
                  allow_folders: bool,
                  path_to_templates: str,
+                 g: Graphics,
                  import_func):
         super().__init__(master=master)
         self.title("AuD-GUI :D - Abgaben importieren")
         self.resizable(False, False)
         self.focus_set()
-        self.grab_set()
+        self.g = g
         self.allow_folders = allow_folders
 
         # Read templates
@@ -29,52 +32,102 @@ class ImportDialog(tk.Toplevel):
         self.import_func = import_func
 
         # WIDGETS
+        self.config(bg=self.g.bg_color)
 
         # Input label
-        self.input_label = tk.Label(self, text="Ordner auswählen:")
-        self.input_label.pack(padx=10, pady=5, anchor="w")
+        self.input_label = tk.Label(self,
+                                    text="Ordner auswählen:" if allow_folders else "Zip-Archiv auswählen:",
+                                    bg=self.g.bg_color)
+        self.input_label.pack(padx=10,
+                              pady=5,
+                              anchor="w")
 
         # Folder entry field
-        self.entry_frame = tk.Frame(self)
-        self.input_entry = tk.Entry(self.entry_frame, width=50, textvariable=self.import_folder)
-        self.input_entry.pack(anchor="w", side="left", fill="x", expand=True)
+        self.entry_frame = tk.Frame(self,
+                                    bg=self.g.bg_color)
+        self.input_entry = tk.Entry(self.entry_frame,
+                                    width=50,
+                                    textvariable=self.import_folder)
+        self.input_entry.pack(anchor="w",
+                              side="left",
+                              fill="x",
+                              expand=True)
 
         # Search button
-        self.search_button = tk.Button(self.entry_frame, text="Durchsuchen", command=self.search_folder)
-        self.search_button.pack(padx=10, side="right", anchor="e")
-        self.entry_frame.pack(padx=10, pady=5, anchor="w", fill="x", expand=True)
+        self.search_button = tk.Button(self.entry_frame,
+                                       text="Durchsuchen",
+                                       bg=self.g.button_color,
+                                       command=self.search_folder)
+        self.search_button.pack(padx=10,
+                                side="right",
+                                anchor="e")
+        self.entry_frame.pack(padx=10,
+                              pady=5,
+                              anchor="w",
+                              fill="x",
+                              expand=True)
 
         # Template label
-        self.template_label = tk.Label(self, text="Template auswählen:")
-        self.template_label.pack(padx=10, pady=5, anchor="w")
+        self.template_label = tk.Label(self,
+                                       text="Template auswählen:",
+                                       bg=self.g.bg_color)
+        self.template_label.pack(padx=10,
+                                 pady=5,
+                                 anchor="w")
 
         # Template choose box
         self.template_box = ttk.Combobox(self,
                                          state="readonly",
                                          values=self.templates,
                                          textvariable=self.template_title)
-        self.template_box.pack(padx=10, pady=5, anchor="w")
+        self.template_box.pack(padx=10,
+                               pady=5,
+                               anchor="w")
 
         # Team-ID label
-        self.id_label = tk.Label(self, text="Team-IDs eingeben:")
-        self.id_label.pack(padx=10, pady=5, anchor="w")
+        self.id_label = tk.Label(self,
+                                 text="Team-IDs eingeben:",
+                                 bg=self.g.bg_color)
+        self.id_label.pack(padx=10,
+                           pady=5,
+                           anchor="w")
 
         # Team-ID box
-        self.id_box = tk.Text(self, width=20, height=10)
-        self.id_box.pack(padx=10, pady=5, anchor="w")
+        self.id_box = tk.Text(self,
+                              width=20,
+                              height=10)
+        self.id_box.pack(padx=10,
+                         pady=5,
+                         anchor="w")
 
         # Termination frame
-        self.terminate_frame = tk.Frame(self)
+        self.terminate_frame = tk.Frame(self,
+                                        bg=self.g.bg_color)
 
         # Abort button
-        self.abort_button = tk.Button(self.terminate_frame, text="Abbrechen", command=self.abort)
-        self.abort_button.pack(padx=10, pady=5, anchor="e", side="right")
+        self.abort_button = tk.Button(self.terminate_frame,
+                                      text="Abbrechen",
+                                      bg=self.g.button_color,
+                                      command=self.abort)
+        self.abort_button.pack(padx=10,
+                               pady=5,
+                               anchor="e",
+                               side="right")
 
         # Import button
-        self.import_button = tk.Button(self.terminate_frame, text="Importieren", command=self.import_data)
-        self.import_button.pack(padx=10, pady=5, anchor="e", side="right")
+        self.import_button = tk.Button(self.terminate_frame,
+                                       text="Importieren",
+                                       bg=self.g.button_color,
+                                       command=self.import_data)
+        self.import_button.pack(padx=10,
+                                pady=5,
+                                anchor="e",
+                                side="right")
 
-        self.terminate_frame.pack(padx=10, pady=5, anchor="w", fill="x")
+        self.terminate_frame.pack(padx=10,
+                                  pady=5,
+                                  anchor="w",
+                                  fill="x")
 
     def search_folder(self):
         if self.allow_folders:
@@ -103,73 +156,432 @@ class ImportDialog(tk.Toplevel):
 class SettingsDialog(tk.Toplevel):
     def __init__(self,
                  master,
-                 name: str,
+                 input_list: list[str],
+                 g: Graphics,
                  save_func):
-        super().__init__(master=master)  # , width=size[0], height=size[1]
-        # self.geometry(f"{size[0]}x{size[1]}+100+100")
-        self.title("AuD-GUI :D - Einstellungen")
+        super().__init__(master=master)
+        self.title("AuD-GUI :D - Kommentar-Einstellungen")
         self.resizable(False, False)
         self.focus_set()
-        self.grab_set()
+        self.g = g
 
         # STATES
-        self.name = name
+        self.compile_error = input_list[0]
+        self.plagiat = input_list[1]
+        self.name = input_list[2]
         self.save_func = save_func
 
         # WIDGETS
+        self.config(bg=self.g.bg_color)
+
+        # Compile Error comment
+        self.compile_error_label = tk.Label(self,
+                                            text="Compile-Error Kommentar:",
+                                            anchor="w",
+                                            bg=self.g.bg_color,
+                                            font=(self.g.header_font, 14))
+        self.compile_error_label.pack(fill="x", side="top", anchor="w", padx=10, pady=5)
+        # String box
+        self.ce_box = tk.Text(self, width=50, height=5)
+        self.ce_box.insert(tk.END, self.compile_error)
+        self.ce_box.pack(fill="x", side="top", anchor="w", padx=10, pady=5)
+
+        self.compile_error_info_label = tk.Label(self,
+                                                 text="INFO:\nDieser Kommentar wird bei jedem Compile-Error eingefügt.",
+                                                 anchor="w",
+                                                 justify="left",
+                                                 bg=self.g.bg_color)
+        self.compile_error_info_label.pack(fill="x", side="top", anchor="w", padx=10, pady=5)
+
+        # Plagiat comment
+        self.plag_label = tk.Label(self,
+                                   text="Plagiat Kommentar:",
+                                   anchor="w",
+                                   bg=self.g.bg_color,
+                                   font=(self.g.header_font, 14))
+        self.plag_label.pack(fill="x", side="top", anchor="w", padx=10, pady=5)
+        # String box
+        self.p_box = tk.Text(self, width=50, height=5)
+        self.p_box.insert(tk.END, self.plagiat)
+        self.p_box.pack(fill="x", side="top", anchor="w", padx=10, pady=5)
+
+        self.plag_info_label = tk.Label(self,
+                                        text="INFO:\nDieser Kommentar wird bei jedem Plagiat eingefügt.",
+                                        anchor="w",
+                                        justify="left",
+                                        bg=self.g.bg_color)
+        self.plag_info_label.pack(fill="x", side="top", anchor="w", padx=10, pady=5)
 
         # Input label
-        self.input_label = tk.Label(self, text="Persönlicher Kommentar:", anchor="w")
+        self.input_label = tk.Label(self,
+                                    text="Persönlicher Kommentar:",
+                                    anchor="w",
+                                    bg=self.g.bg_color,
+                                    font=(self.g.header_font, 14))
         self.input_label.pack(fill="x", side="top", anchor="w", padx=10, pady=5)
 
         # String box
-        self.id_box = tk.Text(self, width=50, height=10)
+        self.id_box = tk.Text(self, width=50, height=5)
         self.id_box.insert(tk.END, self.name)
         self.id_box.pack(fill="x", side="top", anchor="w", padx=10, pady=5)
 
-        self.info_label = ttk.Label(self, text="INFO:\nDieser Kommentar wird unter jedem Comment angefügt.", anchor="w")
+        self.info_label = tk.Label(self,
+                                   text="INFO:\nDieser Kommentar wird unter jedem Comment angefügt.",
+                                   anchor="w",
+                                   justify="left",
+                                   bg=self.g.bg_color)
         self.info_label.pack(fill="x", side="top", anchor="w", padx=10, pady=5)
 
         # Termination frame
-        self.terminate_frame = tk.Frame(self)
+        self.terminate_frame = tk.Frame(self, bg=self.g.bg_color)
 
         # Abort button
-        self.abort_button = tk.Button(self.terminate_frame, text="Abbrechen", command=self.abort)
+        self.abort_button = tk.Button(self.terminate_frame,
+                                      text="Abbrechen",
+                                      command=self.abort,
+                                      bg=self.g.button_color)
         self.abort_button.pack(padx=10, pady=5, anchor="e", side="right")
 
         # Import button
-        self.import_button = tk.Button(self.terminate_frame, text="Speichern", command=self.accept)
+        self.import_button = tk.Button(self.terminate_frame,
+                                       text="Speichern",
+                                       command=self.accept,
+                                       bg=self.g.button_color)
         self.import_button.pack(padx=10, pady=5, anchor="e", side="right")
 
         self.terminate_frame.pack(padx=10, pady=5, anchor="w", fill="x")
 
     def accept(self):
-        name = self.id_box.get("1.0", "end")
+        compile_error = self.ce_box.get("1.0", "end")
+        plagiat = self.p_box.get("1.0", "end")
+        comment = self.id_box.get("1.0", "end")
+        res = [compile_error, plagiat, comment]
         self.destroy()
-        self.save_func(name)
+        self.save_func(res)
 
     def abort(self):
         self.destroy()
 
 
+class GraphicsDialog(tk.Toplevel):
+    def __init__(self,
+                 master,
+                 g: Graphics,
+                 save_func):
+        super().__init__(master=master)
+        self.title("AuD-GUI :D - Grafik-Einstellungen")
+        self.resizable(False, False)
+        self.focus_set()
+        self.g = g
+
+        # STATES
+        self.save_func = save_func
+        # Fonts
+        self.header_font = tk.StringVar(value=self.g.header_font)
+        self.test_result_font = tk.StringVar(value=self.g.test_result_font)
+        self.points_font = tk.StringVar(value=self.g.points_font)
+        # Sizes
+        self.header_size = self.g.header_size
+        self.test_result_size = self.g.test_result_size
+        self.team_title_size = self.g.team_title_size
+        self.button_font_size = self.g.button_font_size
+        self.total_points_size = self.g.total_points_size
+        self.class_font_size = self.g.class_font_size
+        self.task_font_size = self.g.task_font_size
+        # Colors
+        self.header_color = tk.StringVar(value=self.g.header_color)
+        self.bg_color = tk.StringVar(value=self.g.bg_color)
+        self.button_color = tk.StringVar(value=self.g.button_color)
+
+        # WIDGETS
+        self.config(bg=self.g.bg_color)
+        self.scroll = DoubleScrolledFrame(self)
+        self.scroll.set_color(self.g.bg_color)
+        self.scroll.pack(fill="both", expand=True)
+
+        # Background ---------------------------------------------------------------------------------------------------
+        header_title = tk.Label(self.scroll,
+                                text="Hintergrund",
+                                anchor="w",
+                                bg=self.g.bg_color,
+                                font=(self.g.header_font, 14))
+        header_title.pack(fill="x", side="top", anchor="w", padx=10, pady=5)
+
+        bg_frame = tk.Frame(self.scroll, bg=self.g.bg_color)
+        bg_color_label = tk.Label(bg_frame, text="Hintergrundfarbe:", bg=self.g.bg_color)
+        bg_color_label.pack(side="left", padx=5)
+        self.bg_color_entry = tk.Entry(bg_frame,
+                                       width=20,
+                                       textvariable=self.bg_color)
+        self.bg_color_entry.pack(side="right", padx=5)
+        bg_frame.pack(fill="x", side="top", anchor="w", padx=10, pady=5)
+
+        # Buttons ------------------------------------------------------------------------------------------------------
+        button_title = tk.Label(self.scroll,
+                                text="Buttons",
+                                anchor="w",
+                                bg=self.g.bg_color,
+                                font=(self.g.header_font, 14))
+        button_title.pack(fill="x", side="top", anchor="w", padx=10, pady=5)
+
+        button_s_frame = tk.Frame(self.scroll, bg=self.g.bg_color)
+        button_size_label = tk.Label(button_s_frame, text="Schriftgröße:", bg=self.g.bg_color)
+        button_size_label.pack(side="left", padx=5)
+        self.button_size_entry = ttk.Spinbox(button_s_frame,
+                                             from_=8,
+                                             to=26,
+                                             increment=1,
+                                             width=20)
+        self.button_size_entry.set(self.button_font_size)
+        self.button_size_entry.pack(side="right", padx=5)
+        button_s_frame.pack(fill="x", side="top", anchor="w", padx=10, pady=5)
+
+        button_c_frame = tk.Frame(self.scroll, bg=self.g.bg_color)
+        button_color_label = tk.Label(button_c_frame, text="Grundfarbe:", bg=self.g.bg_color)
+        button_color_label.pack(side="left", padx=5)
+        self.button_color_entry = tk.Entry(button_c_frame,
+                                           width=20,
+                                           textvariable=self.button_color)
+        self.button_color_entry.pack(side="right", padx=5)
+        button_c_frame.pack(fill="x", side="top", anchor="w", padx=10, pady=5)
+
+        # Header config ------------------------------------------------------------------------------------------------
+        header_title = tk.Label(self.scroll,
+                                text="Überschriften",
+                                anchor="w",
+                                bg=self.g.bg_color,
+                                font=(self.g.header_font, 14))
+        header_title.pack(fill="x", side="top", anchor="w", padx=10, pady=5)
+
+        header_frame1 = tk.Frame(self.scroll, bg=self.g.bg_color)
+        header_font_label = tk.Label(header_frame1, text="Schriftart:", bg=self.g.bg_color)
+        header_font_label.pack(side="left", padx=5)
+        self.header_font_entry = tk.Entry(header_frame1,
+                                          width=20,
+                                          textvariable=self.header_font)
+        self.header_font_entry.pack(side="right", padx=5)
+        header_frame1.pack(fill="x", side="top", anchor="w", padx=10, pady=5)
+
+        header_frame2 = tk.Frame(self.scroll, bg=self.g.bg_color)
+        header_size_label = tk.Label(header_frame2, text="Schriftgröße:", bg=self.g.bg_color)
+        header_size_label.pack(side="left", padx=5)
+        self.header_size_entry = ttk.Spinbox(header_frame2,
+                                             from_=8,
+                                             to=26,
+                                             increment=1,
+                                             width=20)
+        self.header_size_entry.set(self.header_size)
+        self.header_size_entry.pack(side="right", padx=5)
+        header_frame2.pack(fill="x", side="top", anchor="w", padx=10, pady=5)
+
+        header_frame3 = tk.Frame(self.scroll, bg=self.g.bg_color)
+        header_color_label = tk.Label(header_frame3, text="Grundfarbe:", bg=self.g.bg_color)
+        header_color_label.pack(side="left", padx=5)
+        self.header_color_entry = tk.Entry(header_frame3,
+                                           width=20,
+                                           textvariable=self.header_color)
+        self.header_color_entry.pack(side="right", padx=5)
+        header_frame3.pack(fill="x", side="top", anchor="w", padx=10, pady=5)
+
+        # Feedback config ----------------------------------------------------------------------------------------------
+        feedback_title = tk.Label(self.scroll,
+                                  text="Test Feedback",
+                                  anchor="w",
+                                  bg=self.g.bg_color,
+                                  font=(self.g.header_font, 14))
+        feedback_title.pack(fill="x", side="top", anchor="w", padx=10, pady=5)
+
+        feedback_frame1 = tk.Frame(self.scroll, bg=self.g.bg_color)
+        feedback_font_label = tk.Label(feedback_frame1, text="Schriftart:", bg=self.g.bg_color)
+        feedback_font_label.pack(side="left", padx=5)
+        self.feedback_font_entry = tk.Entry(feedback_frame1,
+                                            width=20,
+                                            textvariable=self.test_result_font)
+        self.feedback_font_entry.pack(side="right", padx=5)
+        feedback_frame1.pack(fill="x", side="top", anchor="w", padx=10, pady=5)
+
+        feedback_frame2 = tk.Frame(self.scroll, bg=self.g.bg_color)
+        feedback_size_label = tk.Label(feedback_frame2, text="Schriftgröße:", bg=self.g.bg_color)
+        feedback_size_label.pack(side="left", padx=5)
+        self.feedback_size_entry = ttk.Spinbox(feedback_frame2,
+                                               from_=8,
+                                               to=26,
+                                               increment=1,
+                                               width=20)
+        self.feedback_size_entry.set(self.test_result_size)
+        self.feedback_size_entry.pack(side="right", padx=5)
+        feedback_frame2.pack(fill="x", side="top", anchor="w", padx=10, pady=5)
+
+        # Points -------------------------------------------------------------------------------------------------------
+        points_title = tk.Label(self.scroll,
+                                text="Punkte",
+                                anchor="w",
+                                bg=self.g.bg_color,
+                                font=(self.g.header_font, 14))
+        points_title.pack(fill="x", side="top", anchor="w", padx=10, pady=5)
+
+        points_frame1 = tk.Frame(self.scroll, bg=self.g.bg_color)
+        points_font_label = tk.Label(points_frame1, text="Schriftart:", bg=self.g.bg_color)
+        points_font_label.pack(side="left", padx=5)
+        self.points_font_entry = tk.Entry(points_frame1,
+                                          width=20,
+                                          textvariable=self.points_font)
+        self.points_font_entry.pack(side="right", padx=5)
+        points_frame1.pack(fill="x", side="top", anchor="w", padx=10, pady=5)
+
+        points_frame2 = tk.Frame(self.scroll, bg=self.g.bg_color)
+        id_size_label = tk.Label(points_frame2, text="Schriftgröße ID:", bg=self.g.bg_color)
+        id_size_label.pack(side="left", padx=5)
+        self.id_size_entry = ttk.Spinbox(points_frame2,
+                                         from_=8,
+                                         to=26,
+                                         increment=1,
+                                         width=20)
+        self.id_size_entry.set(self.team_title_size)
+        self.id_size_entry.pack(side="right", padx=5)
+        points_frame2.pack(fill="x", side="top", anchor="w", padx=10, pady=5)
+
+        points_frame3 = tk.Frame(self.scroll, bg=self.g.bg_color)
+        total_size_label = tk.Label(points_frame3, text="Schriftgröße Gesamtpunkte:", bg=self.g.bg_color)
+        total_size_label.pack(side="left", padx=5)
+        self.total_size_entry = ttk.Spinbox(points_frame3,
+                                            from_=8,
+                                            to=26,
+                                            increment=1,
+                                            width=20)
+        self.total_size_entry.set(self.total_points_size)
+        self.total_size_entry.pack(side="right", padx=5)
+        points_frame3.pack(fill="x", side="top", anchor="w", padx=10, pady=5)
+
+        points_frame4 = tk.Frame(self.scroll, bg=self.g.bg_color)
+        class_size_label = tk.Label(points_frame4, text="Schriftgröße Klassen:", bg=self.g.bg_color)
+        class_size_label.pack(side="left", padx=5)
+        self.class_size_entry = ttk.Spinbox(points_frame4,
+                                            from_=8,
+                                            to=26,
+                                            increment=1,
+                                            width=20)
+        self.class_size_entry.set(self.class_font_size)
+        self.class_size_entry.pack(side="right", padx=5)
+        points_frame4.pack(fill="x", side="top", anchor="w", padx=10, pady=5)
+
+        points_frame5 = tk.Frame(self.scroll, bg=self.g.bg_color)
+        task_size_label = tk.Label(points_frame5, text="Schriftgröße Tasks:", bg=self.g.bg_color)
+        task_size_label.pack(side="left", padx=5)
+        self.task_size_entry = ttk.Spinbox(points_frame5,
+                                           from_=8,
+                                           to=26,
+                                           increment=1,
+                                           width=20)
+        self.task_size_entry.set(self.task_font_size)
+        self.task_size_entry.pack(side="right", padx=5)
+        points_frame5.pack(fill="x", side="top", anchor="w", padx=10, pady=5)
+
+        # Termination frame --------------------------------------------------------------------------------------------
+        self.terminate_frame = tk.Frame(self, bg=self.g.bg_color)
+
+        # Abort button
+        self.abort_button = tk.Button(self.terminate_frame,
+                                      text="Abbrechen",
+                                      command=self.abort,
+                                      bg=self.g.button_color)
+        self.abort_button.pack(padx=10, pady=5, anchor="e", side="right")
+
+        # Import button
+        self.import_button = tk.Button(self.terminate_frame,
+                                       text="Speichern",
+                                       command=self.accept,
+                                       bg=self.g.button_color)
+        self.import_button.pack(padx=10, pady=5, anchor="e", side="right")
+
+        # Font button
+        self.font_button = tk.Button(self.terminate_frame,
+                                     text="Alle Schriftarten",
+                                     command=self.open_fonts,
+                                     bg=self.g.button_color)
+        self.font_button.pack(padx=10, pady=5, anchor="w", side="left")
+
+        self.terminate_frame.pack(padx=10, pady=5, anchor="w", fill="x")
+
+        for i in [self.button_size_entry,
+                  self.header_size_entry,
+                  self.feedback_size_entry,
+                  self.id_size_entry,
+                  self.total_size_entry,
+                  self.class_size_entry,
+                  self.task_size_entry]:
+            i.bind("<MouseWheel>", self.disable_spinbox_scroll)
+
+    def disable_spinbox_scroll(self, event):
+        # Prevent the spinbox from scrolling with the mouse wheel
+        self.scroll._on_mousewheel(event)  # Pass the event to the scroll frame and perform scroll
+        return "break"  # Prevent tkinter from further event handling
+
+    def open_fonts(self):
+        d = FontsDialog(master=self, g=self.g)
+
+    def accept(self):
+        # Get all results in three lists
+        fonts = [self.header_font.get(),
+                 self.test_result_font.get(),
+                 self.points_font.get()]
+        sizes = [self.header_size_entry.get(),
+                 self.feedback_size_entry.get(),
+                 self.id_size_entry.get(),
+                 self.button_size_entry.get(),
+                 self.total_size_entry.get(),
+                 self.class_size_entry.get(),
+                 self.task_size_entry.get()]
+        colors = [self.header_color.get(),
+                  self.bg_color.get(),
+                  self.button_color.get()]
+        self.destroy()
+        self.save_func(fonts, sizes, colors)
+
+    def abort(self):
+        self.destroy()
+
+
+class FontsDialog(tk.Toplevel):
+    def __init__(self,
+                 master,
+                 g: Graphics):
+        super().__init__(master=master)
+        self.title("AuD-GUI :D - Schriftarten")
+        self.resizable(False, False)
+        self.focus_set()
+        self.config(bg=g.bg_color)
+
+        self.text = tk.Text(self,
+                            height=30,
+                            width=40,
+                            wrap="none",
+                            borderwidth=0,
+                            bg=g.bg_color)
+        self.text.insert("1.0", "\n".join(sorted(g.get_available_fonts())))
+        self.text.config(state="disabled")
+        self.text.pack(padx=10, pady=10)
+
+
 class ExportDialog(tk.Toplevel):
     def __init__(self,
                  master,
+                 g: Graphics,
                  export_func):
         super().__init__(master=master)
         self.title("AuD-GUI :D - Korrektur exportieren")
         self.resizable(False, False)
         self.focus_set()
-        self.grab_set()
 
         # STATES
         self.export_folder = tk.StringVar(value="")
         self.export_func = export_func
 
         # WIDGETS
+        self.config(bg=g.bg_color)
 
         # Input label
-        self.input_label = tk.Label(self, text="Exportieren als:")
+        self.input_label = tk.Label(self, text="Exportieren als:", bg=g.bg_color)
         self.input_label.pack(padx=10, pady=5, anchor="w", side="top")
 
         # Folder entry field
@@ -182,18 +594,21 @@ class ExportDialog(tk.Toplevel):
                                         "benötigt der Ordner einen speziellen Namen.\nDieser kann auf StudOn "
                                         "heruntergeladen werden und hier eingefügt werden.",
                                    justify="left",
-                                   anchor="w")
+                                   anchor="w",
+                                   bg=g.bg_color)
         self.info_label.pack(padx=10, pady=5, anchor="w")
 
         # Termination frame
-        self.terminate_frame = tk.Frame(self)
+        self.terminate_frame = tk.Frame(self, bg=g.bg_color)
 
         # Abort button
-        self.abort_button = tk.Button(self.terminate_frame, text="Abbrechen", command=self.abort)
+        self.abort_button = tk.Button(self.terminate_frame, text="Abbrechen", bg=g.button_color,
+                                      command=self.abort)
         self.abort_button.pack(padx=10, pady=5, anchor="e", side="right")
 
         # Import button
-        self.export_button = tk.Button(self.terminate_frame, text="Exportieren", command=self.export_data)
+        self.export_button = tk.Button(self.terminate_frame, text="Exportieren", bg=g.button_color,
+                                       command=self.export_data)
         self.export_button.pack(padx=10, pady=5, anchor="e", side="right")
 
         self.terminate_frame.pack(padx=10, pady=5, anchor="w", fill="x")
@@ -203,237 +618,4 @@ class ExportDialog(tk.Toplevel):
         self.export_func(self.export_folder.get())
 
     def abort(self):
-        self.destroy()
-
-
-class Category:
-    def __init__(self, title: str):
-        self.title = title
-        self.annotations = []
-
-    def add_annotation(self, annotation: str):
-        self.annotations.append(annotation)
-
-    def delete_annotation(self, annotation: Union[int, str]):
-        try:
-            if type(annotation) == int:
-                self.annotations.remove(self.annotations[annotation])
-            elif type(annotation) == str:
-                self.annotations.remove(annotation)
-        except ValueError:
-            print(f"Annotation \"{annotation}\" not in Category \"{self.title}\"")
-
-    def get_num_annotations(self) -> int:
-        return len(self.annotations)
-
-    def __eq__(self, other):
-        if isinstance(other, Category):
-            return self.title == other.title
-        else:
-            return False
-
-
-class ClipboardApp(tk.Toplevel):
-    def __init__(self, master, path_to_data: str):
-        super().__init__(master=master)
-        self.title("AuD-GUI :D - Korrekturhilfe")
-        self.geometry("600x600")
-
-        # Variables
-        self.data: list[Category] = []
-        self.selected_category = -1
-        self.path_to_data_file = path_to_data
-
-        self.protocol("WM_DELETE_WINDOW", self.close)
-
-        # Widgets
-        # Sidebar
-        self.sidebar_buttons: list[tk.Button] = []
-        self.sidebar_frames: list[tk.Frame] = []
-
-        self.sidebar_frame = tk.Frame(self, highlightbackground="gray", highlightthickness=2)
-
-        self.sidebar_title_frame = tk.Frame(self.sidebar_frame)
-        self.sidebar_title = tk.Label(self.sidebar_title_frame,
-                                      text="Kategorie",
-                                      width=10,
-                                      bg="gray",
-                                      font=("Arial", 18),
-                                      relief="solid")
-        self.sidebar_title.pack(fill="x",
-                                expand=True,
-                                side="top",
-                                anchor="n")
-        # Buttons
-        self.sidebar_button_frame = tk.Frame(self.sidebar_title_frame)
-        self.plus_button = tk.Button(self.sidebar_button_frame, text="+", font=("Arial", 16),
-                                     command=self.add_category)
-        self.plus_button.pack(fill="x", side="left", anchor="n", expand=True)
-        self.minus_button = tk.Button(self.sidebar_button_frame, text="-", font=("Arial", 16),
-                                      command=self.delete_category)
-        self.minus_button.pack(fill="x", side="right", anchor="n", expand=True)
-        self.sidebar_button_frame.pack(fill="x", side="top", anchor="n", expand=True)
-
-        self.sidebar_title_frame.pack(fill="x", side="top", anchor="n")
-
-        self.update_sidebar()
-
-        self.sidebar_frame.pack(fill="both",
-                                side="left",
-                                anchor="nw")
-
-        # Main frame
-        self.main_frames = []
-        self.labels = []
-
-        self.main_frame = tk.Frame(self, highlightbackground="gray", highlightthickness=2)
-
-        self.main_title_frame = tk.Frame(self.main_frame)
-        self.main_title = tk.Label(self.main_title_frame,
-                                   text="Anmerkungen",
-                                   bg="gray",
-                                   font=("Arial", 18),
-                                   relief="solid")
-        self.main_title.pack(fill="x",
-                             expand=True,
-                             side="top",
-                             anchor="n")
-
-        self.main_title_frame.pack(fill="x", side="top", anchor="n")
-
-        self.add_button = tk.Button(self.main_frame, text="+", font=("Arial", 16), command=self.add_annotation)
-        self.add_button.pack(fill="x")
-
-        self.update_main_frame()
-
-        self.main_frame.pack(fill="both",
-                             side="right",
-                             anchor="ne",
-                             expand=True)
-
-        # Load stored data
-        self.load()
-        self.bind("<Configure>", self.wrap_labels)
-
-    def update_sidebar(self):
-        # Forget old content
-        for f in self.sidebar_frames:
-            f.pack_forget()
-        self.sidebar_frames.clear()
-
-        # Create new content
-        for i, c in enumerate(self.data):
-            f = tk.Frame(self.sidebar_frame, highlightbackground="gray", highlightthickness=5)
-            b = tk.Button(f, text=c.title, command=lambda x=i: self.open_category(x))
-            b.pack(fill="x")
-            f.pack(fill="x", padx=2, pady=2, side="top", anchor="n")
-            self.sidebar_frames.append(f)
-            self.sidebar_buttons.append(b)
-        self.color_sidebar()
-
-    def color_sidebar(self):
-        for i in range(len(self.sidebar_frames)):
-            if i == self.selected_category:
-                self.sidebar_frames[i].configure(highlightbackground="blue")
-            else:
-                self.sidebar_frames[i].configure(highlightbackground="gray")
-
-    def open_category(self, index: int):
-        self.selected_category = index
-        self.color_sidebar()
-        self.update_main_frame()
-
-    def add_category(self):
-        title = simpledialog.askstring(title="Kategorie hinzufügen", prompt="Bezeichung:\t\t\t", parent=self)
-        if title is not None:
-            c = Category(title)
-            if c in self.data:
-                messagebox.showerror(title="Fehler", message=f"Kategorie \"{c.title}\" existiert bereits!", parent=self)
-                return
-            self.data.append(c)
-            self.update_sidebar()
-
-    def delete_category(self):
-        if self.selected_category >= 0:
-            permission = messagebox.askyesno(title="Kategorie entfernen",
-                                             message=f"Kategorie \"{self.data[self.selected_category].title}\" "
-                                                     f"unwiderruflich löschen?",
-                                             parent=self)
-            if permission:
-                self.data.remove(self.data[self.selected_category])
-                self.selected_category = -1
-                self.update_sidebar()
-                self.update_main_frame()
-
-    def update_main_frame(self):
-        if len(self.main_frames) > 0:
-            for f in self.main_frames:
-                f.pack_forget()
-            self.main_frames.clear()
-            self.labels.clear()
-
-        if self.selected_category >= 0:
-            for an in self.data[self.selected_category].annotations:
-                f = tk.Frame(self.main_frame, highlightbackground="gray", highlightthickness=2)
-                b0 = tk.Button(f, text="-", width=10,
-                               command=lambda x=an: self.delete_annotation(x))
-                text = tk.Label(f, text=an, justify="left")
-                self.labels.append(text)
-                b1 = tk.Button(f, text="Copy", width=10,
-                               command=lambda x=an: self.copy_to_clipboard(x))
-                b0.pack(side="left", fill="y")
-                text.pack(side="left", fill="y")
-                b1.pack(side="right", fill="y")
-                f.pack(fill="x", anchor="w", side="top")
-                self.main_frames.append(f)
-            self.wrap_labels(None)
-
-    def wrap_labels(self, event):
-        if event is None or event.widget == self:
-            for i, f in enumerate(self.main_frames):
-                width = self.winfo_width() - self.sidebar_frame.winfo_width() - 180
-                self.labels[i].configure(wraplength=width)
-
-    def add_annotation(self):
-        if self.selected_category >= 0:
-            annotation = simpledialog.askstring(title="Anmerkung hinzufügen", prompt="Text:" + "\t" * 10, parent=self)
-            if annotation is not None:
-                self.data[self.selected_category].add_annotation(annotation)
-                self.update_main_frame()
-
-    def delete_annotation(self, x: str):
-        if self.selected_category >= 0:
-            self.data[self.selected_category].delete_annotation(x)
-            self.update_main_frame()
-
-    def copy_to_clipboard(self, content: str):
-        self.clipboard_clear()
-        self.clipboard_append(content)
-
-        self.update()
-
-    def save(self):
-        save_data = []
-        for c in self.data:
-            save_data.append({"title": c.title, "annotations": c.annotations})
-
-        # Write the data to a JSON file
-        with open(os.path.join(self.path_to_data_file), "w", encoding="utf-8") as f:
-            json.dump(save_data, f, indent=4, ensure_ascii=False)  # indent=4 is optional but makes it pretty-printed
-
-    def load(self):
-        if os.path.isfile(self.path_to_data_file):
-            with open(self.path_to_data_file, "r", encoding="utf-8") as f:
-                data = json.load(f)
-            for d in data:
-                c = Category(d["title"])
-                for t in d["annotations"]:
-                    c.add_annotation(t)
-                self.data.append(c)
-            self.update_sidebar()
-            self.update_main_frame()
-
-    def close(self):
-        self.clipboard_clear()
-        self.save()
         self.destroy()

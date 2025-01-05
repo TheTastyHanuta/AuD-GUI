@@ -2,7 +2,6 @@ import logging
 from typing import List
 import os
 import shutil
-import datetime
 import subprocess
 import platform
 import pandas as pd
@@ -11,17 +10,8 @@ from tkinter import filedialog
 from tkinter import messagebox
 
 from src.comment_utils import State, Settings
-from src.io_utils import copy_import_data, check_updates, copy_import_src
-
-# Configure Log
-logging.basicConfig(
-    level=logging.DEBUG,
-    filename=f"logs/{str(datetime.date.today())}_AuDGUI.log",
-    filemode="a",
-    format="{asctime} - {levelname} - {message}",
-    style="{",
-    datefmt="%Y-%m-%d %H:%M"
-)
+from src.graphics import Graphics
+from src.io_utils import check_updates, copy_import_src
 
 
 class Manager:
@@ -32,9 +22,9 @@ class Manager:
         self.path_to_templates = os.path.join(self.path, "templates")
         self.path_to_data = os.path.join(self.path, "data")
         self.path_to_settings = os.path.join(self.path, "settings")
-        self.path_to_clipboarddata = os.path.join(self.path, "settings", "clipboard_data.json")
+        self.path_to_clipboarddata = os.path.join(self.path, "settings", "annotations.json")
         self.path_to_output = os.path.join(self.path, "out")
-        self.path_to_tmp = os.path.join(self.path, ".tmp")
+        self.path_to_tmp = os.path.join(self.path, ".cache")
         # Late initialization
         self.code_dir = ""
         self.pdf_dir = ""
@@ -47,11 +37,22 @@ class Manager:
             self.settings = Settings(json_file=os.path.join(self.path_to_settings, "settings.json"))
         else:
             # Create new settings from scratch
-            self.settings = Settings(personal_annotation="Korrigiert von Friedrich-Alexander\n"
+            self.settings = Settings(compile_error_annotation="Compile Error :(",
+                                     plagiat_annotation="Plagiat :(",
+                                     personal_annotation="Korrigiert von Friedrich-Alexander\n"
                                                          "Bitte Korrektur-PDF beachten :)\n"
                                                          "(E-mail: friedrich.alexander@fau.de)",
                                      filepath=self.path_to_settings)
             self.settings.save()
+
+        # Appearance
+        if "graphics.json" in os.listdir(self.path_to_settings):
+            # Load from JSON file
+            self.graphics = Graphics(json_file=os.path.join(self.path_to_settings, "graphics.json"))
+        else:
+            # Create new graphics
+            self.graphics = Graphics(filepath=self.path_to_settings)
+            self.graphics.save()
 
         # Important state variables
         self.team_idx: int = 0  # Current index of team in team_list
@@ -257,6 +258,14 @@ class Manager:
         self.team_state.comment["compile_error"] = not self.team_state.comment["compile_error"]
         logging.debug(f"switch_compile_error: Team {self.team_state.id}: {self.team_state.comment['compile_error']}")
 
+    def get_plagiat(self):
+        return self.team_state.comment["plagiat"]
+
+    def switch_plagiat(self):
+        logging.debug("manager.py: switch_plagiat")
+        self.team_state.comment["plagiat"] = not self.team_state.comment["plagiat"]
+        logging.debug(f"switch_plagiat: Team {self.team_state.id}: {self.team_state.comment['plagiat']}")
+
     def get_class_idx(self, class_str):
         for idx, i in enumerate(self.team_state.comment["classes"]):
             if i["title"] == class_str:
@@ -275,7 +284,7 @@ class Manager:
 
     def update_total_points(self):
         total_sum = 0.
-        if not self.team_state.comment["compile_error"]:
+        if not self.team_state.comment["compile_error"] and not self.team_state.comment["plagiat"]:
             for i, c in enumerate(self.team_state.comment["classes"]):
                 self.update_class_points(c["title"])
                 total_sum += self.team_state.comment["classes"][i]["points"]["actual"]
@@ -329,11 +338,23 @@ class Manager:
                 # Update total points after updating task points
                 self.update_total_points()
 
-    def save_personal_comment(self, comment: str):
+    def save_personal_comment(self, comments: list):
         logging.debug("manager.py: save_personal_comment")
-        self.settings.personal_annotation = comment.rstrip("\n")  # Remove trailing newlines
+        # Remove trailing newlines
+        self.settings.compile_error_annotation = comments[0].rstrip("\n")
+        self.settings.plagiat_annotation = comments[1].rstrip("\n")
+        self.settings.personal_annotation = comments[2].rstrip("\n")
         self.settings.save()
-        logging.debug(f"save_personal_comment: Saved \"{self.settings.personal_annotation}\"")
+        logging.debug(f"save_personal_comment: Saved \"{self.settings.compile_error_annotation}\"\n"
+                      f"\"{self.settings.plagiat_annotation}\"\n\"{self.settings.personal_annotation}\"")
+
+    def save_graphics(self, fonts: list[str], sizes: list[int], colors: list[str]):
+        logging.debug("manager.py: save_graphics")
+        self.graphics.set_fonts(fonts)
+        self.graphics.set_sizes(sizes)
+        self.graphics.set_color(colors)
+        self.graphics.save()
+        logging.debug(f"save_graphics: Saved new graphics settings")
 
     def export(self, zip_name: str):
         logging.debug("manager.py: export")
@@ -344,7 +365,7 @@ class Manager:
             return
         res = []
         for s in self.states:
-            points, feedback = s.export()
+            points, feedback = s.export(self.settings.compile_error_annotation, self.settings.plagiat_annotation)
             feedback += f"\n{self.settings.personal_annotation}"
             res.append((str(s.id), points, feedback))  # Add ID, total points, comment feedback
         logging.debug("export: Created export list successfully")
