@@ -2,12 +2,12 @@ import os
 import logging
 import datetime
 
-from V2.src.gui import AuDGUI
+from src.gui import AuDGUI
 
 # Configure Log
 logging.basicConfig(
     level=logging.DEBUG,
-    filename=f"log/{str(datetime.date.today())}_AuDGUI.log",
+    filename=f"logs/{str(datetime.date.today())}_AuDGUI.log",
     filemode="a",
     format="{asctime} - {levelname} - {message}",
     style="{",

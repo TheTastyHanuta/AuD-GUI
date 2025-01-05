@@ -3,10 +3,9 @@ from tkinter import messagebox, simpledialog
 from tkinter import ttk
 import os
 
-from V2.src.gui_utils import Window, DoubleScrolledFrame
-from V2.src.manager import Manager
-from V2.src.graphics import Graphics
-from V2.src.dialogs import ImportDialog, ExportDialog, SettingsDialog
+from src.gui_utils import Window, DoubleScrolledFrame, ClipboardApp
+from src.manager import Manager
+from src.dialogs import ImportDialog, ExportDialog, SettingsDialog, GraphicsDialog
 
 
 class AuDGUI(Window):
@@ -14,9 +13,9 @@ class AuDGUI(Window):
         super().__init__(title="AuD-GUI :D")
         self.main_path = start_path
 
-        self.g = Graphics()
-
         self.manager = Manager(path_of_mainfile=self.main_path)
+
+        self.g = self.manager.graphics  # Set graphics
 
         self.active_left_frame = False
         self.active_right_frame = False
@@ -66,6 +65,9 @@ class AuDGUI(Window):
                                        command=self._toggle_left_frame)
         self.view_menu.add_checkbutton(label="Test Feedback",
                                        command=self._toggle_right_frame)
+        self.view_menu.add_separator()
+        self.view_menu.add_command(label="Grafik-Einstellungen",
+                                   command=self.graphics_dialog)
         self.menu_bar.add_cascade(label="Ansicht",
                                   menu=self.view_menu)
 
@@ -93,9 +95,7 @@ class AuDGUI(Window):
                                 expand=True)
         # Scrollbars
         self.main_scroll1 = DoubleScrolledFrame(self.main_notebook)
-        self.main_scroll2 = DoubleScrolledFrame(self.main_notebook)
         self.main_notebook.add(self.main_scroll1, text="Punkte")
-        self.main_notebook.add(self.main_scroll2, text="Kommentare")
 
         self.left_frame = tk.Frame(self.paned_window)
 
@@ -123,13 +123,10 @@ class AuDGUI(Window):
         # Left frame: parent = self.left_scroll
         self.left_sidebar_frames: list[tk.Frame] = []
         self.left_sidebar_buttons: list[tk.Button] = []
-        # self._create_team_sidebar_buttons()  # TODO: Remove???
 
         # Right frame: parent = self.right_scroll
         self.feedback_label = tk.Label(self.right_scroll,
-                                       text="Hier steht das Test Feedback",
-                                       font=(self.g.test_result_font, self.g.test_result_size),
-                                       bg=self.g.bg_color,
+                                       text="",
                                        anchor="w",
                                        justify="left")
         self.feedback_label.pack(fill="both",
@@ -185,6 +182,11 @@ class AuDGUI(Window):
                                    anchor="w")
 
         # Main scroll 2: Points --> parent = self.main_scroll2
+        self.clipboard_helper = ClipboardApp(self.main_notebook,
+                                             self.g,
+                                             self.manager.path_to_clipboarddata)
+        # self.clipboard_helper.pack(fill="both", expand=True)
+        self.main_notebook.add(self.clipboard_helper, text="Kommentare")
 
         self.update_graphics()
 
@@ -208,7 +210,6 @@ class AuDGUI(Window):
         self.left_scroll.set_color(self.g.bg_color)
         self.right_scroll.set_color(self.g.bg_color)
         self.main_scroll1.set_color(self.g.bg_color)
-        self.main_scroll2.set_color(self.g.bg_color)
 
         # Main frame
         self.main_title_frame.config(bg=self.g.bg_color)
@@ -239,6 +240,8 @@ class AuDGUI(Window):
             self.compile_error_button.config(font=(self.g.points_font, self.g.button_font_size))
         if self.plag_button is not None:
             self.plag_button.config(font=(self.g.points_font, self.g.button_font_size))
+        self.feedback_label.config(font=(self.g.test_result_font, self.g.test_result_size),
+                                   bg=self.g.bg_color)
 
     def _delete_main_frame(self):
         for li in [self.main_frames,
@@ -282,10 +285,11 @@ class AuDGUI(Window):
                             pady=10)
             self.plag_button = tk.Button(plag_frame,
                                          text="Nein",
-                                         width=5,
+                                         width=10,
                                          command=self._switch_plag)
             self._render_plag()  # Ensure correct state
-            self.plag_button.pack(side="left",
+            self.plag_button.pack(side="right",
+                                  padx=10,
                                   pady=10)
             plag_frame.pack(fill="x",
                             side="top",
@@ -307,10 +311,11 @@ class AuDGUI(Window):
                                      pady=10)
             self.compile_error_button = tk.Button(compile_error_frame,
                                                   text="Nein",
-                                                  width=5,
+                                                  width=10,
                                                   command=self._switch_compile_error)
             self._render_compile_error()  # Ensure correct state
-            self.compile_error_button.pack(side="left",
+            self.compile_error_button.pack(side="right",
+                                           padx=10,
                                            pady=10)
             compile_error_frame.pack(fill="x",
                                      side="top",
@@ -320,25 +325,35 @@ class AuDGUI(Window):
 
             # Total points ---------------------------------------------------------------------------------------------
             p = self.manager.get_total_points()
-            self.total_points_label = tk.Label(self.main_scroll1,
+            total_points_frame = tk.Frame(self.main_scroll1,
+                                          relief="solid",
+                                          bd=2)
+            self.total_points_label = tk.Label(total_points_frame,
                                                text=f"Total: {p['actual']} / {p['max']}",
                                                anchor="w")
-            self.total_points_label.pack(fill="x", padx=10, pady=10)
+            self.total_points_label.pack(fill="x",
+                                         padx=10,
+                                         pady=10)
+            total_points_frame.pack(fill="x",
+                                    side="top",
+                                    pady=10)
             self.main_total_points_labels.append(self.total_points_label)
+            self.main_frames.append(total_points_frame)
 
             # Classes --------------------------------------------------------------------------------------------------
             for c in self.manager.team_state.comment["classes"]:
                 c_title, c_points = c["title"], c["points"]
                 c_label = tk.Label(self.main_scroll1,
                                    text=f"{c_title}: {c_points['actual']} / {c_points['max']}",
-                                   anchor="w")
+                                   anchor="w",
+                                   relief="solid",
+                                   bd=1)
                 self.class_points_labels.append((c_title, c_label))  # Store for correct config when changing points
                 c_label.pack(fill="x",
                              anchor="w",
                              padx=10,
                              pady=10)
                 self.main_class_title_labels.append(c_label)
-
                 # Tasks ------------------------------------------------------------------------------------------------
                 for t in self.manager.team_state.comment["classes"][self.manager.get_class_idx(c_title)]["tasks"]:
                     t_title, t_points = t["title"], t["points"]
@@ -445,6 +460,7 @@ class AuDGUI(Window):
         # Save all other data
         if self._ready():
             self.manager.save()
+        self.clipboard_helper.save()
 
     def open_data(self):
         # Set team_ids
@@ -459,7 +475,7 @@ class AuDGUI(Window):
             # Configure menu
             self.file_menu.entryconfigure("Korrekturen exportieren", state="normal")
             # Update edit menu
-            for i in ["Nächstes Team", "Vorheriges Team", "Suche Team", "PDF öffnen"]:
+            for i in ["Nächstes Team", "Vorheriges Team", "Suche Team", "PDF öffnen", "Code öffnen"]:
                 self.edit_menu.entryconfigure(i, state="normal")
 
     def settings_dialog(self):
@@ -467,8 +483,23 @@ class AuDGUI(Window):
         Create SettingsDialog.
         """
         SettingsDialog(master=self,
-                       name=self.manager.settings.personal_annotation,
+                       input_list=[self.manager.settings.compile_error_annotation,
+                                   self.manager.settings.plagiat_annotation,
+                                   self.manager.settings.personal_annotation],
+                       g=self.g,
                        save_func=self.manager.save_personal_comment)
+
+    def graphics_dialog(self):
+        """
+        Create GraphicsDialog.
+        """
+        GraphicsDialog(master=self,
+                       g=self.g,
+                       save_func=self._save_graphics)
+
+    def _save_graphics(self, fonts: list[str], sizes: list[int], colors: list[str]):
+        self.manager.save_graphics(fonts, sizes, colors)
+        self.update_graphics()
 
     def import_dialog(self, allow_folders: bool):
         """
@@ -477,6 +508,7 @@ class AuDGUI(Window):
         ImportDialog(master=self,
                      allow_folders=allow_folders,
                      path_to_templates=self.manager.path_to_templates,
+                     g=self.g,
                      import_func=self._continue_import)
 
     def export_data(self):
@@ -494,7 +526,7 @@ class AuDGUI(Window):
                     if not continue_export:
                         return
             # Continue if all teams were confirmed or manually passed to export via messagebox
-            ExportDialog(self, export_func=self.manager.export)
+            ExportDialog(self, g=self.g, export_func=self.manager.export)
 
     def next_folder(self):
         """
@@ -646,6 +678,10 @@ class AuDGUI(Window):
         """
         Switch the compile error state.
         """
+        # Switch confirmed to prevent errors
+        if self.manager.team_state.confirmed:
+            self._switch_confirm()
+
         self.manager.switch_compile_error()
         self._render_compile_error()  # Update Compile Error button
         self._render_points_labels()  # Update labels
@@ -664,8 +700,12 @@ class AuDGUI(Window):
         """
         Switch the plagiat state.
         """
+        # Switch confirmed to prevent errors
+        if self.manager.team_state.confirmed:
+            self._switch_confirm()
+
         self.manager.switch_plagiat()
-        self._render_plag()  # Update Compile Error button
+        self._render_plag()  # Update plag button
         self._render_points_labels()  # Update labels
 
     def _render_plag(self):
