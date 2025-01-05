@@ -43,7 +43,7 @@ class AuDGUI(Window):
         self.file_menu.add_command(label="Beenden", command=self.close)
 
         # Check if there are already loaded corrections
-        if len(os.listdir(self.manager.path_to_data)) == 0:
+        if len(os.listdir(self.manager.path_to_data)) <= 1:
             self.file_menu.entryconfigure("Korrektur öffnen", state="disabled")
 
         # Add to main menu
