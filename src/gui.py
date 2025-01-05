@@ -10,6 +10,9 @@ from src.dialogs import ImportDialog, ExportDialog, SettingsDialog, GraphicsDial
 
 class AuDGUI(Window):
     def __init__(self, start_path: str):
+        """
+        Class containing all GUI widgets, which send commands to the manager class
+        """
         super().__init__(title="AuD-GUI :D")
         self.main_path = start_path
 
