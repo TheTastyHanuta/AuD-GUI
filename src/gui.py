@@ -184,6 +184,16 @@ class AuDGUI(Window):
                                    expand=True,
                                    anchor="w")
 
+        # Login Label
+        self.login_label = tk.Label(self.main_scroll1,
+                                    text=f"StudOn-Kennungen: ",
+                                    anchor="w")
+        self.login_label.pack(fill="x",
+                              side="top",
+                              anchor="w",
+                              padx=10,
+                              expand=True)
+
         # Main scroll 2: Points --> parent = self.main_scroll2
         self.clipboard_helper = ClipboardApp(self.main_notebook,
                                              self.g,
@@ -218,6 +228,8 @@ class AuDGUI(Window):
         self.main_title_frame.config(bg=self.g.bg_color)
         self.main_id.config(bg=self.g.bg_color,
                             font=(self.g.points_font, self.g.team_title_size))
+        self.login_label.config(bg=self.g.bg_color,
+                                font=(self.g.points_font, self.g.total_points_size))
         self.next_button.config(bg=self.g.button_color,
                                 font=(self.g.points_font, self.g.button_font_size))
         self.prev_button.config(bg=self.g.button_color,
@@ -273,6 +285,7 @@ class AuDGUI(Window):
         # Create new widgets
         if self._ready():
             self.main_id.config(text=f"Team {self.manager.get_id()}")
+            self.login_label.config(text=f"StudOn-Kennungen: {', '.join(self.manager.get_logins())}")
 
             # Plagiat Error frame --------------------------------------------------------------------------------------
             plag_frame = tk.Frame(self.main_scroll1,
