@@ -1,9 +1,7 @@
 04-color.zip
-04-color
 test.py
 team_ids.txt
 .idea
-tutors_team_ids.json
 
 # Exclude folders but keep empty folders for file structure -> .gitkeep
 .cache/**
