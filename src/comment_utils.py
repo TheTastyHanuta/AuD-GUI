@@ -10,6 +10,7 @@ class Settings:
                  compile_error_annotation: str = "",
                  plagiat_annotation: str = "",
                  filepath: str = "",
+                 id_key: str = "",
                  json_file: str = ""):
         if json_file != "":
             # Initialization via json dict
@@ -19,12 +20,15 @@ class Settings:
                     json_data["compile_error_annotation"] = ""
                 if "plagiat_annotation" not in json_data.keys():
                     json_data["plagiat_annotation"] = ""
+                if "id_key" not in json_data.keys():
+                    json_data["id_key"] = "<Name>"
                 self.__dict__.update(json_data)
         else:
             self.settings_path = os.path.join(filepath, "settings.json")
             self.personal_annotation = personal_annotation
             self.compile_error_annotation = compile_error_annotation
             self.plagiat_annotation = plagiat_annotation
+            self.id_key = id_key
 
     def save(self):
         """
@@ -40,6 +44,8 @@ class State:
                  code_dir: str = "",
                  pdf_dir: str = "",
                  status_file: str = "",
+                 compile_error: bool = False,
+                 plagiat: bool = False,
                  json_file: str = ""):
         if json_file != "":
             # Initialization via json dict
@@ -52,7 +58,7 @@ class State:
                     if logins:
                         self.logins = logins
                 if "plagiat" not in self.comment.keys():
-                    self.comment["plagiat"] = False
+                    self.comment["plagiat"] = plagiat
         else:
             # New instance
             self.id = int(team_id)
@@ -84,8 +90,14 @@ class State:
 
             # Define comment
             self.comment = d
+            # Update comment compile-error attribute
+            self.comment["compile_error"] = compile_error
             # Add new plagiat attribute
-            self.comment["plagiat"] = False
+            self.comment["plagiat"] = plagiat
+
+            # Set total points correct
+            if compile_error or plagiat:
+                self.comment["total_points"]["actual"] = 0.
 
             # Try to load status.csv
             try:

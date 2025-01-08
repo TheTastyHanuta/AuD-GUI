@@ -1,3 +1,4 @@
+import json
 import logging
 from typing import List
 import os
@@ -42,6 +43,7 @@ class Manager:
                                      personal_annotation="Korrigiert von Friedrich-Alexander\n"
                                                          "Bitte Korrektur-PDF beachten :)\n"
                                                          "(E-mail: friedrich.alexander@fau.de)",
+                                     id_key="<Name>",
                                      filepath=self.path_to_settings)
             self.settings.save()
 
@@ -62,7 +64,7 @@ class Manager:
 
     def import_data(self, res):
         logging.debug("manager.py: import_data")
-        filename, template, team_ids = res
+        filename, template = res[0], res[1]
 
         # copy_import_src(self.path_to_tmp, filename, self.path_to_data)
         # return
@@ -72,6 +74,48 @@ class Manager:
         if dir_name is None:
             logging.debug("import_data: Import folder is not valid or does not exist")
             return
+
+        if len(res) == 2:
+            # Automatic IDs
+            if "tutors_team_ids.json" not in os.listdir(os.path.join(self.path, dir_name)):
+                logging.error("import_data: No \"tutors_team_ids.json\" found for manual id selection!")
+                messagebox.showerror(title="AuD-GUI :D - Fehler!",
+                                     message=f"Datei \"tutors_team_ids.json\" für die automatische ID-Auswahl wurde "
+                                             f"nicht in \"{os.path.join(self.path, dir_name)}\" gefunden! "
+                                             f"Manuelle Eingabe der IDs erforderlich.")
+                # Abort
+                return
+            else:
+                # Open "tutors_team_ids.json
+                with open(os.path.join(self.path, dir_name, "tutors_team_ids.json"), "r", encoding="utf-8") as f:
+                    json_ids = json.load(f)
+
+                data_list = json_ids[self.settings.id_key]
+                team_ids = []
+                compile_errors = []
+                plagiats = []
+
+                # Read out data
+                for item in data_list:
+                    team_ids.append(str(item[0]))
+                    # A bit of security :D
+                    if len(item) > 1:
+                        compile_errors.append(item[1])
+                    else:
+                        compile_errors.append(False)
+                    if len(item) > 2:
+                        plagiats.append(item[2])
+                    else:
+                        plagiats.append(False)
+        elif len(res) == 3:
+            # Manual IDs
+            team_ids = res[2]
+            compile_errors = [False for _ in range(len(team_ids))]
+            plagiats = [False for _ in range(len(team_ids))]
+        else:
+            logging.error("import_data: Invalid return value of ImportDialog. Expected 2 or 3 return values.")
+            return
+
         self.team_list = team_ids
         self.dir_name = os.path.split(dir_name)[-1]  # Store for later usage
 
@@ -100,6 +144,18 @@ class Manager:
         # Remove files that are not necessary
         # List of teams to keep
         team_folders_to_keep = ["Team " + i for i in team_ids]
+        # Check validity (remove non existing team IDs)
+        remove_copy = team_ids[:]
+        for i, t in enumerate(team_folders_to_keep[:]):  # Iterate over copy of the list for safe removal
+            if not (t in os.listdir(self.code_dir) and t in os.listdir(self.pdf_dir)):
+                # Show error
+                messagebox.showerror(title="AuD-GUI :D - Fehler!",
+                                     message=f"\"{t}\" existiert nicht! ID wird entfernt.")
+                # Log error
+                logging.error(f"import_data: {t} does not exist!")
+                # Remove
+                team_folders_to_keep.remove(t)
+                team_ids.remove(remove_copy[i])
         logging.debug(f"import_data: Keep teams {team_folders_to_keep}")
 
         # Remove from code_dir and status.csv
@@ -120,11 +176,13 @@ class Manager:
             elif f == "status.csv":
                 self.path_to_status_csv = os.path.join(self.pdf_dir, f)
 
-        self.states = [State(team_id=i,
+        self.states = [State(team_id=team_ids[i],
                              template_file=os.path.join(self.path_to_templates, template_file),
                              code_dir=self.code_dir,
                              pdf_dir=self.pdf_dir,
-                             status_file=self.path_to_status_csv) for i in team_ids]
+                             status_file=self.path_to_status_csv,
+                             compile_error=compile_errors[i],
+                             plagiat=plagiats[i]) for i in range(len(team_ids))]
 
         # Check if all teams were found
         check_ids = [str(i.id) for i in self.states]
@@ -209,7 +267,8 @@ class Manager:
                     subprocess.Popen([code_file], shell=True)
         else:
             logging.debug("manager.py: open_code (single file)")
-            logging.debug(f"open_code: Open code for team {self.team_state.id} (Location: \"{self.team_state.code[0]}\")")
+            logging.debug(
+                f"open_code: Open code for team {self.team_state.id} (Location: \"{self.team_state.code[0]}\")")
             # Open code in default editor for .java files
             if platform.system() == "Darwin":
                 subprocess.Popen(["open", self.team_state.code[0]])
@@ -344,9 +403,11 @@ class Manager:
         self.settings.compile_error_annotation = comments[0].rstrip("\n")
         self.settings.plagiat_annotation = comments[1].rstrip("\n")
         self.settings.personal_annotation = comments[2].rstrip("\n")
+        self.settings.id_key = comments[3].strip()
         self.settings.save()
         logging.debug(f"save_personal_comment: Saved \"{self.settings.compile_error_annotation}\"\n"
-                      f"\"{self.settings.plagiat_annotation}\"\n\"{self.settings.personal_annotation}\"")
+                      f"\"{self.settings.plagiat_annotation}\"\n\"{self.settings.personal_annotation}\"\n"
+                      f"Key: \"{self.settings.id_key}\"")
 
     def save_graphics(self, fonts: list[str], sizes: list[int], colors: list[str]):
         logging.debug("manager.py: save_graphics")

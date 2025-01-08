@@ -29,6 +29,7 @@ class ImportDialog(tk.Toplevel):
         self.import_folder = tk.StringVar(value="")
         self.template_title = tk.StringVar(value="")
         self.team_ids = tk.StringVar(value="")
+        self.manual_ids = tk.BooleanVar(value=False)
         self.import_func = import_func
 
         # WIDGETS
@@ -85,9 +86,14 @@ class ImportDialog(tk.Toplevel):
                                anchor="w")
 
         # Team-ID label
-        self.id_label = tk.Label(self,
-                                 text="Team-IDs eingeben:",
-                                 bg=self.g.bg_color)
+        self.id_label = tk.Checkbutton(self, text="Manuelle Eingabe der Team-IDs:", variable=self.manual_ids,
+                                       command=self.toggle_id_mode,
+                                       bg=self.g.bg_color,
+                                       fg="gray")
+
+        # self.id_label = tk.Label(self,
+        #                          text="Team-IDs eingeben:",
+        #                          bg=self.g.bg_color)
         self.id_label.pack(padx=10,
                            pady=5,
                            anchor="w")
@@ -95,7 +101,9 @@ class ImportDialog(tk.Toplevel):
         # Team-ID box
         self.id_box = tk.Text(self,
                               width=20,
-                              height=10)
+                              height=10,
+                              state="disabled",
+                              bg=self.g.bg_color)
         self.id_box.pack(padx=10,
                          pady=5,
                          anchor="w")
@@ -129,6 +137,16 @@ class ImportDialog(tk.Toplevel):
                                   anchor="w",
                                   fill="x")
 
+    def toggle_id_mode(self):
+        if self.manual_ids.get():
+            self.id_label.config(fg="black")
+            self.id_box.config(state="normal")
+            self.id_box.config(bg="white")
+        else:
+            self.id_label.config(fg="gray")
+            self.id_box.config(state="disabled")
+            self.id_box.config(bg=self.g.bg_color)
+
     def search_folder(self):
         if self.allow_folders:
             self.import_folder.set(filedialog.askdirectory(parent=self))
@@ -136,11 +154,15 @@ class ImportDialog(tk.Toplevel):
             self.import_folder.set(filedialog.askopenfilename(parent=self, filetypes=[("ZIP Files", "*.zip")]))
 
     def import_data(self):
-        # Set text widget to variable
-        self.team_ids.set(self.id_box.get("1.0", "end"))
-        res = [self.import_folder.get(),
-               self.template_title.get(),
-               [i for i in self.team_ids.get().splitlines() if i != ""]]
+        if self.manual_ids.get():
+            # Set text widget to variable
+            self.team_ids.set(self.id_box.get("1.0", "end"))
+            res = [self.import_folder.get(),
+                   self.template_title.get(),
+                   [i for i in self.team_ids.get().splitlines() if i != ""]]
+        else:
+            res = [self.import_folder.get(),
+                   self.template_title.get()]
         self.destroy()
         self.import_func(res)
 
@@ -169,10 +191,31 @@ class SettingsDialog(tk.Toplevel):
         self.compile_error = input_list[0]
         self.plagiat = input_list[1]
         self.name = input_list[2]
+        self.id_key = input_list[3]
         self.save_func = save_func
 
         # WIDGETS
         self.config(bg=self.g.bg_color)
+
+        # ID Key comment
+        self.id_key_label = tk.Label(self,
+                                     text="Key für automatische Team-IDs:",
+                                     anchor="w",
+                                     bg=self.g.bg_color,
+                                     font=(self.g.header_font, 14))
+        self.id_key_label.pack(fill="x", side="top", anchor="w", padx=10, pady=5)
+        # String box
+        self.id_key_entry = tk.Entry(self, width=50)
+        self.id_key_entry.insert(0, self.id_key)
+        self.id_key_entry.pack(fill="x", side="top", anchor="w", padx=10, pady=5)
+
+        self.id_key_info_label = tk.Label(self,
+                                          text="INFO:\nDieser Key wird für die automatische Zuordnung der Team-IDs "
+                                               "benötigt.",
+                                          anchor="w",
+                                          justify="left",
+                                          bg=self.g.bg_color)
+        self.id_key_info_label.pack(fill="x", side="top", anchor="w", padx=10, pady=5)
 
         # Compile Error comment
         self.compile_error_label = tk.Label(self,
@@ -255,7 +298,8 @@ class SettingsDialog(tk.Toplevel):
         compile_error = self.ce_box.get("1.0", "end")
         plagiat = self.p_box.get("1.0", "end")
         comment = self.id_box.get("1.0", "end")
-        res = [compile_error, plagiat, comment]
+        id_key = self.id_key_entry.get()
+        res = [compile_error, plagiat, comment, id_key]
         self.destroy()
         self.save_func(res)
 
