@@ -173,10 +173,13 @@ class ClipboardApp(tk.Frame):
         self.path_to_data_file = path_to_data
 
         # Widgets
-        # Sidebar
         self.sidebar_buttons: list[tk.Button] = []
         self.sidebar_frames: list[tk.Frame] = []
+        self.buttons = []
+        self.main_frames = []
+        self.labels = []
 
+        # Sidebar
         self.sidebar_frame = tk.Frame(self, highlightbackground=self.g.bg_color, highlightthickness=2)
 
         self.sidebar_title_frame = tk.Frame(self.sidebar_frame, bg=self.g.bg_color)
@@ -197,17 +200,20 @@ class ClipboardApp(tk.Frame):
                                      font=(self.g.points_font, self.g.button_font_size),
                                      command=self.add_category,
                                      bg=self.g.button_color)
+        self.buttons.append(self.plus_button)
         self.plus_button.pack(fill="x", side="left", anchor="n", expand=True)
         self.minus_button = tk.Button(self.sidebar_button_frame, text="-",
                                       font=(self.g.points_font, self.g.button_font_size),
                                       command=self.delete_category,
                                       bg=self.g.button_color)
+        self.buttons.append(self.minus_button)
         self.minus_button.pack(fill="x", side="right", anchor="n", expand=True)
         self.sidebar_button_frame.pack(fill="x", side="top", anchor="n", expand=True)
 
         self.sidebar_title_frame.pack(fill="x", side="top", anchor="n")
 
-        self.scroll = DoubleScrolledFrame(self.sidebar_frame, bg=self.g.bg_color, width=self.sidebar_title.winfo_width())
+        self.scroll = DoubleScrolledFrame(self.sidebar_frame, bg=self.g.bg_color,
+                                          width=self.sidebar_title.winfo_width())
         self.scroll.pack(fill="both", expand=True)
 
         self.update_sidebar()
@@ -217,9 +223,6 @@ class ClipboardApp(tk.Frame):
                                 anchor="nw")
 
         # Main frame
-        self.main_frames = []
-        self.labels = []
-
         self.main_frame = tk.Frame(self, highlightbackground=self.g.bg_color, highlightthickness=2)
 
         self.main_title_frame = tk.Frame(self.main_frame, bg=self.g.bg_color)
@@ -238,6 +241,7 @@ class ClipboardApp(tk.Frame):
         self.add_button = tk.Button(self.main_frame, text="+", font=(self.g.points_font, self.g.button_font_size),
                                     command=self.add_annotation,
                                     bg=self.g.button_color)
+        self.buttons.append(self.add_button)
         self.add_button.pack(fill="x")
 
         self.main_scroll = DoubleScrolledFrame(self.main_frame, bg=self.g.bg_color)
@@ -266,6 +270,7 @@ class ClipboardApp(tk.Frame):
             b = tk.Button(f, text=c.title, command=lambda x=i: self.open_category(x),
                           width=max([len(i.title) for i in self.data]),
                           bg=self.g.button_color, font=(self.g.points_font, self.g.button_font_size))
+            self.buttons.append(b)
             b.pack(fill="x", expand=True)
             f.pack(fill="x", padx=2, pady=2, side="top", anchor="n", expand=True)
             self.sidebar_frames.append(f)
@@ -325,18 +330,39 @@ class ClipboardApp(tk.Frame):
                                command=lambda x=an: self.delete_annotation(x),
                                bg=self.g.button_color,
                                font=(self.g.points_font, self.g.button_font_size))
+                self.buttons.append(b0)
                 text = tk.Label(f, text=an, justify="left", bg=self.g.bg_color,
                                 font=(self.g.points_font, self.g.task_font_size))
                 self.labels.append(text)
                 b1 = tk.Button(f, text="Copy", width=7,
                                command=lambda x=an: self.copy_to_clipboard(x),
                                bg=self.g.button_color, font=(self.g.points_font, self.g.button_font_size))
+                self.buttons.append(b1)
                 b0.pack(side="left", fill="y")
                 text.pack(side="left", fill="y")
                 b1.pack(side="right", fill="y")
                 f.pack(fill="x", anchor="w", side="top")
                 self.main_frames.append(f)
             self.wrap_labels(None)
+
+    def update_labels_graphics(self):
+        self.config(bg=self.g.bg_color)
+        self.scroll.set_color(self.g.bg_color)
+        self.main_scroll.set_color(self.g.bg_color)
+        for i in self.buttons:
+            i.config(bg=self.g.button_color,
+                     font=(self.g.points_font, self.g.button_font_size))
+        for i in self.labels:
+            i.config(bg=self.g.bg_color,
+                     font=(self.g.points_font, self.g.task_font_size))
+        for i in self.main_frames:
+            i.config(bg=self.g.bg_color,
+                     highlightbackground=self.g.button_color)
+
+        self.sidebar_title.config(bg=self.g.header_color,
+                                  font=(self.g.header_font, self.g.header_size))
+        self.main_title.config(bg=self.g.header_color,
+                               font=(self.g.header_font, self.g.header_size))
 
     def wrap_labels(self, event):
         if event is None or event.widget == self:
@@ -353,8 +379,12 @@ class ClipboardApp(tk.Frame):
 
     def delete_annotation(self, x: str):
         if self.selected_category >= 0:
-            self.data[self.selected_category].delete_annotation(x)
-            self.update_main_frame()
+            permission = messagebox.askyesno(title="Anmerkung entfernen",
+                                             message=f"Anmerkung \"{x}\" unwiderruflich löschen?",
+                                             parent=self)
+            if permission:
+                self.data[self.selected_category].delete_annotation(x)
+                self.update_main_frame()
 
     def copy_to_clipboard(self, content: str):
         self.clipboard_clear()
@@ -387,4 +417,3 @@ class ClipboardApp(tk.Frame):
         self.clipboard_clear()
         self.save()
         self.destroy()
-

@@ -258,6 +258,8 @@ class AuDGUI(Window):
         self.feedback_label.config(font=(self.g.test_result_font, self.g.test_result_size),
                                    bg=self.g.bg_color)
 
+        self.clipboard_helper.update_labels_graphics()
+
     def _delete_main_frame(self):
         for li in [self.main_frames,
                    self.main_total_points_labels,
