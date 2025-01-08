@@ -503,7 +503,8 @@ class AuDGUI(Window):
         SettingsDialog(master=self,
                        input_list=[self.manager.settings.compile_error_annotation,
                                    self.manager.settings.plagiat_annotation,
-                                   self.manager.settings.personal_annotation],
+                                   self.manager.settings.personal_annotation,
+                                   self.manager.settings.id_key],
                        g=self.g,
                        save_func=self.manager.save_personal_comment)
 
@@ -601,6 +602,7 @@ class AuDGUI(Window):
         return len(self.manager.states) > 0
 
     def _continue_import(self, res: list):
+        self.manager.team_idx = 0
         # Load directory
         self.manager.import_data(res)
         # Change status back and forth to refresh scroll region (call 2 times)
