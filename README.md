@@ -24,7 +24,7 @@
    The structure should look as follows:
    ```
    ./AuD-GUI
-     ├── .tmp
+     ├── .cache
      │    └── .gitkeep
      ├── data
      │    └── .gitkeep
@@ -80,12 +80,16 @@ If you have no python IDE installed, then double clicking on the file may also w
 ## Settings
 If you start the GUI for the first time, go to the `Datei > Einstellungen` menu and set the personal annotation. 
 This annotation is added to every text feedback as a kind of "signature". Enter your personal information and save it.
+You can also add comments for compile errors or plagiat cases. These comments are inserted instead of the points table.
+
+An additional feature is the ***ID key***, which will be used to retrieve the corresponding team IDs automatically.
 
 ## Functionalities
 A quick overview on the current functionalities:
 - **Import**: Import the students' submissions as folder (`Datei > Abgaben importieren > Ordner`) or zip archive (`Datei > Abgaben importieren > Zip-Datei`).
   - Choose a comment template
-  - Enter the team IDs that were assigned to you
+  - Team IDs are automatically selected based on your ID key
+  - (Optional: Enter the team IDs manually - this ignores the ID key)
 - **Open**: Open previously imported submissions via `Datei > Korrektur öffnen`.
 - **Navigation menu**:
   - `Navigation > Nächstes Team`: Jumps to the next team
@@ -107,4 +111,4 @@ A quick overview on the current functionalities:
    ```
 - A detailed description of the procedures with pictures may follow in the future ... :D
 
-State: 24-11-18, Author: Simon Kramer
+State: 25-01-09, Author: Simon Kramer

@@ -617,7 +617,7 @@ class AuDGUI(Window):
         # Configure export menu
         self.file_menu.entryconfigure("Korrekturen exportieren", state="normal")
         # Update edit menu
-        for i in ["Nächstes Team", "Vorheriges Team", "Suche Team", "PDF öffnen"]:
+        for i in ["Nächstes Team", "Vorheriges Team", "Suche Team", "PDF öffnen", "Code öffnen"]:
             self.edit_menu.entryconfigure(i, state="normal")
 
     def _open_team(self, index: int):
