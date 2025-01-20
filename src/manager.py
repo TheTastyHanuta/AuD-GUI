@@ -83,10 +83,12 @@ class Manager:
                                      message=f"Datei \"tutors_team_ids.json\" für die automatische ID-Auswahl wurde "
                                              f"nicht in \"{os.path.join(self.path, dir_name)}\" gefunden! "
                                              f"Manuelle Eingabe der IDs erforderlich.")
-                # Abort
+                # Abort and delete folder
+                logging.debug(f"import_data: Remove folder \"{os.path.join(self.path, dir_name)}\"")
+                shutil.rmtree(os.path.join(self.path, dir_name))
                 return
             else:
-                # Open "tutors_team_ids.json
+                # Open "tutors_team_ids.json"
                 with open(os.path.join(self.path, dir_name, "tutors_team_ids.json"), "r", encoding="utf-8") as f:
                     json_ids = json.load(f)
 
