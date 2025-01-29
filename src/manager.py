@@ -78,7 +78,7 @@ class Manager:
         if len(res) == 2:
             # Automatic IDs
             if "tutors_team_ids.json" not in os.listdir(os.path.join(self.path, dir_name)):
-                logging.error("import_data: No \"tutors_team_ids.json\" found for manual id selection!")
+                logging.error("import_data: No \"tutors_team_ids.json\" found for automatic id selection!")
                 messagebox.showerror(title="AuD-GUI :D - Fehler!",
                                      message=f"Datei \"tutors_team_ids.json\" für die automatische ID-Auswahl wurde "
                                              f"nicht in \"{os.path.join(self.path, dir_name)}\" gefunden! "
@@ -129,7 +129,6 @@ class Manager:
         logging.debug(f"import_data: Path info:\n"
                       f"self.path: {self.path}\n"
                       f"dir_name: {dir_name}\n"
-                      f"Joined: {os.path.join(self.path, dir_name)}\n"
                       f"Content: {os.listdir(os.path.join(self.path, dir_name))}")
 
         self.code_dir = os.path.join(self.path,
