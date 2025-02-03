@@ -271,6 +271,10 @@ class AuDGUI(Window):
                     i.pack_forget()
                 li.clear()
 
+        # Delete lists for point <-> label relations
+        self.class_points_labels.clear()
+        self.task_points_labels.clear()
+
         if self.confirm_button is not None:
             self.confirm_button.pack_forget()
             self.confirm_button = None
@@ -627,7 +631,7 @@ class AuDGUI(Window):
         self.manager.open_team(index)
         # Update labels
         self._create_main_frame()
-        self._color_sidebar()
+        # self._color_sidebar()
         self._create_feedback_label()
         self._color_sidebar()
 

@@ -330,7 +330,7 @@ class Manager:
         for idx, i in enumerate(self.team_state.comment["classes"]):
             if i["title"] == class_str:
                 return idx
-        logging.error(f"Class \"{class_str}\" does not exist in current status file")
+        logging.error(f"manager.py: get_class_idx: Class \"{class_str}\" does not exist in current status file")
         return None
 
     def get_task_idx(self, class_str, task_str):
