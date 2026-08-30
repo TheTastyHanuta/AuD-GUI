@@ -15,6 +15,14 @@ from src.graphics import Graphics
 from src.io_utils import check_updates, copy_import_src
 
 
+def _find_subdir(path: str, keywords: tuple[str, ...]) -> str:
+    for entry in os.listdir(path):
+        full = os.path.join(path, entry)
+        if os.path.isdir(full) and any(keyword in entry.casefold() for keyword in keywords):
+            return full
+    return ""
+
+
 class Manager:
     def __init__(self, path_of_mainfile: str):
         logging.debug("manager.py: Start of GUI and creation of manager")
@@ -131,16 +139,19 @@ class Manager:
                       f"dir_name: {dir_name}\n"
                       f"Content: {os.listdir(os.path.join(self.path, dir_name))}")
 
-        self.code_dir = os.path.join(self.path,
-                                     dir_name,
-                                     [i for i in os.listdir(os.path.join(self.path, dir_name)) if
-                                      "Code" in i and os.path.isdir(os.path.join(self.path, dir_name, i))][0],
-                                     "Abgaben")
-        self.pdf_dir = os.path.join(self.path,
-                                    dir_name,
-                                    [i for i in os.listdir(os.path.join(self.path, dir_name)) if
-                                     "Korrektur" in i and os.path.isdir(os.path.join(self.path, dir_name, i))][0],
-                                    "Abgaben")
+        import_root = os.path.join(self.path, dir_name)
+        code_root = _find_subdir(import_root, ("code",))
+        pdf_root = _find_subdir(import_root, ("korrektur", "korrekturen", "pdf"))
+
+        if not code_root or not pdf_root:
+            logging.error(f'import_data: Could not resolve code/pdf folders inside "{import_root}"')
+            messagebox.showerror(title="AuD-GUI :D - Fehler!",
+                                 message=f'In "{dir_name}" wurde keine gültige Code-/Korrektur-Struktur gefunden.')
+            shutil.rmtree(import_root)
+            return
+
+        self.code_dir = os.path.join(code_root, "Abgaben")
+        self.pdf_dir = os.path.join(pdf_root, "Abgaben")
         logging.debug(f"Path info:\nCode: {self.code_dir}\nPDFs: {self.pdf_dir}")
         # Remove files that are not necessary
         # List of teams to keep
