@@ -507,6 +507,15 @@ class Manager:
         else:
             logging.error(f"export: status.csv not found in \"{path_to_status_csv}\"")
 
+        # The AuD website only accepts an upload that names the Korrekturpaket it came from.
+        # pdf_dir is <import folder>/<...-Korrektur>/Abgaben, and the file sits in the import folder.
+        package_info = os.path.join(os.path.dirname(os.path.dirname(self.pdf_dir)), "aud_correction_package.json")
+        if os.path.isfile(package_info):
+            shutil.copy2(package_info, os.path.join(parent_dir, "aud_correction_package.json"))
+            logging.debug(f"export: Copy \"{package_info}\" to \"{parent_dir}\"")
+        else:
+            logging.warning(f"export: \"{package_info}\" not found, the AuD website will refuse this export")
+
         try:
             logging.debug(f"export: Try to open \"{path_to_status_csv}\"")
             with open(path_to_status_csv, encoding="utf-8", errors="backslashreplace") as input_fd:
